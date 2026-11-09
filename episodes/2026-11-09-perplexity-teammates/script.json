@@ -1,0 +1,64 @@
+{
+  "episode": "2026-11-09",
+  "series": "Augaster AI Digest",
+  "story": "Perplexity launches Teammates, always-on AI agents",
+  "sources": [
+    {
+      "name": "Perplexity product page",
+      "url": "https://www.perplexity.ai/hub/products/teammate"
+    },
+    {
+      "name": "Let's Data Science (citing Digital Trends)",
+      "url": "https://letsdatascience.com/news/perplexity-launches-teammates-persistent-ai-agents-for-max-s-704b7a36"
+    },
+    {
+      "name": "Lilach Bullock, AI News for Small Business, 8 Nov 2026",
+      "url": "https://www.lilachbullock.com/ai-news-this-week-for-small-business-8-november-2026/"
+    }
+  ],
+  "source_line": "Sources: Perplexity, Digital Trends",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "THIS WEEK IN AI",
+      "title": "AI \"teammates\" that keep working after you close the chat",
+      "point": "",
+      "narration": "Perplexity just launched AI teammates that keep working after you close the chat."
+    },
+    {
+      "kind": "news",
+      "label": "WHAT HAPPENED",
+      "title": "Give it a goal, not a prompt",
+      "point": "Watch competitor prices \u00b7 draft support replies",
+      "narration": "Give one an ongoing goal, like watching competitor prices or drafting support replies."
+    },
+    {
+      "kind": "news",
+      "label": "HOW IT WORKS",
+      "title": "Its own browser. Works in the background.",
+      "point": "Checks in when it needs your approval",
+      "narration": "It works in its own browser, and checks in when it needs your approval."
+    },
+    {
+      "kind": "analysis",
+      "label": "WHAT IT MEANS FOR YOU",
+      "title": "A part-time assistant for repetitive work",
+      "point": "Catch: Max plan only, about $200 a month",
+      "narration": "For a small business, that's a part-time assistant for repetitive work. The catch: it's only on the Max plan, about two hundred dollars a month."
+    },
+    {
+      "kind": "analysis",
+      "label": "OUR TAKE",
+      "title": "Keep refunds, prices and customers behind your approval",
+      "point": "Let the agent draft. You decide.",
+      "narration": "Our take: let it draft, but keep refunds and prices behind your approval."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER AI DIGEST",
+      "title": "Full breakdown + sources",
+      "point": "augaster.com",
+      "narration": "Full breakdown and sources on augaster dot com. Follow for weekly practical AI."
+    }
+  ]
+}

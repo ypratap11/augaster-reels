@@ -1,0 +1,24 @@
+{
+  "duration_sec": 31.86,
+  "segments": 6,
+  "captions": 27,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/home/claude/reelgen/episodes/2026-11-09-perplexity-teammates/reel.mp4",
+  "voice": "en-us-lessac-medium.onnx",
+  "sources": [
+    {
+      "name": "Perplexity product page",
+      "url": "https://www.perplexity.ai/hub/products/teammate"
+    },
+    {
+      "name": "Let's Data Science (citing Digital Trends)",
+      "url": "https://letsdatascience.com/news/perplexity-launches-teammates-persistent-ai-agents-for-max-s-704b7a36"
+    },
+    {
+      "name": "Lilach Bullock, AI News for Small Business, 8 Nov 2026",
+      "url": "https://www.lilachbullock.com/ai-news-this-week-for-small-business-8-november-2026/"
+    }
+  ],
+  "approved": false
+}
