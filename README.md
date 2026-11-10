@@ -8,8 +8,15 @@ Turns one verified AI news story into a narrated, captioned, branded 1080×1920 
 ```
 Installs the Python packages and downloads the offline narrator voice (Piper, en-US "lessac").
 
+## Generate an episode (script + posts)
+```bash
+export ANTHROPIC_API_KEY=...
+python3 make_episode.py --title "Story headline" --url https://source-one --url https://source-two
+```
+Claude fetches every source; claims not confirmed by two sources are dropped (see `verification.json`). The script is checked for segment order, 82–98 words, spelled-out numbers and the CTA (service CTA on every third episode). Then render it as below.
+
 ## Make a reel
-1. Create `episodes/YYYY-MM-DD-slug/script.json` (copy an existing episode). Keep total narration to ~75 words for 30–35 sec.
+1. Create `episodes/YYYY-MM-DD-slug/script.json` (copy an existing episode). Keep total narration to ~90 words for 30–35 sec (the first episode is 91 words → 31.7 sec).
 2. Render:
    ```bash
    python3 render_reel.py episodes/YYYY-MM-DD-slug/script.json --voice voices/en-us-lessac-medium.onnx
