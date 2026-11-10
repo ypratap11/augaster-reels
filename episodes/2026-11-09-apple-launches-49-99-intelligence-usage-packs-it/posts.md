@@ -2,7 +2,7 @@
 
 ## Instagram / YouTube Shorts caption
 
-Apple just put a price tag on AI usage. 💸
+Apple now sells extra AI usage for its Creator Studio apps. 💸
 ✅ Intelligence Usage Packs cost $49.99 and buy more AI usage in Apple Creator Studio apps
 ✅ Until now, Apple Intelligence features were free on Apple devices
 ⚠️ Packs apply only to Creator Studio apps for now, and Apple has said it will not stay free forever
@@ -14,7 +14,7 @@ Full breakdown + sources: augaster.com (link in bio)
 
 ## LinkedIn post
 
-Apple has started charging for AI, and small-business owners who use Apple tools should take note.
+Apple now sells extra AI usage, and small-business owners who use its Creator Studio apps should take note.
 
 According to 9to5Mac and Yahoo Finance, Apple is selling Intelligence Usage Packs for $49.99. They buy more AI usage in its Apple Creator Studio apps.
 
