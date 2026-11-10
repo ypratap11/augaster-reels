@@ -342,6 +342,11 @@ def main():
                for s in verified["sources"] if 0 <= s["index"] < len(args.url)}
     kept, dropped = keep_corroborated(verified, len(args.url))
     print(f"      {len(kept)} claims confirmed by 2+ sources (1+ non-roundup), {len(dropped)} dropped", file=sys.stderr)
+    for s in verified["sources"]:
+        print(f"      source [{s['index']}] fetched={s['fetched']} kind={s['kind']} {s['name']} {s['published']}", file=sys.stderr)
+    for c in verified["claims"]:
+        mark = "keep" if any(k["claim"] == c["claim"] for k in kept) else "drop"
+        print(f"      {mark} {c['supported_by']} {c['claim']}", file=sys.stderr)
     if len(kept) < 3:
         raise SystemExit("fewer than three claims are confirmed by two sources; pick a better-covered story")
 
