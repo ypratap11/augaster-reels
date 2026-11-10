@@ -24,7 +24,7 @@ Roundups (AIToolsRecap, AI Weekly, Ground News…) are used as leads only: the p
 
 ## Scheduled pipeline (GitHub Actions)
 `.github/workflows/episode.yml` runs Mon/Wed/Fri 8:30 AM Pacific (DST-aware): pick → generate → render → commit `episodes/<date-slug>/` → upload `reel.mp4`, `thumbnail.png`, `posts.md` as a workflow artifact. It never publishes; every episode lands with `"approved": false`.
-- One-time: add the repo secret `ANTHROPIC_API_KEY` (Settings → Secrets and variables → Actions).
+- One-time: add the repo secret `A_API_KEY` (your Anthropic API key; the workflow passes it to the scripts as `ANTHROPIC_API_KEY`) (Settings → Secrets and variables → Actions).
 - Manual run: Actions → Make episode → Run workflow; optionally give a title and space-separated source URLs to skip the picker.
 
 ## Make a reel

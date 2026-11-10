@@ -67,7 +67,7 @@ jobs:
       - name: Pick story
         if: steps.when.outputs.run == 'true' && inputs.title == ''
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.A_API_KEY }}
         run: python pick_story.py --out "$RUNNER_TEMP/story.json"
 
       - name: Generate episode
@@ -75,7 +75,7 @@ jobs:
         id: gen
         shell: bash
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.A_API_KEY }}
           TITLE: ${{ inputs.title }}
           URLS: ${{ inputs.urls }}
         run: |
