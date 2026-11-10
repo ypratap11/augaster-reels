@@ -44,7 +44,8 @@ Avoid: funding rounds, research benchmarks, rumors, opinion pieces, stories alre
 Good places to find leads: aitoolsrecap.com/ai-news-today, aiweekly.co/ai-news-today, ground.news, the OpenAI API changelog, Anthropic and Google announcements, Hugging Face trending, TechFundingNews, Crunchbase News.
 Roundups and aggregators are leads only: always follow them to the underlying announcement, and check its date there. A story that a roundup presents as new but that was announced before the window is not eligible. Do not treat cumulative figures (total downloads, all-time stars) as daily or weekly numbers.
 Return 2-4 source URLs you actually found: the primary announcement first, then at least one independent original report. Use a roundup URL only as a last extra source. Every URL must be a specific article or product page, not a home page.
-Set "announced" to the date in the primary source."""
+Set "announced" to the date in the primary source.
+Before returning, open each URL with web_fetch and keep only pages whose article text you could actually read; some sites block fetching. If fewer than two readable sources remain (one of them primary or original reporting), find replacements or pick a different story."""
 
 
 def covered_stories():
@@ -69,7 +70,8 @@ def main():
     covered = covered_stories()
     content = (f"Today is {today}. Pick the best story announced between {since} and {today}.\n\n"
                "Already covered (do not repeat):\n" + ("\n".join(f"- {c}" for c in covered) or "- none"))
-    tools = [{"type": "web_search_20260209", "name": "web_search", "max_uses": 12}]
+    tools = [{"type": "web_search_20260209", "name": "web_search", "max_uses": 12},
+             {"type": "web_fetch_20260209", "name": "web_fetch", "max_uses": 8}]
 
     print(f"searching AI news {since}..{today}…", file=sys.stderr)
     story = call(anthropic.Anthropic(), SYSTEM, content, SCHEMA, tools=tools)

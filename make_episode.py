@@ -60,6 +60,7 @@ VERIFY_SCHEMA = {
                 "type": "object",
                 "properties": {
                     "index": {"type": "integer"},
+                    "url": {"type": "string", "description": "The URL you fetched"},
                     "name": {"type": "string", "description": "Short publisher name, e.g. 'Perplexity product page'"},
                     "fetched": {"type": "boolean", "description": "false if the page could not be read"},
                     "published": {"type": "string", "description": "Publication date as printed on the page, or ''"},
@@ -71,7 +72,7 @@ VERIFY_SCHEMA = {
                                        "roundup = daily news digest, aggregator or list that summarizes others",
                     },
                 },
-                "required": ["index", "name", "fetched", "published", "kind"],
+                "required": ["index", "url", "name", "fetched", "published", "kind"],
                 "additionalProperties": False,
             },
         },
@@ -136,6 +137,7 @@ WRITE_SCHEMA = {
 VERIFY_SYSTEM = """You fact-check AI news for the Augaster AI Digest, a short video series for small-business owners.
 
 Fetch every source URL with the web_fetch tool, then list the factual claims about the story that the sources state.
+Every claim must be confirmed by two readable sources, at least one of them primary or original reporting. If a given source cannot be fetched, is only partly readable, or there is no primary source, use web_search to find the company's own announcement (newsroom, blog, docs, changelog) and one more independent original report, fetch them, and add them as extra sources numbered after the given ones. Only list a source you actually fetched and read.
 - A claim is one checkable fact: what launched, who made it, when, price, availability, how it works, limits.
 - For each claim, list every source index that states it explicitly. Do not count a source that only implies it.
 - Copy numbers, prices and dates exactly as the sources print them. Where sources disagree, record each version as a separate claim.
@@ -198,7 +200,8 @@ def call(client, system, content, schema, tools=None, effort="high"):
 def verify(client, title, urls):
     listing = "\n".join(f"[{i}] {u}" for i, u in enumerate(urls))
     content = f"Story: {title}\n\nSources:\n{listing}\n\nFetch each source and list the claims."
-    tools = [{"type": "web_fetch_20260209", "name": "web_fetch", "max_uses": len(urls) + 3}]
+    tools = [{"type": "web_search_20260209", "name": "web_search", "max_uses": 5},
+             {"type": "web_fetch_20260209", "name": "web_fetch", "max_uses": len(urls) + 6}]
     return call(client, VERIFY_SYSTEM, content, VERIFY_SCHEMA, tools=tools)
 
 
@@ -338,12 +341,18 @@ def main():
     verified = verify(client, args.title, args.url)
     if verified["off_limits"]:
         raise SystemExit(f"off-limits story: {verified['off_limits_reason']}")
-    sources = {s["index"]: {**s, "url": args.url[s["index"]]}
-               for s in verified["sources"] if 0 <= s["index"] < len(args.url)}
-    kept, dropped = keep_corroborated(verified, len(args.url))
+    # Given sources keep the URL we passed; extra ones found by the model use the URL it reports.
+    sources = {}
+    for s in verified["sources"]:
+        i = s["index"]
+        url = args.url[i] if 0 <= i < len(args.url) else s["url"]
+        if i >= 0 and i not in sources and re.match(r"https?://", url):
+            sources[i] = {**s, "url": url}
+    verified["sources"] = list(sources.values())
+    kept, dropped = keep_corroborated(verified, max(sources, default=-1) + 1)
     print(f"      {len(kept)} claims confirmed by 2+ sources (1+ non-roundup), {len(dropped)} dropped", file=sys.stderr)
     for s in verified["sources"]:
-        print(f"      source [{s['index']}] fetched={s['fetched']} kind={s['kind']} {s['name']} {s['published']}", file=sys.stderr)
+        print(f"      source [{s['index']}] fetched={s['fetched']} kind={s['kind']} {s['name']} {s['published']} {s['url']}", file=sys.stderr)
     for c in verified["claims"]:
         mark = "keep" if any(k["claim"] == c["claim"] for k in kept) else "drop"
         print(f"      {mark} {c['supported_by']} {c['claim']}", file=sys.stderr)
