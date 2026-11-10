@@ -26,9 +26,9 @@ BETAS = ["server-side-fallback-2026-07-01"]
 ROOT = os.path.dirname(os.path.abspath(__file__))
 EPISODES = os.path.join(ROOT, "episodes")
 
-# Measured: the first episode is 91 words -> 31.7 sec at LENGTH_SCALE 0.95 (~3 words/sec plus
-# 0.3 sec padding per segment). 82-98 words lands in the 30-35 sec target.
-WORDS_MIN, WORDS_MAX = 82, 98
+# Measured at LENGTH_SCALE 0.95: 91 words -> 31.7 sec (episode 1); 93 words with a long
+# spelled-out price -> 35.4 sec (episode 2). 78-92 words keeps reels inside 30-35 sec.
+WORDS_MIN, WORDS_MAX = 78, 92
 KINDS = ["hook", "news", "news", "analysis", "analysis", "cta"]
 LABELS = {1: "WHAT HAPPENED", 3: "WHAT IT MEANS FOR YOU", 4: "OUR TAKE"}
 BLOCKED = re.compile(r"\b(oracle|wipro)\b", re.I)  # also screened by the model for Wipro clients
@@ -160,7 +160,7 @@ Reel script: exactly six segments, in this order:
 6. cta: copy exactly the CTA segment you are given.
 
 Narration rules (the narration is read by a text-to-speech voice):
-- 85 to 95 words across all six segments, CTA included (the reel must run 30-35 seconds). Short, spoken sentences.
+- 80 to 88 words across all six segments, CTA included (the reel must run 30-35 seconds). Short, spoken sentences.
 - Spell out every number, price and year in words ("two hundred dollars a month", "twenty twenty-six"). No digits, no "$" or "%".
 - Say "dot com", never ".com".
 On-screen title and point use normal written formatting ("$200 a month"). Keep titles under about 60 characters and points under about 50. A point may be "" if nothing useful fits.
@@ -225,7 +225,8 @@ def keep_corroborated(verified, n_sources):
     kept, dropped = [], []
     for c in verified["claims"]:
         srcs = sorted({i for i in c["supported_by"] if i in fetched and 0 <= i < n_sources})
-        ok = len(srcs) >= 2 and any(i in solid for i in srcs)
+        hedged = re.search(r"\b(unconfirmed|unverified)\b", c["claim"], re.I)  # model flagged it itself
+        ok = len(srcs) >= 2 and any(i in solid for i in srcs) and not hedged
         (kept if ok else dropped).append({**c, "supported_by": srcs})
     return kept, dropped
 
@@ -252,7 +253,7 @@ def check_draft(draft, cta):
             problems.append("CTA segment must match the given CTA exactly")
     words = narration_words(segs)
     if not WORDS_MIN <= words <= WORDS_MAX:
-        problems.append(f"narration is {words} words; it must be {WORDS_MIN}-{WORDS_MAX} (aim for 90)")
+        problems.append(f"narration is {words} words; it must be {WORDS_MIN}-{WORDS_MAX} (aim for 84)")
     for i, s in enumerate(segs):
         if re.search(r"[0-9$%]", s["narration"]):
             problems.append(f"segment {i + 1} narration has digits or symbols; spell them out: {s['narration']!r}")
