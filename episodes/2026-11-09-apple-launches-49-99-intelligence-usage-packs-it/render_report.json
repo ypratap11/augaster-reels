@@ -1,0 +1,20 @@
+{
+  "duration_sec": 35.35,
+  "segments": 6,
+  "captions": 26,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/__w/augaster-reels/augaster-reels/episodes/2026-11-09-apple-launches-49-99-intelligence-usage-packs-it/reel.mp4",
+  "voice": "en-us-lessac-medium.onnx",
+  "sources": [
+    {
+      "name": "9to5Mac",
+      "url": "https://9to5mac.com/2026/11/09/apple-launches-50-intelligence-usage-packs-for-select-ai-features/"
+    },
+    {
+      "name": "Yahoo Finance (syndicated GuruFocus article)",
+      "url": "https://finance.yahoo.com/technology/ai/articles/apple-makes-major-ai-pricing-185711619.html"
+    }
+  ],
+  "approved": false
+}

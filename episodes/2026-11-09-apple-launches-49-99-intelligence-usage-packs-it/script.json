@@ -1,0 +1,60 @@
+{
+  "episode": "2026-11-09",
+  "series": "Augaster AI Digest",
+  "story": "Apple launches $49.99 Intelligence Usage Packs, its first paid Apple Intelligence tier",
+  "sources": [
+    {
+      "name": "9to5Mac",
+      "url": "https://9to5mac.com/2026/11/09/apple-launches-50-intelligence-usage-packs-for-select-ai-features/"
+    },
+    {
+      "name": "Yahoo Finance (syndicated GuruFocus article)",
+      "url": "https://finance.yahoo.com/technology/ai/articles/apple-makes-major-ai-pricing-185711619.html"
+    }
+  ],
+  "source_line": "Sources: 9to5Mac, Yahoo Finance",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "THIS WEEK IN AI",
+      "title": "Apple is now charging for AI",
+      "point": "Usage Packs: $49.99",
+      "narration": "Apple is now charging for AI. Intelligence Usage Packs cost forty-nine dollars and ninety-nine cents."
+    },
+    {
+      "kind": "news",
+      "label": "WHAT HAPPENED",
+      "title": "Apple sells AI usage packs",
+      "point": "For Apple Creator Studio apps",
+      "narration": "Apple is selling usage packs for more AI in its Creator Studio apps. Until now, Apple Intelligence was free."
+    },
+    {
+      "kind": "news",
+      "label": "THE KEY DETAIL",
+      "title": "Creator Studio only, for now",
+      "point": "Apple: not free forever",
+      "narration": "For now, packs cover only Creator Studio apps. Apple says Apple Intelligence will not stay free forever."
+    },
+    {
+      "kind": "analysis",
+      "label": "WHAT IT MEANS FOR YOU",
+      "title": "AI may become a budget line",
+      "point": "The catch: costs may creep up",
+      "narration": "If you use Creator Studio, budget for AI. The catch: costs may creep up."
+    },
+    {
+      "kind": "analysis",
+      "label": "OUR TAKE",
+      "title": "Track usage before you buy",
+      "point": "Buy only if it saves time",
+      "narration": "Our take: track your usage first. Buy a pack only if it saves real time."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER AI DIGEST",
+      "title": "Full breakdown + sources",
+      "point": "augaster.com",
+      "narration": "Full breakdown and sources on augaster dot com. Follow for weekly practical AI."
+    }
+  ]
+}

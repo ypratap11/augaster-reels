@@ -1,0 +1,116 @@
+{
+  "title": "Apple launches $49.99 Intelligence Usage Packs, its first paid Apple Intelligence tier",
+  "episode_number": 2,
+  "cta": "follow",
+  "sources": [
+    {
+      "index": 0,
+      "url": "https://9to5mac.com/2026/11/09/apple-launches-50-intelligence-usage-packs-for-select-ai-features/",
+      "name": "9to5Mac",
+      "fetched": true,
+      "published": "Nov 9 2026 - 8:32 am PT",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 1,
+      "url": "https://appleinsider.com/articles/26/11/09/apple-creator-studio-users-can-pay-for-higher-apple-intelligence-usage-limits",
+      "name": "AppleInsider",
+      "fetched": false,
+      "published": "",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 2,
+      "url": "https://finance.yahoo.com/technology/ai/articles/apple-makes-major-ai-pricing-185711619.html",
+      "name": "Yahoo Finance (syndicated GuruFocus article)",
+      "fetched": true,
+      "published": "Mon, November 9, 2026 at 10:57 AM PST",
+      "kind": "roundup"
+    }
+  ],
+  "kept": [
+    {
+      "claim": "Apple is selling Intelligence usage packs for $49.99, to buy more AI usage in its Apple Creator Studio apps.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "9to5Mac: the only option is a $49.99 one-time purchase of an 'intelligence usage pack', tied to Apple Creator Studio apps. Yahoo/GuruFocus: customers who exceed limits can purchase additional intelligence usage packs for $49.99."
+    },
+    {
+      "claim": "Until now all Apple Intelligence features were free on Apple devices, and this is Apple's first take on charging for AI features. Yahoo calls it one of Apple's earliest efforts to directly monetize AI consumption, which is weaker wording. 9to5Mac says Apple has said it will not stay free forever.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "9to5Mac: until now all Apple Intelligence features have been available free, and Apple has officially launched its first take on charging for AI features. Yahoo/GuruFocus: 'one of Apple's earliest efforts' to directly monetize AI consumption. Neither describes it as a paid 'tier'; that wording comes from the story headline."
+    },
+    {
+      "claim": "The packs apply only to Apple Creator Studio apps for now. Yahoo says they are for active Creator Studio subscribers. UNCONFIRMED in detail: the sources frame it differently.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "9to5Mac: for now these usage packs are limited to Creator Studio apps. Yahoo/GuruFocus: introduced for subscribers who exceed monthly AI limits in Creator Studio applications."
+    },
+    {
+      "claim": "The launch was reported on November 9, 2026. 9to5Mac says the Creator Studio updates were announced earlier; its link points to an Apple newsroom post dated October 2026 (URL path /newsroom/2026/10/). That Apple post could not be fetched, so the original announcement date is unverified.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "9to5Mac dated Nov 9 2026 and calls the Creator Studio updates 'already-announced'. Yahoo/GuruFocus is dated Mon, November 9, 2026. No primary Apple source could be read."
+    }
+  ],
+  "dropped": [
+    {
+      "claim": "The packs are sold as a one-time purchase, not a subscription (at least initially). UNCONFIRMED: only one source states it, and Apple's support page could not be fetched.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "9to5Mac: Apple is, at least initially, selling expanded AI access through $50 one-time purchases, and quotes Apple's website saying packs are a one-time purchase. Yahoo/GuruFocus does not say this and loosely mentions 'recurring revenue'."
+    },
+    {
+      "claim": "The packs don't support Family Sharing and can be used only by the Apple Account used for iCloud at purchase. UNCONFIRMED: single source, and Apple's page was not fetched.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "9to5Mac quoting Apple's support page: they don't support Family Sharing and can be used only by the Apple Account you were using for iCloud when the purchase was made."
+    },
+    {
+      "claim": "Unused extra usage rolls over month to month and expires 12 months after purchase. Extra usage is consumed only after the monthly limit is reached. UNCONFIRMED: single source.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "9to5Mac quoting Apple's support page: unused additional usage rolls over from month to month and expires 12 months after purchase, and is consumed only after you've reached your monthly limit."
+    },
+    {
+      "claim": "The first place to buy a pack is Logic Pro's latest update, via menu bar > Intelligence Features > Show Usage > Buy More Usage. Logic Pro is currently the only app offering it. Final Cut Pro, Pixelmator Pro and the iWork suite are expected to follow when the already-announced Creator Studio updates arrive this month. UNCONFIRMED: single source.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "9to5Mac: right now the only app that lets you buy additional AI usage is Logic Pro, and usage packs are expected in Final Cut Pro, Pixelmator Pro and iWork. Yahoo/GuruFocus says AI features are already in Keynote, Pages, Numbers, Pixelmator Pro, Freeform and Logic Pro, and does not say which apps sell packs, so the two sources differ on scope."
+    },
+    {
+      "claim": "The entry-level monthly allowance is 50 images, 250 shapes, 50 presentations, plus presenter notes covering 700 slides. UNCONFIRMED: single source, and a secondary one.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Yahoo/GuruFocus: under the entry-level allocation subscribers can generate 50 images, 250 shapes and 50 presentations, alongside presenter notes covering 700 slides. 9to5Mac gives no figures."
+    },
+    {
+      "claim": "Apple confirmed availability to active Creator Studio subscribers in eight countries, including the US, UK, Canada, Germany and India. UNCONFIRMED: single secondary source.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Yahoo/GuruFocus: Apple confirmed the feature is available to active Creator Studio subscribers across eight countries, including the United States, United Kingdom, Canada, Germany and India."
+    },
+    {
+      "claim": "Apple's Services segment generated $31.57 billion in its latest reported quarter. UNCONFIRMED: single secondary source, and background rather than part of the launch.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Yahoo/GuruFocus: Services segment generated $31.57 billion in its latest reported quarter."
+    }
+  ]
+}
