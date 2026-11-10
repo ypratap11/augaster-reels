@@ -21,7 +21,7 @@ import argparse, datetime, json, os, re, sys
 
 import anthropic
 
-MODEL = "claude-opus-5-5"
+MODEL = "claude-sonnet-5-5"  # $2/$10 per MTok; switch back to "claude-opus-5-5" for higher quality
 BETAS = ["server-side-fallback-2026-07-01"]
 ROOT = os.path.dirname(os.path.abspath(__file__))
 EPISODES = os.path.join(ROOT, "episodes")
