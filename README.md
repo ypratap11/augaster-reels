@@ -15,6 +15,18 @@ python3 make_episode.py --title "Story headline" --url https://source-one --url 
 ```
 Claude fetches every source; claims not confirmed by two sources are dropped (see `verification.json`). The script is checked for segment order, 82–98 words, spelled-out numbers and the CTA (service CTA on every third episode). Then render it as below.
 
+## Pick a story automatically
+```bash
+python3 pick_story.py --out story.json          # web search, past 3 days, skips covered stories
+python3 make_episode.py --story story.json
+```
+Roundups (AIToolsRecap, AI Weekly, Ground News…) are used as leads only: the picker follows them to the primary announcement and checks its date, and the generator requires every claim to have two sources, at least one primary or original reporting.
+
+## Scheduled pipeline (GitHub Actions)
+`.github/workflows/episode.yml` runs Mon/Wed/Fri 8:30 AM Pacific (DST-aware): pick → generate → render → commit `episodes/<date-slug>/` → upload `reel.mp4`, `thumbnail.png`, `posts.md` as a workflow artifact. It never publishes; every episode lands with `"approved": false`.
+- One-time: add the repo secret `ANTHROPIC_API_KEY` (Settings → Secrets and variables → Actions).
+- Manual run: Actions → Make episode → Run workflow; optionally give a title and space-separated source URLs to skip the picker.
+
 ## Make a reel
 1. Create `episodes/YYYY-MM-DD-slug/script.json` (copy an existing episode). Keep total narration to ~90 words for 30–35 sec (the first episode is 91 words → 31.7 sec).
 2. Render:

@@ -63,8 +63,15 @@ VERIFY_SCHEMA = {
                     "name": {"type": "string", "description": "Short publisher name, e.g. 'Perplexity product page'"},
                     "fetched": {"type": "boolean", "description": "false if the page could not be read"},
                     "published": {"type": "string", "description": "Publication date as printed on the page, or ''"},
+                    "kind": {
+                        "type": "string",
+                        "enum": ["primary", "original_reporting", "roundup"],
+                        "description": "primary = the company's own announcement/docs/changelog; "
+                                       "original_reporting = a journalist's own article; "
+                                       "roundup = daily news digest, aggregator or list that summarizes others",
+                    },
                 },
-                "required": ["index", "name", "fetched", "published"],
+                "required": ["index", "name", "fetched", "published", "kind"],
                 "additionalProperties": False,
             },
         },
@@ -133,6 +140,9 @@ Fetch every source URL with the web_fetch tool, then list the factual claims abo
 - For each claim, list every source index that states it explicitly. Do not count a source that only implies it.
 - Copy numbers, prices and dates exactly as the sources print them. Where sources disagree, record each version as a separate claim.
 - If a page cannot be fetched, mark it fetched=false and give it no claims.
+- Classify each source: primary (the company's own announcement, docs, changelog), original_reporting, or roundup (daily digests and aggregators such as AIToolsRecap, AI Weekly, Ground News). If a roundup links to the underlying announcement, fetch that too and attribute claims to it only if it actually states them.
+- Numbers: say exactly what a figure measures. A cumulative or rolling total (total downloads, all-time stars) is not a daily or weekly figure; write it as the sources define it.
+- Dates: record when the thing was actually announced or released, from the primary source if available, not when a roundup mentioned it. If the announcement is older than the sources imply, include that as a claim.
 - Set off_limits=true if the story involves Oracle, Wipro, or any Wipro client company."""
 
 WRITE_SYSTEM = """You write the Augaster AI Digest: 30-35 second vertical news reels for small-business owners, plus matching posts.
@@ -205,12 +215,15 @@ def write(client, title, claims, sources, cta, feedback=None, previous=None):
 # ---------------------------------------------------------------- checks (no API needed)
 
 def keep_corroborated(verified, n_sources):
-    """Drop claims with fewer than two distinct, fetched sources. Returns (kept, dropped)."""
+    """Keep claims confirmed by two distinct fetched sources, at least one of them primary or
+    original reporting (roundups alone don't count). Returns (kept, dropped)."""
     fetched = {s["index"] for s in verified["sources"] if s["fetched"]}
+    solid = {s["index"] for s in verified["sources"] if s["fetched"] and s["kind"] != "roundup"}
     kept, dropped = [], []
     for c in verified["claims"]:
         srcs = sorted({i for i in c["supported_by"] if i in fetched and 0 <= i < n_sources})
-        (kept if len(srcs) >= 2 else dropped).append({**c, "supported_by": srcs})
+        ok = len(srcs) >= 2 and any(i in solid for i in srcs)
+        (kept if ok else dropped).append({**c, "supported_by": srcs})
     return kept, dropped
 
 
@@ -287,15 +300,25 @@ def build_posts(date, title, draft, sources_used):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--title", required=True, help="story headline")
-    ap.add_argument("--url", action="append", required=True, help="source URL (repeat; at least two)")
+    ap.add_argument("--story", help="story.json from pick_story.py (title, slug, urls)")
+    ap.add_argument("--title", help="story headline")
+    ap.add_argument("--url", action="append", default=[], help="source URL (repeat; at least two)")
     ap.add_argument("--date", default=datetime.date.today().isoformat())
     ap.add_argument("--slug", help="folder slug (default: from title)")
     ap.add_argument("--cta", choices=["auto", "follow", "service"], default="auto",
                     help="auto = service CTA on every third episode")
     ap.add_argument("--force", action="store_true", help="overwrite an existing episode folder")
+    ap.add_argument("--print-dir", action="store_true", help="print only the episode folder path on success")
     args = ap.parse_args()
 
+    if args.story:
+        with open(args.story, encoding="utf-8") as f:
+            picked = json.load(f)
+        args.title = args.title or picked["title"]
+        args.url = args.url or picked["urls"]
+        args.slug = args.slug or picked.get("slug")
+    if not args.title:
+        raise SystemExit("pass --title or --story")
     if len(args.url) < 2:
         raise SystemExit("need at least two source URLs: every claim must appear in two sources")
     if BLOCKED.search(args.title):
@@ -318,7 +341,7 @@ def main():
     sources = {s["index"]: {**s, "url": args.url[s["index"]]}
                for s in verified["sources"] if 0 <= s["index"] < len(args.url)}
     kept, dropped = keep_corroborated(verified, len(args.url))
-    print(f"      {len(kept)} claims confirmed by 2+ sources, {len(dropped)} dropped", file=sys.stderr)
+    print(f"      {len(kept)} claims confirmed by 2+ sources (1+ non-roundup), {len(dropped)} dropped", file=sys.stderr)
     if len(kept) < 3:
         raise SystemExit("fewer than three claims are confirmed by two sources; pick a better-covered story")
 
@@ -344,6 +367,9 @@ def main():
         json.dump({"title": args.title, "episode_number": n, "cta": cta_kind,
                    "sources": list(sources.values()), "kept": kept, "dropped": dropped},
                   f, indent=2, ensure_ascii=False)
+    if args.print_dir:
+        print(epdir)
+        return
     print(json.dumps({"episode": folder, "dir": epdir, "words": narration_words(draft["segments"]),
                       "cta": cta_kind, "claims_kept": len(kept), "claims_dropped": len(dropped)}, indent=2))
 

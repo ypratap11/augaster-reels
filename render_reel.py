@@ -171,7 +171,8 @@ def draw_frame(base, glows, seg, local_t, global_t, total, cue, script):
         box = [M, y, M + tw + 80, y + 170]
         ld.rounded_rectangle(box, radius=28, fill=BRAND["accent"] + (alpha,))
         ld.text((M + 40, y + 22), url, font=F_CTA_URL, fill=BRAND["bg_top"] + (alpha,))
-        ld.text((M, y + 220), "Link in bio · Follow for weekly practical AI", font=F_POINT, fill=BRAND["muted"] + (alpha,))
+        footer = "Link in bio · Follow for weekly practical AI" if "Follow" in seg["narration"] else "Link in bio"
+        ld.text((M, y + 220), footer, font=F_POINT, fill=BRAND["muted"] + (alpha,))
     else:
         # label chip
         lw = ld.textlength(seg["label"], font=F_LABEL)
