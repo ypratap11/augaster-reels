@@ -1,0 +1,24 @@
+{
+  "duration_sec": 31.59,
+  "segments": 6,
+  "captions": 25,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/__w/augaster-reels/augaster-reels/episodes/2026-11-11-claude-sheets-whiteboards-data/reel.mp4",
+  "voice": "en-us-lessac-medium.onnx",
+  "sources": [
+    {
+      "name": "Anthropic / Claude product-updates article",
+      "url": "https://claude.com/resources/articles/sheets-whiteboards-data"
+    },
+    {
+      "name": "Tom's Guide",
+      "url": "https://www.tomsguide.com/ai/claude/claude-just-got-3-powerful-new-tools-and-they-could-replace-some-of-your-favorite-apps"
+    },
+    {
+      "name": "Fone Arena",
+      "url": "https://www.fonearena.com/blog/496819/anthropic-claude-whiteboards-sheets.html"
+    }
+  ],
+  "approved": false
+}

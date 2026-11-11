@@ -1,0 +1,254 @@
+{
+  "title": "Anthropic launches Claude Sheets and Whiteboards in beta, makes Claude Data generally available",
+  "episode_number": 3,
+  "cta": "service",
+  "sources": [
+    {
+      "index": 0,
+      "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+      "name": "Anthropic / Claude product-updates article",
+      "fetched": true,
+      "published": "November 10, 2026",
+      "kind": "primary"
+    },
+    {
+      "index": 1,
+      "url": "https://www.tomsguide.com/ai/claude/claude-just-got-3-powerful-new-tools-and-they-could-replace-some-of-your-favorite-apps",
+      "name": "Tom's Guide",
+      "fetched": true,
+      "published": "11 November 2026",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 2,
+      "url": "https://www.fonearena.com/blog/496819/anthropic-claude-whiteboards-sheets.html",
+      "name": "Fone Arena",
+      "fetched": true,
+      "published": "November 11, 2026",
+      "kind": "original_reporting"
+    }
+  ],
+  "kept": [
+    {
+      "claim": "Anthropic announced Claude Whiteboards, Claude Sheets and Claude Data on November 10, 2026.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "Source 0 is dated November 10, 2026 and says 'Today we're launching...'. Source 1: 'Anthropic announced three productivity upgrades on November 10'. Source 2 is dated November 11, 2026 and gives no explicit announcement date."
+    },
+    {
+      "claim": "Claude Whiteboards and Claude Sheets launched in beta.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0: 'launching Claude Whiteboards and Claude Sheets in beta'. Source 1: 'Sheets and Whiteboards are launching in beta'. Source 2: 'introduced Claude Whiteboards and Claude Sheets in beta'."
+    },
+    {
+      "claim": "Claude Dashboards, which launched in beta in October, became generally available under the new name Claude Data.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0: 'launched in beta in October... Starting today, it's generally available as Claude Data'. Source 1: 'Claude Data, previously known as Claude Dashboards, is now generally available'. Source 2: 'renamed Claude Dashboards, which launched in beta in October, to Claude Data and made it generally available'. Only 0 and 2 state the October beta."
+    },
+    {
+      "claim": "The October beta launch date of Claude Dashboards is earlier than the Nov 10 announcement. Claude Data is a rename and GA of an existing product, not a brand-new product.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0: 'Claude Dashboards launched in beta in October'. Source 2: same statement. Neither gives an exact October date."
+    },
+    {
+      "claim": "The tools are available on all paid Claude plans.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0: 'These are available on all paid plans'. Source 1: 'available on paid Claude plans, including Pro'. Source 2: 'included in all paid Claude plans'."
+    },
+    {
+      "claim": "All three tools work on web, desktop and mobile.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0: 'Claude Whiteboards, Sheets, and Data work on web, desktop, and mobile'. Source 2: 'All three tools work on the web, desktop, and mobile'."
+    },
+    {
+      "claim": "Claude Data requires a data connector, such as a warehouse or CRM.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0: 'Claude Data needs a data connector, such as a warehouse or CRM'. Source 2: 'requires a data connector, such as a data warehouse or CRM'. Source 1: 'Claude Data requires a compatible data connector'."
+    },
+    {
+      "claim": "On Team plans, all three tools are on by default. On Enterprise plans, Whiteboards and Sheets are off by default, and Claude Data turns on by default on November 19, 2026. Admins can change these settings under Organization settings > Artifacts.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0 and source 2 state the Team and Enterprise defaults, the November 19, 2026 date and the Organization settings > Artifacts path."
+    },
+    {
+      "claim": "Whiteboards is a shared board where teams brainstorm with Claude in real time. Claude can turn a discussion into a board with a timeline, owners and dates.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0: 'Claude can turn it into a board with a timeline with owners and dates'. Source 2: 'turn the discussion into a board containing a timeline, owners, and dates'. Source 1 describes something similar: a timeline with responsibilities and deadlines."
+    },
+    {
+      "claim": "In a retro meeting, participants add notes to the board and Claude groups them by theme and drafts action items for each person.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0 and source 2 both describe this retrospective use case. Source 1 says Claude groups similar ideas and identifies themes, but does not mention per-person action items."
+    },
+    {
+      "claim": "Users can drag a box around part of a Whiteboard and ask Claude questions about it.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0: 'dragging a box around it and asking Claude questions'. Source 2: same, selecting a section by dragging a box. Source 1 says users can select an area and ask Claude to expand or refine it."
+    },
+    {
+      "claim": "Claude can turn a Whiteboard into a doc or deck, or bring it into partner tools Lucid, Miro, or Vani by Zoho.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0: 'turn the board into a doc or deck, or bring it into tools like Lucid, Miro, or Vani by Zoho'. Source 2 lists the same. Source 1 names only Miro and Lucid."
+    },
+    {
+      "claim": "Claude Sheets generates spreadsheets with tabs, formulas, formatting and drop-downs, often from a prompt such as a campaign tracker or hiring budget.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0 and source 2 state this nearly identically."
+    },
+    {
+      "claim": "Claude Sheets edits cells and outlines each change so users can track edits. Sheets can be shared with teammates to work on alongside Claude.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0: 'outlining each new edit so you can track changes... share sheets with your team'. Source 2: same. Source 1 says Claude highlights the cells it changes."
+    },
+    {
+      "claim": "Sheets currently has only basic or simple spreadsheet functionality, with more being developed. Users can export to .xlsx or CSV, or use Claude for Excel. Partner tools include Airtable, Asana, monday.com and Smartsheet.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0: 'sheets have simple spreadsheet functionality, but we are working on adding more... export your file to .xlsx or CSV, or use Claude for Excel... Airtable, Asana, monday.com, and Smartsheet'. Source 2 says the same. Source 1 mentions only the Excel export."
+    },
+    {
+      "claim": "Claude Data's initial use was letting teams ask quick questions of company data in tools like Amazon Redshift, BigQuery and ClickHouse.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0 and source 2 both name Amazon Redshift, BigQuery and ClickHouse."
+    },
+    {
+      "claim": "Anthropic changed the name because company data use is broader than dashboards.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0: 'We changed the name because the way companies use their data is broader than dashboards'. Source 2 gives the same reason."
+    },
+    {
+      "claim": "Certified queries and live sharing in Claude Data remain in beta.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0: 'Certified queries and live sharing are in beta'. Source 1: 'certified queries and live sharing, remain in beta'. Source 2: same."
+    },
+    {
+      "claim": "Claude Data lets data teams certify queries, and charts built on those metrics carry a 'certified' badge.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0 and source 2 both describe certified metric definitions and the badge."
+    },
+    {
+      "claim": "Claude Data lets users draft data stories or narrated videos from their metrics, to review before sharing.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0 and source 2 include the review-before-sharing detail. Source 1 mentions data stories and narrated videos."
+    },
+    {
+      "claim": "Live sharing lets colleagues see up-to-date numbers without access to the underlying connectors. Viewers see results of approved queries and cannot run others with the owner's access.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0 and source 2 state this."
+    },
+    {
+      "claim": "Claude Data adds design-system support, caching with per-dashboard refresh cadences, and tracked changes with roll-back to a specific version.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0: 'Design systems are now supported... caching... refresh cadences... per-dashboard... tracked changes... roll back'. Source 2 matches. Source 1 mentions only tracking changes."
+    },
+    {
+      "claim": "Claude Data partners include Amplitude, Mixpanel, Omni, PostHog and Sigma.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0: 'Our partners for Claude Data include Amplitude, Mixpanel, Omni, PostHog, and Sigma.' Source 2 gives the same list."
+    },
+    {
+      "claim": "Interactive connectors can now open as full apps beside the conversation or in full screen, in tools such as Adobe, Atlassian, Box and Notion. This starts the same day.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0: 'Starting today, interactive connectors can open as full apps beside your conversation or in full screen... Adobe, Atlassian, Box, and Notion'. Source 2 matches, minus the 'starting today' wording."
+    }
+  ],
+  "dropped": [
+    {
+      "claim": "Claude Pro costs $20 per month when billed monthly.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Source 1: 'Pro, which costs $20 per month when billed monthly'. The primary page and source 2 do not state a price. This is single-source."
+    },
+    {
+      "claim": "Claude Sheets lacks pivot tables, protected ranges, filter views and Excel macros, has a 100,000-cell limit, and cannot currently pull live data from connected apps.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Source 1 attributes this to Anthropic's own documentation. The primary article and source 2 do not state it, and the help-center page was not fetched, so this is single-source."
+    },
+    {
+      "claim": "Claude Data supports connections to platforms including Snowflake, BigQuery and Salesforce.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Source 1 only. The primary article names Amazon Redshift, BigQuery and ClickHouse, plus warehouse or CRM generally. Snowflake and Salesforce are not named there, so this is single-source."
+    }
+  ]
+}

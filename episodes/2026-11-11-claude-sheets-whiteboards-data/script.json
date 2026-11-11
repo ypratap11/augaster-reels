@@ -1,0 +1,64 @@
+{
+  "episode": "2026-11-11",
+  "series": "Augaster AI Digest",
+  "story": "Anthropic launches Claude Sheets and Whiteboards in beta, makes Claude Data generally available",
+  "sources": [
+    {
+      "name": "Anthropic / Claude product-updates article",
+      "url": "https://claude.com/resources/articles/sheets-whiteboards-data"
+    },
+    {
+      "name": "Tom's Guide",
+      "url": "https://www.tomsguide.com/ai/claude/claude-just-got-3-powerful-new-tools-and-they-could-replace-some-of-your-favorite-apps"
+    },
+    {
+      "name": "Fone Arena",
+      "url": "https://www.fonearena.com/blog/496819/anthropic-claude-whiteboards-sheets.html"
+    }
+  ],
+  "source_line": "Sources: Anthropic, Tom's Guide, Fone Arena",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "THIS WEEK IN AI",
+      "title": "Claude adds Whiteboards and Sheets",
+      "point": "Shared tools your team can use",
+      "narration": "Claude adds whiteboards and spreadsheets your team can share."
+    },
+    {
+      "kind": "news",
+      "label": "WHAT HAPPENED",
+      "title": "Whiteboards and Sheets launch in beta",
+      "point": "Dashboards is now Claude Data",
+      "narration": "On November tenth, Anthropic launched Whiteboards and Sheets in beta. Dashboards is now Claude Data, generally available."
+    },
+    {
+      "kind": "news",
+      "label": "HOW IT WORKS",
+      "title": "Shared boards, prompt-built sheets",
+      "point": "Data needs a connector",
+      "narration": "Teams brainstorm with Claude on a shared board. Sheets builds spreadsheets from prompts. Data needs a connector."
+    },
+    {
+      "kind": "analysis",
+      "label": "WHAT IT MEANS FOR YOU",
+      "title": "On all paid Claude plans",
+      "point": "Catch: Sheets is still basic",
+      "narration": "It's on all paid plans. The catch: Sheets is still basic."
+    },
+    {
+      "kind": "analysis",
+      "label": "OUR TAKE",
+      "title": "Pilot Whiteboards first",
+      "point": "",
+      "narration": "Our take: try Whiteboards at your next team meeting. Keep your spreadsheet tool for now."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER TECHNOLOGIES",
+      "title": "Want this set up for your business?",
+      "point": "augaster.com",
+      "narration": "Full breakdown and sources on augaster dot com. Want this set up for your business? Link in bio."
+    }
+  ]
+}
