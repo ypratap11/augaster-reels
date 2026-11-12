@@ -58,6 +58,6 @@ Tuning: `LENGTH_SCALE` in `render_reel.py` (<1 = faster speech); brand colors in
 `publish_instagram.py episodes/<date-slug>` posts the reel through the Instagram API (Instagram Login), but only if its gate passes: at least three claims each confirmed by two sources, a 25–40 sec 1080×1920 reel, no Oracle/Wipro mention, and no `published.json` yet. Use `--dry-run` to check the gate and see the caption without posting.
 
 One-time setup (repo Settings → Secrets and variables → Actions):
-- Secrets: `IG_ACCESS_TOKEN` (long-lived Instagram User token with `instagram_business_content_publish`; expires after 60 days), `IG_USER_ID` (the augaster.ai account id).
+- Secrets: `IG_ACCESS_TOKEN` (system-user token from the Meta app "Augaster Reels Publisher", Instagram API with Unified login; never expires), `IG_USER_ID` (the augaster.ai account id).
 - Variables: `AUTO_PUBLISH` = `true` to turn posting on (anything else = off); `LINK_IN_BIO` = `1` once the profile has the augaster.com link.
-- The repo must stay public: Instagram fetches `reel.mp4` and `thumbnail.png` from raw.githubusercontent.com.
+- The video is uploaded directly to Meta (resumable upload), so the repo can be public or private.

@@ -6,13 +6,15 @@ Usage:
   python3 publish_instagram.py episodes/<date-slug> --dry-run  # gate + print caption only
 
 Env (GitHub Actions secrets):
-  IG_ACCESS_TOKEN   long-lived Instagram User access token (Instagram API with
-                    Instagram Login, permission instagram_business_content_publish)
+  IG_ACCESS_TOKEN   system-user access token from the Meta app "Augaster Reels
+                    Publisher" (Instagram API, Unified login; never expires;
+                    permission instagram_content_publish)
   IG_USER_ID        the augaster.ai Instagram professional account id
-  PUBLIC_BASE_URL   where episode files are publicly readable, e.g.
-                    https://raw.githubusercontent.com/ypratap11/augaster-reels/main
   LINK_IN_BIO=1     keep "(link in bio)" in the caption (set once the profile has
                     the augaster.com link)
+
+The video bytes are sent straight to Meta (resumable upload), so the repo does
+not need to be public.
 
 Safety gate (nothing is posted unless all pass):
   - every kept claim in verification.json is supported by at least two sources,
@@ -26,7 +28,8 @@ render_report.json on success.
 import argparse, json, os, re, subprocess, sys, time, urllib.parse, urllib.request
 from datetime import datetime, timezone
 
-GRAPH = os.environ.get("IG_GRAPH_BASE", "https://graph.instagram.com/v23.0")
+GRAPH = os.environ.get("IG_GRAPH_BASE", "https://graph.facebook.com/v23.0")
+COVER_MS = 3000  # cover frame: the headline card, 3 sec in
 BLOCKED = re.compile(r"\b(oracle|wipro)\b", re.I)
 
 
@@ -112,13 +115,23 @@ def main():
 
     token = os.environ.get("IG_ACCESS_TOKEN") or fail("IG_ACCESS_TOKEN not set")
     user = os.environ.get("IG_USER_ID") or fail("IG_USER_ID not set")
-    base = (os.environ.get("PUBLIC_BASE_URL") or fail("PUBLIC_BASE_URL not set")).rstrip("/")
-    rel = urllib.parse.quote(epdir.strip("./"))
-    video_url, cover_url = f"{base}/{rel}/reel.mp4", f"{base}/{rel}/thumbnail.png"
+    reel = os.path.join(epdir, "reel.mp4")
+    size = os.path.getsize(reel)
 
-    c = api("POST", f"{user}/media", {"media_type": "REELS", "video_url": video_url,
-                                       "cover_url": cover_url, "caption": cap,
+    c = api("POST", f"{user}/media", {"media_type": "REELS", "upload_type": "resumable",
+                                       "caption": cap, "thumb_offset": str(COVER_MS),
                                        "share_to_feed": "true", "access_token": token})
+    upload_uri = c.get("uri") or f"https://rupload.facebook.com/ig-api-upload/{GRAPH.rsplit('/', 1)[-1]}/{c['id']}"
+    with open(reel, "rb") as f:
+        req = urllib.request.Request(upload_uri, data=f.read(), method="POST", headers={
+            "Authorization": f"OAuth {token}", "offset": "0", "file_size": str(size)})
+    try:
+        with urllib.request.urlopen(req, timeout=300) as r:
+            up = json.load(r)
+    except urllib.error.HTTPError as e:
+        fail(f"video upload failed ({e.code}): {e.read().decode(errors='ignore')}")
+    if not up.get("success", True):
+        fail(f"video upload not accepted: {up}")
     cid = c["id"]
     print(f"container {cid}; waiting for Instagram to process the video")
     for _ in range(40):  # up to ~10 min
