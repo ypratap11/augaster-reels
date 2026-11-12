@@ -19,7 +19,7 @@ Owner: Pratap Yeragudipati, Augaster Technologies. Remote: https://github.com/yp
    - Every third episode uses a service CTA ("Want this set up for your business? Link in bio.").
 4. **Story picker:** pick the single most useful AI story for small-business owners from the past 3 days (web search via the API's web search tool, or the user's existing 8 AM AI Digest output if he points you to it — ask him where it runs).
 5. **Schedule:** GitHub Actions workflow on Mon/Wed/Fri 8:30 AM Pacific (cron in UTC, e.g. `30 16 * * 1,3,5` during PST) that runs picker → generator → renderer, commits the episode folder, and uploads `reel.mp4` as a workflow artifact. Secrets: `ANTHROPIC_API_KEY` only. Cache the Piper voice.
-6. **Approval stays human:** never auto-publish. `render_report.json` keeps `"approved": false` until Pratap approves.
+6. **Auto-publish (Pratap, Nov 2026):** episodes post to Instagram automatically only through `publish_instagram.py`, whose safety gate must pass. Never loosen the gate or the two-source rule to post more. Off switch: repo variable `AUTO_PUBLISH`.
 
 ## Constraints
 - Content must not involve Oracle, Wipro, or any Wipro client — Pratap can't do Oracle-related side work.

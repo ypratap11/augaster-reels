@@ -23,7 +23,7 @@ python3 make_episode.py --story story.json
 Roundups (AIToolsRecap, AI Weekly, Ground News…) are used as leads only: the picker follows them to the primary announcement and checks its date, and the generator requires every claim to have two sources, at least one primary or original reporting.
 
 ## Scheduled pipeline (GitHub Actions)
-`.github/workflows/episode.yml` runs Mon/Wed/Fri 8:30 AM Pacific (DST-aware): pick → generate → render → commit `episodes/<date-slug>/` → upload `reel.mp4`, `thumbnail.png`, `posts.md` as a workflow artifact. It never publishes; every episode lands with `"approved": false`.
+`.github/workflows/episode.yml` runs daily at 8:30 AM Pacific (DST-aware): pick → generate → render → commit `episodes/<date-slug>/` → upload artifacts → publish to Instagram when the repo variable `AUTO_PUBLISH` is `true` and the safety gate in `publish_instagram.py` passes.
 - One-time: add the repo secret `A_API_KEY` (your Anthropic API key; the workflow passes it to the scripts as `ANTHROPIC_API_KEY`) (Settings → Secrets and variables → Actions).
 - Manual run: Actions → Make episode → Run workflow; optionally give a title and space-separated source URLs to skip the picker.
 
@@ -53,3 +53,11 @@ Roundups (AIToolsRecap, AI Weekly, Ground News…) are used as leads only: the p
 - `render_report.json` starts with `"approved": false`; nothing is published until Pratap approves.
 
 Tuning: `LENGTH_SCALE` in `render_reel.py` (<1 = faster speech); brand colors in `BRAND`.
+
+## Auto-publish to Instagram
+`publish_instagram.py episodes/<date-slug>` posts the reel through the Instagram API (Instagram Login), but only if its gate passes: at least three claims each confirmed by two sources, a 25–40 sec 1080×1920 reel, no Oracle/Wipro mention, and no `published.json` yet. Use `--dry-run` to check the gate and see the caption without posting.
+
+One-time setup (repo Settings → Secrets and variables → Actions):
+- Secrets: `IG_ACCESS_TOKEN` (long-lived Instagram User token with `instagram_business_content_publish`; expires after 60 days), `IG_USER_ID` (the augaster.ai account id).
+- Variables: `AUTO_PUBLISH` = `true` to turn posting on (anything else = off); `LINK_IN_BIO` = `1` once the profile has the augaster.com link.
+- The repo must stay public: Instagram fetches `reel.mp4` and `thumbnail.png` from raw.githubusercontent.com.
