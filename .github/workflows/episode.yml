@@ -1,11 +1,16 @@
 name: Make episode
 
-# Daily 8:30 AM Pacific. GitHub cron is UTC with no DST, so both offsets are
-# scheduled and the "when" step keeps only the one matching Pacific time that day.
+# Three reels a day: 8:30 AM, 12:30 PM and 5:30 PM Pacific. GitHub cron is UTC with
+# no DST, so each slot has a PDT trigger and a PST trigger; the "when" step keeps
+# only the one matching today's Pacific offset (works even if GitHub starts late).
 on:
   schedule:
-    - cron: "30 15 * * *"   # 8:30 PDT (UTC-7, Mar-Nov)
-    - cron: "30 16 * * *"   # 8:30 PST (UTC-8, Nov-Mar)
+    - cron: "30 15 * * *"   # 8:30 AM PDT
+    - cron: "30 16 * * *"   # 8:30 AM PST
+    - cron: "30 19 * * *"   # 12:30 PM PDT
+    - cron: "30 20 * * *"   # 12:30 PM PST
+    - cron: "30 0 * * *"    # 5:30 PM PDT
+    - cron: "30 1 * * *"    # 5:30 PM PST
   workflow_dispatch:
     inputs:
       title:
@@ -37,8 +42,8 @@ jobs:
           run=true
           if [ "${{ github.event_name }}" = "schedule" ]; then
             case "${{ github.event.schedule }}" in
-              "30 15 * * *") [ "$offset" = "-0700" ] || run=false ;;
-              "30 16 * * *") [ "$offset" = "-0800" ] || run=false ;;
+              "30 15 * * *"|"30 19 * * *"|"30 0 * * *") [ "$offset" = "-0700" ] || run=false ;;
+              "30 16 * * *"|"30 20 * * *"|"30 1 * * *") [ "$offset" = "-0800" ] || run=false ;;
             esac
           fi
           echo "Pacific offset $offset, run=$run"
