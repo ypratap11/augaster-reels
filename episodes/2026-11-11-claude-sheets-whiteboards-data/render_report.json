@@ -1,11 +1,11 @@
 {
-  "duration_sec": 31.59,
+  "duration_sec": 32.31,
   "segments": 6,
   "captions": 25,
   "resolution": "1080x1920",
   "fps": 30,
-  "output": "/__w/augaster-reels/augaster-reels/episodes/2026-11-11-claude-sheets-whiteboards-data/reel.mp4",
-  "voice": "en-us-lessac-medium.onnx",
+  "output": "/tmp/repos/augaster-reels/episodes/2026-11-11-claude-sheets-whiteboards-data/reel.mp4",
+  "voice": "kokoro:af_heart",
   "sources": [
     {
       "name": "Anthropic / Claude product-updates article",
