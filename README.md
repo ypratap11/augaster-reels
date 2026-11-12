@@ -60,4 +60,5 @@ Tuning: `LENGTH_SCALE` in `render_reel.py` (<1 = faster speech); brand colors in
 One-time setup (repo Settings → Secrets and variables → Actions):
 - Secrets: `IG_ACCESS_TOKEN` (system-user token from the Meta app "Augaster Reels Publisher", Instagram API with Unified login; never expires), `IG_USER_ID` (the augaster.ai account id).
 - Variables: `AUTO_PUBLISH` = `true` to turn posting on (anything else = off); `LINK_IN_BIO` = `1` once the profile has the augaster.com link.
-- The video is uploaded directly to Meta (resumable upload), so the repo can be public or private.
+- Keep the repo public: direct byte upload is tried first, but Meta currently rejects it, so posting falls back to Meta fetching `reel.mp4` from raw.githubusercontent.com.
+- To retry a failed post: Actions → Publish episode → Run workflow, with the episode folder name.
