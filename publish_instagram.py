@@ -54,6 +54,19 @@ def api(method, path, params):
         fail(f"Instagram API {method} {path} failed ({e.code}): {body}")
 
 
+def rupload(uri, token, headers, body):
+    req = urllib.request.Request(uri, data=body, method="POST",
+                                 headers={"Authorization": f"OAuth {token}", **headers})
+    try:
+        with urllib.request.urlopen(req, timeout=300) as r:
+            up = json.load(r)
+    except urllib.error.HTTPError as e:
+        return None, f"{e.code} {e.read().decode(errors='ignore')}"
+    if up.get("success") is False:
+        return None, f"not accepted: {up}"
+    return up, None
+
+
 def caption_from(posts_md, link_in_bio):
     m = re.search(r"## Instagram[^\n]*\n(.*?)\n---", posts_md, re.S)
     if not m:
@@ -123,17 +136,22 @@ def main():
                                        "share_to_feed": "true", "access_token": token})
     upload_uri = c.get("uri") or f"https://rupload.facebook.com/ig-api-upload/{GRAPH.rsplit('/', 1)[-1]}/{c['id']}"
     with open(reel, "rb") as f:
-        req = urllib.request.Request(upload_uri, data=f.read(), method="POST", headers={
-            "Authorization": f"OAuth {token}", "offset": "0", "file_size": str(size)})
-    try:
-        with urllib.request.urlopen(req, timeout=300) as r:
-            up = json.load(r)
-    except urllib.error.HTTPError as e:
-        fail(f"video upload failed ({e.code}): {e.read().decode(errors='ignore')}")
-    if not up.get("success", True):
-        fail(f"video upload not accepted: {up}")
+        body = f.read()
+    up, err = rupload(upload_uri, token, {"offset": "0", "file_size": str(size),
+                                          "Content-Type": "application/octet-stream"}, body)
+    if err:
+        # Fallback: let Meta fetch the file from the public GitHub copy of the repo.
+        repo, ref = os.environ.get("GITHUB_REPOSITORY"), os.environ.get("GITHUB_REF_NAME", "main")
+        if not repo:
+            fail(f"video upload failed: {err}")
+        file_url = f"https://raw.githubusercontent.com/{repo}/{ref}/{urllib.parse.quote(epdir.strip('./'))}/reel.mp4"
+        print(f"::warning::byte upload failed ({err}); retrying with file_url {file_url}")
+        up, err = rupload(upload_uri, token, {"file_url": file_url}, b"")
+        if err:
+            fail(f"video upload failed both ways: {err}")
+    print(f"upload response: {up}")
     cid = c["id"]
-    print(f"container {cid}; waiting for Instagram to process the video")
+    print(f"container {cid} (upload uri from Meta: {bool(c.get('uri'))}); waiting for Instagram to process the video")
     for _ in range(40):  # up to ~10 min
         st = api("GET", cid, {"fields": "status_code,status", "access_token": token})
         code = st.get("status_code")

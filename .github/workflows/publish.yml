@@ -1,0 +1,39 @@
+name: Publish episode
+
+# Manually post an episode that already exists in episodes/ (e.g. to retry a failed post).
+on:
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Episode folder name, e.g. 2026-11-12-chatgpt-business-profiles"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: episode
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install ffprobe
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends ffmpeg >/dev/null
+      - name: Publish to Instagram
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          LINK_IN_BIO: ${{ vars.LINK_IN_BIO }}
+          EPISODE: ${{ inputs.episode }}
+        run: |
+          case "$EPISODE" in *[!A-Za-z0-9._-]*|"") echo "bad episode name"; exit 1;; esac
+          python3 publish_instagram.py "episodes/$EPISODE"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "episodes/$EPISODE"
+          git commit -m "Published to Instagram: $EPISODE" -m "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+          git push
