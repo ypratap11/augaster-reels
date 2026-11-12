@@ -1,0 +1,24 @@
+{
+  "duration_sec": 35.89,
+  "segments": 6,
+  "captions": 24,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/__w/augaster-reels/augaster-reels/episodes/2026-11-12-chatgpt-business-profiles/reel.mp4",
+  "voice": "kokoro:af_heart",
+  "sources": [
+    {
+      "name": "VentureBeat (Carl Franzen)",
+      "url": "https://venturebeat.com/technology/openai-lets-you-claim-your-business-in-chatgpt-and-set-up-a-custom-agentic-ai-customer-sales-rep"
+    },
+    {
+      "name": "Inc. (Aaron Mok)",
+      "url": "https://www.inc.com/aaron-mok/small-businesses-can-now-claim-a-free-chatgpt-profile-to-reach-customers-heres-how-to-set-it-up/91434978"
+    },
+    {
+      "name": "Digiday (Krystal Scanlon)",
+      "url": "https://digiday.com/marketing/openais-new-business-agents-give-brands-a-free-way-into-the-conversation-its-also-selling-as-an-ad/"
+    }
+  ],
+  "approved": false
+}

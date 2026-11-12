@@ -1,0 +1,267 @@
+{
+  "title": "OpenAI launches Businesses in ChatGPT: free business profiles and AI sales agents",
+  "episode_number": 4,
+  "cta": "follow",
+  "sources": [
+    {
+      "index": 0,
+      "url": "https://venturebeat.com/technology/openai-lets-you-claim-your-business-in-chatgpt-and-set-up-a-custom-agentic-ai-customer-sales-rep",
+      "name": "VentureBeat (Carl Franzen)",
+      "fetched": true,
+      "published": "1:49 pm, PT, November 10, 2026",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 1,
+      "url": "https://www.inc.com/aaron-mok/small-businesses-can-now-claim-a-free-chatgpt-profile-to-reach-customers-heres-how-to-set-it-up/91434978",
+      "name": "Inc. (Aaron Mok)",
+      "fetched": true,
+      "published": "Nov 11, 2026",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 2,
+      "url": "https://digiday.com/marketing/openais-new-business-agents-give-brands-a-free-way-into-the-conversation-its-also-selling-as-an-ad/",
+      "name": "Digiday (Krystal Scanlon)",
+      "fetched": true,
+      "published": "November 10, 2026",
+      "kind": "original_reporting"
+    }
+  ],
+  "kept": [
+    {
+      "claim": "OpenAI launched Businesses in ChatGPT as a beta on Tuesday, November 10, 2026. NOTE: OpenAI's own announcement (openai.com/index/introducing-businesses-chatgpt/) and help-centre page could not be fetched (url_not_accessible, then the tool limit was reached), so no primary source was read. Only search-result excerpts were seen, and they are not counted as sources. Two independent original-reporting sources support this claim.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "VentureBeat (published Nov 10, 2026): 'OpenAI on Tuesday launched a beta program'. Inc.: 'On Tuesday, OpenAI launched Businesses in ChatGPT, a beta feature' (Inc. published Nov 11, 2026). Digiday is dated Nov 10, 2026 and refers to 'the beta', but does not say 'Tuesday'."
+    },
+    {
+      "claim": "The announcement is recent, not older than the sources imply. No earlier launch date appears. The paid 'sponsored agent' ad format it builds on began testing earlier, in September 2026 (see the separate claim).",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "All three articles are dated Nov 10-11, 2026 and describe the launch as new."
+    },
+    {
+      "claim": "Businesses can claim their profile in ChatGPT through a new dashboard called Business Hub. They can update the information customers see.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "VentureBeat: businesses can 'claim their profiles in ChatGPT, update the information customers see'. Inc.: a place 'to claim their company profiles... all through a dashboard called Business Hub'. Digiday: 'Businesses can now claim a profile in ChatGPT through a new Business Hub'."
+    },
+    {
+      "claim": "OpenAI says ChatGPT reaches 1.2 billion people a week. This is a weekly reach figure that OpenAI states about ChatGPT overall, not a Business Hub figure.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "VentureBeat: 'a service that OpenAI says reaches 1.2 billion people a week'. Inc.: 'the 1.2 billion people who use ChatGPT each week'."
+    },
+    {
+      "claim": "Eligible U.S. ecommerce and online service businesses can publish a Business Agent at launch. It answers customer questions about the business's own products and policies. The U.S. restriction is described as 'for now'.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "VentureBeat: 'At launch, it's available to eligible U.S. ecommerce and online service companies with a website'. Inc.: 'only eligible U.S. ecommerce and online service businesses can create a Business Agent'. Digiday: 'In the U.S. (for now), e-commerce and online services businesses... can... publish a business agent'."
+    },
+    {
+      "claim": "The Business Agent is built from instructions and context that the business supplies, such as a product feed and tone guidelines. Digiday adds that OpenAI does not allow businesses to bring their own agents.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "VentureBeat: 'The business supplies the information and sets guidelines for the agent'. Inc.: 'Give the AI instructions on how to behave and context to draw from'. Digiday: built 'from the instructions and product feed a business supplies'."
+    },
+    {
+      "claim": "The Business Agent conversation is separately labelled in ChatGPT, so shoppers can tell they have moved from the general assistant to one speaking for the business.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "VentureBeat: 'ChatGPT labels the conversation'. Digiday: 'a separately labelled chat that speaks for the brand'."
+    },
+    {
+      "claim": "Business Hub and agents are free at launch. OpenAI's vice president of monetization, Benji Shomair, did not rule out charging in future.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "VentureBeat (citing Digiday's briefing report): 'publish a Business Agent for free at launch... Shomair left open the possibility of charging'. Digiday: 'free for now but Shomair didn't rule out a paid model'. Note that VentureBeat's claim derives from Digiday's reporting, so the two are not fully independent."
+    },
+    {
+      "claim": "The profile-claim beta is available wherever ChatGPT is available. VentureBeat qualifies this to markets where OpenAI supports the required verification. Local stores and restaurants can currently claim only an existing U.S. listing.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "Inc.: 'Business Hub is available in beta wherever ChatGPT is available'. VentureBeat: 'in markets where ChatGPT operates and OpenAI supports the required verification'; 'Local stores and restaurants can currently claim only an existing U.S. listing' (the local-store limit is VentureBeat only)."
+    },
+    {
+      "claim": "Business Hub's dashboard shows mentions, website clicks and discovery topics (common themes in conversations where ChatGPT cites the business's site).",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "VentureBeat: 'website clicks, mentions and recurring topics'. Inc.: 'tracks mentions, profile views, and website clicks'; a pie chart breaks down mentions by topic. Digiday: 'mentions, views and website clicks, plus discovery topics'."
+    },
+    {
+      "claim": "The dashboard also shows profile views.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Inc.: 'mentions, profile views, and website clicks'. Digiday: 'mentions, views and website clicks'. VentureBeat does not list views."
+    },
+    {
+      "claim": "Businesses do not see users' conversations or Business Agent chats. They see only aggregate themes and counts.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "VentureBeat quotes OpenAI: 'We don't share users' conversations or Business Agent chats with businesses.' Digiday's OpenAI spokesperson: 'Businesses don't see individual prompts or chats.'"
+    },
+    {
+      "claim": "How a mention is counted depends on the business type. For an online business, ChatGPT must reference its website. For a local business, showing the location in a result counts.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "VentureBeat: online 'ChatGPT has to reference its website'; local 'showing the location in a result is enough'. Digiday gives the same rule and says 'Just naming the brand doesn't count'."
+    },
+    {
+      "claim": "Claiming a profile gives no guarantee of better placement or more sales in ChatGPT recommendations. OpenAI says ChatGPT keeps making independent recommendations.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "VentureBeat: 'claiming a profile carries no guarantee of better placement or more sales'. Digiday: Shomair says a claim 'should not have an impact on how frequently it appears', though better information could help ChatGPT surface a business in more relevant conversations."
+    },
+    {
+      "claim": "Businesses can sponsor a Business Agent and make it the destination for a ChatGPT ad. A shopper who clicks the ad can start a chat with the business's agent.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "VentureBeat: 'make a Business Agent the destination for a ChatGPT ad'. Inc.: 'Businesses can run ads consumers can click to start a conversation with the company's agent'. Digiday: the business agent is the organic version of the paid 'sponsored agent'."
+    },
+    {
+      "claim": "Business profiles are positioned as similar to, and competing with, Google Business Profile.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "VentureBeat: claiming a profile 'will be familiar to anyone who manages a Google Business Profile'. Inc.: 'ChatGPT's business profiles compete directly with Google's Business Profiles'."
+    }
+  ],
+  "dropped": [
+    {
+      "claim": "Once verified, owners can edit their profile's About section, contact information, website and hours of operation.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Inc.: founders 'can update their About sections, contact information, websites, and hours of operation directly in the Business Hub'. VentureBeat and Digiday are less specific."
+    },
+    {
+      "claim": "OpenAI is not allowing businesses to bring their own agents.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Digiday quotes Benji Shomair: 'We aren't allowing folks to bring their own agents'. Single source."
+    },
+    {
+      "claim": "When a shopper is ready to pay, the agent sends them to the brand's own website. The business decides how to close the transaction.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Digiday quotes Shomair that 'it's up to the business on how they want to close the transaction'. Single source."
+    },
+    {
+      "claim": "VentureBeat says OpenAI's setup guide describes publishing a single Business Agent from a claimed profile. OpenAI has not said whether this is a hard limit.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "VentureBeat: the guide 'describes publishing a single Business Agent from a claimed profile'. Single source."
+    },
+    {
+      "claim": "Claiming a profile requires no ChatGPT Enterprise agreement or ads account.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "VentureBeat: owners 'can apply through Business Hub without a ChatGPT Enterprise agreement or an ads account'. Inc. says only that a free ChatGPT account is needed. Single-source claim."
+    },
+    {
+      "claim": "Inc. says eligible businesses can claim their profiles with a free ChatGPT account.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Inc.: 'Eligible businesses can claim their profiles with a free ChatGPT account.' Single source."
+    },
+    {
+      "claim": "Verification works as follows. OpenAI can verify a claim through a business phone number, email address, website domain or Shopify account. The person managing the listing must then complete a separate Persona identity check before publishing changes, connecting a product feed, seeing analytics or creating an agent.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "VentureBeat describes both steps. Digiday says only 'get verified'. Single-source detail."
+    },
+    {
+      "claim": "Retailers can upload a product feed with prices and stock, or connect their Shopify store to sync those details. VentureBeat says the Shopify app is listed as free.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "VentureBeat: 'Retailers can upload a product feed with prices and stock information, or connect their Shopify store'. Single source."
+    },
+    {
+      "claim": "Reporting window: VentureBeat says the dashboard shows aggregate activity over the past 28 days.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "VentureBeat: 'aggregate activity over the past 28 days'."
+    },
+    {
+      "claim": "Reporting window (a different version): an ad exec with access said the chart shows the past seven or 28 days. OpenAI declined to say how long mentions are tracked.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Digiday: 'shows everything within the past seven or 28 days'; 'OpenAI declined to say how long mentions are tracked'."
+    },
+    {
+      "claim": "Website clicks are clicks on links from supported ChatGPT surfaces, not completed visits or purchases. Low-volume counts may be withheld for privacy, and share of voice is not part of this beta.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Digiday quotes an OpenAI spokesperson. VentureBeat says the dashboard reports activity only after it meets minimum thresholds."
+    },
+    {
+      "claim": "Sponsored Agents (the paid ad version) are in a limited test with selected advertisers, so access to that format is narrower than the Business Agent beta.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "VentureBeat, citing OpenAI's ads help center: 'Sponsored Agents are in a limited test with selected advertisers'. Single source."
+    },
+    {
+      "claim": "OpenAI started testing the click-to-chat agent as a paid ad format in September 2026. The Business Agent is the free, organic counterpart.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Digiday: the format was reported 'in September, when OpenAI started testing it as a paid ad'; Shomair: 'Think of the business agent as the organic experience'. Single source."
+    },
+    {
+      "claim": "OpenAI's Benji Shomair declined to share a timeline for wider rollout of the business agent beyond the U.S.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Digiday: Shomair 'declined to share a timeline for further rollout'. Single source."
+    }
+  ]
+}

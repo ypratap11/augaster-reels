@@ -1,0 +1,64 @@
+{
+  "episode": "2026-11-12",
+  "series": "Augaster AI Digest",
+  "story": "OpenAI launches Businesses in ChatGPT: free business profiles and AI agents for customer questions",
+  "sources": [
+    {
+      "name": "VentureBeat (Carl Franzen)",
+      "url": "https://venturebeat.com/technology/openai-lets-you-claim-your-business-in-chatgpt-and-set-up-a-custom-agentic-ai-customer-sales-rep"
+    },
+    {
+      "name": "Inc. (Aaron Mok)",
+      "url": "https://www.inc.com/aaron-mok/small-businesses-can-now-claim-a-free-chatgpt-profile-to-reach-customers-heres-how-to-set-it-up/91434978"
+    },
+    {
+      "name": "Digiday (Krystal Scanlon)",
+      "url": "https://digiday.com/marketing/openais-new-business-agents-give-brands-a-free-way-into-the-conversation-its-also-selling-as-an-ad/"
+    }
+  ],
+  "source_line": "Sources: VentureBeat, Inc., Digiday",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "THIS WEEK IN AI",
+      "title": "Free business profiles are now in ChatGPT",
+      "point": "Plus an AI agent for your shop",
+      "narration": "Free business profiles and AI agents are now in ChatGPT."
+    },
+    {
+      "kind": "news",
+      "label": "WHAT HAPPENED",
+      "title": "OpenAI launches Businesses in ChatGPT",
+      "point": "Beta, Nov 10, 2026",
+      "narration": "OpenAI launched Businesses in ChatGPT in beta on November tenth, twenty twenty-six."
+    },
+    {
+      "kind": "news",
+      "label": "HOW IT WORKS",
+      "title": "Claim a profile, publish a Business Agent",
+      "point": "Dashboard: Business Hub",
+      "narration": "Eligible U.S. online businesses publish an agent built from their product feed. A dashboard tracks mentions and clicks."
+    },
+    {
+      "kind": "analysis",
+      "label": "WHAT IT MEANS FOR YOU",
+      "title": "Free at launch, but there are catches",
+      "point": "No placement guarantee",
+      "narration": "It's free at launch, but OpenAI hasn't ruled out charging. Claiming a profile doesn't guarantee better placement."
+    },
+    {
+      "kind": "analysis",
+      "label": "OUR TAKE",
+      "title": "Claim it, fill it in, test it",
+      "point": "",
+      "narration": "Our take: claim your profile, fill it in carefully, and treat results as a test."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER AI DIGEST",
+      "title": "Full breakdown + sources",
+      "point": "augaster.com",
+      "narration": "Full breakdown and sources on augaster dot com. Follow for weekly practical AI."
+    }
+  ]
+}
