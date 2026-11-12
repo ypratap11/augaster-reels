@@ -4,11 +4,13 @@
 script.json -> narrated, captioned, branded 1080x1920 MP4.
 
 Usage:
-  python3 render_reel.py episodes/<episode>/script.json --voice path/to/voice.onnx
+  python3 render_reel.py episodes/<episode>/script.json --voice kokoro:af_heart
+  python3 render_reel.py episodes/<episode>/script.json --voice path/to/piper_voice.onnx
   python3 render_reel.py episodes/<episode>/script.json --voiceover my_recording.wav
 
 Voice options:
-  --voice      offline Piper voice model (.onnx); narrates each segment.
+  --voice      kokoro:<voice> (default house voice: kokoro:af_heart) or an
+               offline Piper voice model (.onnx); narrates each segment.
   --voiceover  your own recording for the whole reel; captions are spread
                across it in proportion to the script text.
 """
@@ -48,7 +50,22 @@ def wav_duration(path):
     with wave.open(path) as w:
         return w.getnframes() / w.getframerate()
 
+KOKORO_DIR = os.environ.get("KOKORO_DIR", "voices")
+KOKORO_SPEED = 1.05  # >1 speaks faster
+_kokoro = None
+
 def tts(text, voice, out):
+    """voice = 'kokoro:<name>' (e.g. kokoro:af_heart) or a Piper .onnx path."""
+    global _kokoro
+    if voice.startswith("kokoro:"):
+        import soundfile as sf
+        from kokoro_onnx import Kokoro
+        if _kokoro is None:
+            _kokoro = Kokoro(os.path.join(KOKORO_DIR, "kokoro-v1.0.onnx"),
+                             os.path.join(KOKORO_DIR, "voices-v1.0.bin"))
+        audio, sr = _kokoro.create(text, voice=voice.split(":", 1)[1], speed=KOKORO_SPEED, lang="en-us")
+        sf.write(out, audio, sr, subtype="PCM_16")
+        return
     run([sys.executable, "-m", "piper", "-m", voice, "--length-scale", str(LENGTH_SCALE), "-f", out], input=text.encode())
 
 def pad_wav(src, dst, start, end):

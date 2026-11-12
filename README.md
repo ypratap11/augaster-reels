@@ -6,7 +6,7 @@ Turns one verified AI news story into a narrated, captioned, branded 1080×1920 
 ```bash
 ./setup.sh
 ```
-Installs the Python packages and downloads the offline narrator voice (Piper, en-US "lessac").
+Installs the Python packages and downloads the narrator voices: Kokoro (house voice `af_heart`, natural-sounding) and Piper "lessac" as a fallback.
 
 ## Generate an episode (script + posts)
 ```bash
@@ -31,7 +31,7 @@ Roundups (AIToolsRecap, AI Weekly, Ground News…) are used as leads only: the p
 1. Create `episodes/YYYY-MM-DD-slug/script.json` (copy an existing episode). Keep total narration to ~90 words for 30–35 sec (the first episode is 91 words → 31.7 sec).
 2. Render:
    ```bash
-   python3 render_reel.py episodes/YYYY-MM-DD-slug/script.json --voice voices/en-us-lessac-medium.onnx
+   python3 render_reel.py episodes/YYYY-MM-DD-slug/script.json --voice kokoro:af_heart
    ```
    Or narrate it yourself: `--voiceover my_recording.m4a`
 3. Outputs in the episode folder: `reel.mp4`, `captions.srt`, `thumbnail.png`, `render_report.json`.

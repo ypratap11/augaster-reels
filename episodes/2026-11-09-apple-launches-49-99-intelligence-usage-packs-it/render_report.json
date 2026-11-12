@@ -1,11 +1,11 @@
 {
-  "duration_sec": 34.09,
+  "duration_sec": 34.16,
   "segments": 6,
   "captions": 25,
   "resolution": "1080x1920",
   "fps": 30,
-  "output": "/repo/episodes/2026-11-09-apple-launches-49-99-intelligence-usage-packs-it/reel.mp4",
-  "voice": "en-us-lessac-medium.onnx",
+  "output": "/tmp/repos/augaster-reels/episodes/2026-11-09-apple-launches-49-99-intelligence-usage-packs-it/reel.mp4",
+  "voice": "kokoro:af_heart",
   "sources": [
     {
       "name": "9to5Mac",

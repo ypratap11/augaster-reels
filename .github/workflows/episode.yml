@@ -53,12 +53,12 @@ jobs:
       - uses: actions/checkout@v4
         if: steps.when.outputs.run == 'true'
 
-      - name: Cache Piper voice
+      - name: Cache voice models
         if: steps.when.outputs.run == 'true'
         uses: actions/cache@v4
         with:
           path: voices
-          key: piper-voice-en-us-lessac-medium-v1
+          key: voices-piper-lessac-kokoro-v1
 
       - name: Setup (Python packages + voice)
         if: steps.when.outputs.run == 'true'
@@ -92,7 +92,7 @@ jobs:
         if: steps.when.outputs.run == 'true'
         shell: bash
         run: |
-          python render_reel.py "${{ steps.gen.outputs.dir }}/script.json" --voice voices/en-us-lessac-medium.onnx
+          python render_reel.py "${{ steps.gen.outputs.dir }}/script.json" --voice kokoro:af_heart
           python - "${{ steps.gen.outputs.dir }}/render_report.json" <<'EOF'
           import json, sys
           r = json.load(open(sys.argv[1]))
