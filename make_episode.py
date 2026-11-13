@@ -290,16 +290,38 @@ def build_script(date, draft, sources_used):
     }
 
 
+AFFILIATES_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "affiliates.json")
+
+
+def affiliate_matches(*texts):
+    """Tools from affiliates.json that the episode mentions and that have a live link."""
+    try:
+        tools = json.load(open(AFFILIATES_FILE, encoding="utf-8"))
+    except FileNotFoundError:
+        return []
+    blob = " ".join(texts).lower()
+    return [t for t in tools
+            if t.get("url") and any(re.search(rf"\b{re.escape(k.lower())}\b", blob) for k in t["keywords"])]
+
+
 def build_posts(date, title, draft, sources_used):
     d = datetime.date.fromisoformat(date)
     heading = f"{d.day} {d.strftime('%b %Y')}"
     srcs = "\n".join(f"- {s['name']}{', ' + s['published'] if s.get('published') else ''}: {s['url']}"
                      for s in sources_used)
+    caption = draft["instagram_caption"].strip()
+    tools = affiliate_matches(title, draft["article_body"], caption)
+    article_links = ""
+    if tools:
+        caption = caption.replace("Full breakdown + sources: augaster.com",
+                                  "Full breakdown, sources and tool links (affiliate): augaster.com")
+        article_links = "\n\n**Try the tools** (affiliate links — we may earn a commission at no cost to you)\n" + \
+            "\n".join(f"- [{t['name']}]({t['url']})" for t in tools)
     return (f"# Augaster AI Digest — {heading}: {title}\n\n"
-            f"## Instagram / YouTube Shorts caption\n\n{draft['instagram_caption'].strip()}\n\n---\n\n"
+            f"## Instagram / YouTube Shorts caption\n\n{caption}\n\n---\n\n"
             f"## LinkedIn post\n\n{draft['linkedin_post'].strip()}\n\n---\n\n"
             f"## Website article (augaster.com/digest)\n\n### {draft['article_title'].strip()}\n\n"
-            f"{draft['article_body'].strip()}\n\n**Sources**\n{srcs}\n")
+            f"{draft['article_body'].strip()}{article_links}\n\n**Sources**\n{srcs}\n")
 
 
 def main():
