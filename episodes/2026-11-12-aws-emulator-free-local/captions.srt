@@ -1,0 +1,96 @@
+1
+00:00:00,100 --> 00:00:01,475
+AWS released a free
+
+2
+00:00:01,475 --> 00:00:02,913
+cloud copy that runs
+
+3
+00:00:02,913 --> 00:00:04,601
+offline on your machine.
+
+4
+00:00:04,901 --> 00:00:06,880
+The AWS Emulator simulates
+
+5
+00:00:06,880 --> 00:00:08,858
+over two hundred services.
+
+6
+00:00:08,858 --> 00:00:10,359
+AI agents wrote and
+
+7
+00:00:10,359 --> 00:00:11,792
+tested every line.
+
+8
+00:00:12,092 --> 00:00:14,127
+Agents build against fidelity
+
+9
+00:00:14,127 --> 00:00:15,653
+tests checked on real
+
+10
+00:00:15,653 --> 00:00:17,560
+AWS. Security agents review
+
+11
+00:00:17,560 --> 00:00:18,577
+every change.
+
+12
+00:00:18,877 --> 00:00:20,349
+You could test cloud
+
+13
+00:00:20,349 --> 00:00:22,013
+apps offline, for free.
+
+14
+00:00:22,013 --> 00:00:23,293
+The catch: it's a
+
+15
+00:00:23,293 --> 00:00:25,021
+simulation, so verify on
+
+16
+00:00:25,021 --> 00:00:25,789
+real AWS.
+
+17
+00:00:26,089 --> 00:00:27,110
+Our take: ask your
+
+18
+00:00:27,110 --> 00:00:28,179
+developer to try it
+
+19
+00:00:28,179 --> 00:00:29,151
+on a test project
+
+20
+00:00:29,151 --> 00:00:29,588
+first.
+
+21
+00:00:29,888 --> 00:00:31,624
+Full breakdown and sources
+
+22
+00:00:31,624 --> 00:00:33,002
+on augaster dot com.
+
+23
+00:00:33,002 --> 00:00:34,798
+Follow for weekly practical
+
+24
+00:00:34,798 --> 00:00:35,157
+AI.
+

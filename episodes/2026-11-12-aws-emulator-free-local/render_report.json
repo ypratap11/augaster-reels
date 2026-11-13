@@ -1,0 +1,20 @@
+{
+  "duration_sec": 35.36,
+  "segments": 6,
+  "captions": 24,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/__w/augaster-reels/augaster-reels/episodes/2026-11-12-aws-emulator-free-local/reel.mp4",
+  "voice": "kokoro:af_heart",
+  "sources": [
+    {
+      "name": "RIO Rundown (Substack) daily digest, Nov 12, 2026",
+      "url": "https://riorundown.substack.com/p/ai-news-nov-12-2026-ai-agents-infrastructure"
+    },
+    {
+      "name": "All Things Distributed (Werner Vogels blog, guest post by Swami Sivasubramian)",
+      "url": "https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html"
+    }
+  ],
+  "approved": false
+}

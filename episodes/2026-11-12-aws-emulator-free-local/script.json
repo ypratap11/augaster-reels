@@ -1,0 +1,60 @@
+{
+  "episode": "2026-11-12",
+  "series": "Augaster AI Digest",
+  "story": "AWS releases a free AWS Emulator, built entirely by AI agents, that runs more than 200 cloud services locally",
+  "sources": [
+    {
+      "name": "RIO Rundown (Substack) daily digest, Nov 12, 2026",
+      "url": "https://riorundown.substack.com/p/ai-news-nov-12-2026-ai-agents-infrastructure"
+    },
+    {
+      "name": "All Things Distributed (Werner Vogels blog, guest post by Swami Sivasubramian)",
+      "url": "https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html"
+    }
+  ],
+  "source_line": "Sources: RIO Rundown, All Things Distributed",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "THIS WEEK IN AI",
+      "title": "A free copy of AWS, on your machine",
+      "point": "Runs offline",
+      "narration": "AWS released a free cloud copy that runs offline on your machine."
+    },
+    {
+      "kind": "news",
+      "label": "WHAT HAPPENED",
+      "title": "AWS Emulator: 200+ services, all AI-built",
+      "point": "Code written by AI agents",
+      "narration": "The AWS Emulator simulates over two hundred services. AI agents wrote and tested every line."
+    },
+    {
+      "kind": "news",
+      "label": "HOW IT WORKS",
+      "title": "Agents build against fidelity tests",
+      "point": "Checked on real AWS",
+      "narration": "Agents build against fidelity tests checked on real AWS. Security agents review every change."
+    },
+    {
+      "kind": "analysis",
+      "label": "WHAT IT MEANS FOR YOU",
+      "title": "Test cloud apps offline, for free",
+      "point": "Catch: it's a simulation",
+      "narration": "You could test cloud apps offline, for free. The catch: it's a simulation, so verify on real AWS."
+    },
+    {
+      "kind": "analysis",
+      "label": "OUR TAKE",
+      "title": "Try it on a test project first",
+      "point": "",
+      "narration": "Our take: ask your developer to try it on a test project first."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER AI DIGEST",
+      "title": "Full breakdown + sources",
+      "point": "augaster.com",
+      "narration": "Full breakdown and sources on augaster dot com. Follow for weekly practical AI."
+    }
+  ]
+}

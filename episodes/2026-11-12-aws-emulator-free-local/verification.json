@@ -1,0 +1,177 @@
+{
+  "title": "AWS releases free AWS Emulator, built entirely by AI agents, to run 200+ cloud services locally",
+  "episode_number": 5,
+  "cta": "follow",
+  "sources": [
+    {
+      "index": 0,
+      "url": "https://www.geekwire.com/2026/aws-gives-developers-a-free-local-stand-in-for-its-cloud-built-from-scratch-by-ai-agents",
+      "name": "GeekWire",
+      "fetched": false,
+      "published": "",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 1,
+      "url": "https://riorundown.substack.com/p/ai-news-nov-12-2026-ai-agents-infrastructure",
+      "name": "RIO Rundown (Substack) daily digest, Nov 12, 2026",
+      "fetched": true,
+      "published": "Nov 12, 2026",
+      "kind": "roundup"
+    },
+    {
+      "index": 2,
+      "url": "https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html",
+      "name": "All Things Distributed (Werner Vogels blog, guest post by Swami Sivasubramian)",
+      "fetched": true,
+      "published": "November 11, 2026",
+      "kind": "primary"
+    }
+  ],
+  "kept": [
+    {
+      "claim": "AWS Emulator simulates/gives a local copy of more than 200 AWS services.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Source 2: 'a local copy of more than 200 AWS services to test against'. Source 1: 'free local tool simulating over 200 services' and 'AWS Emulator covers more than 200 services'."
+    },
+    {
+      "claim": "The emulator is free and runs offline on the user's own machine.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Source 2: 'It runs free and offline on your own machine'. Source 1 calls it a 'free local tool' and says it lets developers test code offline."
+    },
+    {
+      "claim": "All of the emulator's code was written and tested by AI agents.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Source 2: 'All of AWS Emulator's code was written and tested by agents'. Source 1: 'written entirely by autonomous AI agents'."
+    },
+    {
+      "claim": "The emulator is built from more than 400 public API models.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Source 2: 'built from more than 400 API models covering more than 200 AWS services', described as public API models written in Smithy. Source 1: 'more than 400 public API models'."
+    },
+    {
+      "claim": "The emulator code is released under CC0, a Creative Commons public-domain dedication.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Source 2: 'released under CC0, a Creative Commons dedication to the public domain'. Source 1: 'published under CC0 public domain dedication except for vendor code'. The vendor-code exception appears only in source 1."
+    },
+    {
+      "claim": "The idea and project came from Matt (Matthew) Goldberg, a Senior Principal Engineer on the AWS Developer Tools team.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Source 2: 'Matt Goldberg, a Senior Principal Engineer on the AWS Developer Tools team'. Source 1: 'AWS senior principal engineer Matthew Goldberg' and 'Matt Goldberg'."
+    },
+    {
+      "claim": "The agents work from fidelity tests, which are customer scenarios devised from the public API models. The tests are checked against real AWS, and the emulator is built until it passes them.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Source 2 describes fidelity tests corrected until they pass against real AWS. Source 1: 'matching emulator responses against real AWS calls'."
+    },
+    {
+      "claim": "Human-defined guardrails apply: every change goes through a merge gate of automated checks, including multiple security agents doing adversarial reviews.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Source 2: 'a merge gate, a deep bench of automated checks... including several security agents doing adversarial reviews'. Source 1: 'under human-defined guardrails'."
+    },
+    {
+      "claim": "The repository does not accept pull requests but takes bug reports through GitHub Issues. The full commit history and the agent-filed issues are public in the GitHub repo aws/aws-emulator.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Source 1 states the no-pull-requests and bug-report points. Source 2 states that the full commit history and every issue the agents filed are public on GitHub, with a 'things-that-do-not-work' folder of known mismatches. Neither source states both halves, so this claim is only partly confirmed."
+    }
+  ],
+  "dropped": [
+    {
+      "claim": "AWS Emulator was released/launched on November 11, 2026, a day before the Nov 12 roundup that reported it. This is earlier than the roundup date implies.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Source 2 is dated November 11, 2026 and says 'Today we release AWS Emulator'. Source 1 is dated Nov 12, 2026 and gives no launch date. Only one source states the date explicitly, so this claim is not fully confirmed."
+    },
+    {
+      "claim": "One summary in the roundup (attributed to Unite.AI) gives an exact figure of 438 API models. Source 2 says only 'more than 400'.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Source 1: 'utilizes 438 API models'. Source 2 prints no exact count, so this is a single-source claim and unconfirmed."
+    },
+    {
+      "claim": "Three bounded agent teams handle test writing, issue finding and fixing.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Source 1: 'three bounded agent teams manage test writing, issue finding, and fixing'. Source 2 says only 'Teams of agents' and does not give the number three, so this is a single-source claim."
+    },
+    {
+      "claim": "Unimplemented operations return HTTP 501 status codes.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Source 1: 'unimplemented operations returning HTTP 501 status codes'. Not stated in source 2, so this is a single-source claim."
+    },
+    {
+      "claim": "The emulator redirects CLI and SDK calls to in-memory resources through a local HTTPS endpoint, and developers need no AWS account.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Source 1 (Unite.AI summary): 'redirect standard CLI and SDK calls to in-memory resources via a local HTTPS endpoint'. Not in source 2, so this is a single-source claim."
+    },
+    {
+      "claim": "The agents run on Amazon Bedrock AgentCore.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Source 1: 'maintained by agents running on Amazon Bedrock AgentCore'. Not in source 2, so this is a single-source claim."
+    },
+    {
+      "claim": "The Amazon team wrote or reviewed no code in the emulator.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Source 1 summary of GeekWire: 'Matt Goldberg stated the team wrote or reviewed no code'. Source 2 says the code was written and tested by agents but does not state that no human reviewed it, so this is a single-source claim."
+    },
+    {
+      "claim": "Matt Goldberg's first prototype was an SQS emulator. Kiro returned a passable first version in about 15 minutes from one prompt.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Source 2: 'it returned a passable first version of an SQS emulator in about 15 minutes'. Single-source claim."
+    },
+    {
+      "claim": "AWS will share more about this work at re:Invent.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Source 2: 'We will share more about this work at re:Invent'. Single-source claim."
+    },
+    {
+      "claim": "Known limits: some behaviors do not yet match real AWS.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Source 2: the 'things-that-do-not-work' folder holds issues describing behaviors the agents found that do not yet match real AWS. Source 1 mentions only that analysts see 'limitations' and gives no detail."
+    }
+  ]
+}
