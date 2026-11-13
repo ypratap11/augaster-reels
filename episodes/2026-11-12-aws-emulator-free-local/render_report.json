@@ -16,5 +16,6 @@
       "url": "https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html"
     }
   ],
-  "approved": false
+  "approved": true,
+  "approved_by": "auto-publish gate"
 }

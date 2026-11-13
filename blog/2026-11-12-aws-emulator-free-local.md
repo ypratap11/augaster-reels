@@ -5,6 +5,7 @@ slug: "aws-emulator-free-local"
 description: "AWS has released the AWS Emulator, a local copy of more than 200 AWS services. All of its code was written and tested by AI agents. The idea and project came..."
 tags: ["AWS", "AI", "AIAgents", "CloudComputing", "SmallBusiness", "Developers"]
 series: "Augaster AI Digest"
+video: "https://www.instagram.com/reel/Dfqxh5vkxHc/"
 ---
 **What happened.** AWS has released the AWS Emulator, a local copy of more than 200 AWS services. All of its code was written and tested by AI agents. The idea and project came from Matt Goldberg, a Senior Principal Engineer on the AWS Developer Tools team.
 
