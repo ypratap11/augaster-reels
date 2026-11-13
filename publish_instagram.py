@@ -154,7 +154,8 @@ def main():
         repo, ref = os.environ.get("GITHUB_REPOSITORY"), os.environ.get("GITHUB_REF_NAME", "main")
         if not repo:
             fail(f"video upload failed: {err}")
-        file_url = f"https://raw.githubusercontent.com/{repo}/{ref}/{urllib.parse.quote(epdir.strip('./'))}/reel.mp4"
+        rel = os.path.relpath(os.path.abspath(epdir), os.path.dirname(os.path.abspath(__file__))).replace(os.sep, "/")
+        file_url = f"https://raw.githubusercontent.com/{repo}/{ref}/{urllib.parse.quote(rel)}/reel.mp4"
         print(f"::warning::byte upload failed ({err}); retrying with file_url {file_url}")
         up, err = rupload(upload_uri, token, {"file_url": file_url}, b"")
         if err:
