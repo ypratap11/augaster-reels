@@ -1,16 +1,12 @@
 name: Make episode
 
-# Three reels a day: 8:30 AM, 12:30 PM and 5:30 PM Pacific. GitHub cron is UTC with
-# no DST, so each slot has a PDT trigger and a PST trigger; the "when" step keeps
-# only the one matching today's Pacific offset (works even if GitHub starts late).
+# Three reels a day, in Pacific time slots: morning (from 8:30 AM), midday (from 12:30 PM)
+# and evening (from 5:30 PM). GitHub's scheduler sometimes runs late or skips a run, so this
+# checks every hour at :30 and posts only when a slot is open and nothing has been
+# published since it opened. A skipped hour just means the post goes out an hour later.
 on:
   schedule:
-    - cron: "30 15 * * *"   # 8:30 AM PDT
-    - cron: "30 16 * * *"   # 8:30 AM PST
-    - cron: "30 19 * * *"   # 12:30 PM PDT
-    - cron: "30 20 * * *"   # 12:30 PM PST
-    - cron: "30 0 * * *"    # 5:30 PM PDT
-    - cron: "30 1 * * *"    # 5:30 PM PST
+    - cron: "30 * * * *"
   workflow_dispatch:
     inputs:
       title:
@@ -39,27 +35,46 @@ jobs:
     container: python:3.12-slim-bookworm
     timeout-minutes: 45
     steps:
-      - name: Check schedule matches Pacific time
+      - name: Is a slot due?
         id: when
         shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          EVENT: ${{ github.event_name }}
+          MODE_IN: ${{ inputs.mode }}
         run: |
-          offset=$(TZ=America/Los_Angeles date +%z)   # -0700 or -0800
-          run=true
-          if [ "${{ github.event_name }}" = "schedule" ]; then
-            case "${{ github.event.schedule }}" in
-              "30 15 * * *"|"30 19 * * *"|"30 0 * * *") [ "$offset" = "-0700" ] || run=false ;;
-              "30 16 * * *"|"30 20 * * *"|"30 1 * * *") [ "$offset" = "-0800" ] || run=false ;;
-            esac
-          fi
-          # Money Lab: the 12:30 PM slot on Tuesdays and Fridays posts from the queue.
-          mode="${{ inputs.mode || 'news' }}"
-          dow=$(TZ=America/Los_Angeles date +%u)   # 2 = Tue, 5 = Fri
-          case "${{ github.event.schedule }}" in
-            "30 19 * * *"|"30 20 * * *") { [ "$dow" = 2 ] || [ "$dow" = 5 ]; } && mode=queue ;;
-          esac
-          echo "Pacific offset $offset, run=$run, mode=$mode"
-          echo "run=$run" >> "$GITHUB_OUTPUT"
-          echo "mode=$mode" >> "$GITHUB_OUTPUT"
+          python3 - <<'EOF'
+          import datetime as dt, json, os, urllib.request
+          from zoneinfo import ZoneInfo
+          pac = ZoneInfo("America/Los_Angeles")
+          now = dt.datetime.now(pac)
+          slots = [("morning", 8, 30), ("midday", 12, 30), ("evening", 17, 30)]
+          # The open slot is the latest one that has started today, until 10 PM.
+          started = [s for s in slots if (now.hour, now.minute) >= (s[1], s[2] - 5)]
+          run, mode, why = True, os.environ.get("MODE_IN") or "news", "manual run"
+          if os.environ["EVENT"] == "schedule":
+              if not started or now.hour >= 22:
+                  run, why = False, "no slot open"
+              else:
+                  name, h, m = started[-1]
+                  opened = now.replace(hour=h, minute=m, second=0, microsecond=0) - dt.timedelta(minutes=5)
+                  since = opened.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+                  req = urllib.request.Request(
+                      f"https://api.github.com/repos/{os.environ['REPO']}/commits?sha=main&since={since}&per_page=100",
+                      headers={"Authorization": f"Bearer {os.environ['GH_TOKEN']}", "Accept": "application/vnd.github+json"})
+                  msgs = [c["commit"]["message"] for c in json.load(urllib.request.urlopen(req))]
+                  if any(m.startswith("Published") for m in msgs):
+                      run, why = False, f"{name} slot already posted"
+                  else:
+                      why = f"{name} slot open, nothing posted since {opened:%H:%M}"
+                      # Money Lab: the midday slot on Tuesdays and Fridays posts from the queue.
+                      if name == "midday" and now.isoweekday() in (2, 5):
+                          mode = "queue"
+          print(f"{now:%a %H:%M} Pacific: run={run}, mode={mode} ({why})")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"run={'true' if run else 'false'}\nmode={mode}\n")
+          EOF
 
       - name: Install system packages
         if: steps.when.outputs.run == 'true'

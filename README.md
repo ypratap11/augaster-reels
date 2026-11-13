@@ -23,7 +23,7 @@ python3 make_episode.py --story story.json
 Roundups (AIToolsRecap, AI Weekly, Ground News…) are used as leads only: the picker follows them to the primary announcement and checks its date, and the generator requires every claim to have two sources, at least one primary or original reporting.
 
 ## Scheduled pipeline (GitHub Actions)
-`.github/workflows/episode.yml` runs three times a day, 8:30 AM, 12:30 PM and 5:30 PM Pacific (DST-aware): pick → generate → render → commit `episodes/<date-slug>/` → upload artifacts → publish to Instagram when the repo variable `AUTO_PUBLISH` is `true` and the safety gate in `publish_instagram.py` passes.
+`.github/workflows/episode.yml` checks hourly and posts once per Pacific slot (from 8:30 AM, 12:30 PM and 5:30 PM, until 10 PM) if nothing has been published since the slot opened, so a skipped GitHub trigger only delays a post: pick → generate → render → commit `episodes/<date-slug>/` → upload artifacts → publish to Instagram when the repo variable `AUTO_PUBLISH` is `true` and the safety gate in `publish_instagram.py` passes.
 - One-time: add the repo secret `A_API_KEY` (your Anthropic API key; the workflow passes it to the scripts as `ANTHROPIC_API_KEY`) (Settings → Secrets and variables → Actions).
 - Manual run: Actions → Make episode → Run workflow; optionally give a title and space-separated source URLs to skip the picker.
 
