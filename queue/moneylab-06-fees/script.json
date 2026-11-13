@@ -1,0 +1,139 @@
+{
+  "episode": "MONEY LAB 06",
+  "series": "Augaster Money Lab",
+  "brand_tag": "MONEY LAB",
+  "story": "How a 1% fee can quietly take 22% of your money",
+  "sources": [
+    {
+      "name": "Augaster calculation (moneylab/episodes.py)",
+      "url": "https://github.com/ypratap11/augaster-reels/blob/main/moneylab/episodes.py"
+    }
+  ],
+  "source_line": "Calculation code: github.com/ypratap11/augaster-reels",
+  "disclaimer": "Education only. Not financial advice.",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "MONEY LAB",
+      "title": "A 1% fee. 22% of your money.",
+      "point": "Fees compound too",
+      "narration": "A one percent fee sounds small. Over thirty years it can take about 22 percent of your money."
+    },
+    {
+      "kind": "news",
+      "label": "THE SETUP",
+      "title": "$100,000, 7% a year, 30 years",
+      "point": "Fund A fee 0.1%. Fund B fee 1%.",
+      "narration": "Invest one hundred thousand dollars earning seven percent a year for thirty years. Fund A charges point one percent. Fund B charges one percent."
+    },
+    {
+      "kind": "news",
+      "label": "30 YEARS LATER",
+      "title": "Same market, different fee",
+      "point": "",
+      "chart": {
+        "unit": "$",
+        "x_label": "Years: 0 to 30",
+        "zero": false,
+        "series": [
+          {
+            "name": "A · 0.1% fee",
+            "color": "accent",
+            "values": [
+              100000,
+              106900,
+              114276,
+              122161,
+              130590,
+              139601,
+              149233,
+              159531,
+              170538,
+              182305,
+              194884,
+              208331,
+              222706,
+              238073,
+              254500,
+              272061,
+              290833,
+              310900,
+              332352,
+              355285,
+              379799,
+              406005,
+              434020,
+              463967,
+              495981,
+              530204,
+              566788,
+              605896,
+              647703,
+              692394,
+              740169
+            ]
+          },
+          {
+            "name": "B · 1% fee",
+            "color": "bad",
+            "values": [
+              100000,
+              106000,
+              112360,
+              119102,
+              126248,
+              133823,
+              141852,
+              150363,
+              159385,
+              168948,
+              179085,
+              189830,
+              201220,
+              213293,
+              226090,
+              239656,
+              254035,
+              269277,
+              285434,
+              302560,
+              320714,
+              339956,
+              360354,
+              381975,
+              404893,
+              429187,
+              454938,
+              482235,
+              511169,
+              541839,
+              574349
+            ]
+          }
+        ]
+      },
+      "narration": "Fund A grows to about 740,000 dollars. Fund B grows to about 574,000."
+    },
+    {
+      "kind": "analysis",
+      "label": "THE MATH",
+      "title": "The gap: $165,820",
+      "point": "Fees come off the growth, every year",
+      "narration": "That is a gap of about 166,000 dollars, because the fee is taken from a growing balance every single year."
+    },
+    {
+      "kind": "analysis",
+      "label": "THE LESSON",
+      "title": "Check the expense ratio",
+      "point": "Small percentages compound into big dollars",
+      "narration": "Before choosing a fund, check its yearly fee. Over decades, it matters as much as the returns."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER MONEY LAB",
+      "title": "The math behind money",
+      "point": "augaster.com",
+      "narration": "Education only, not advice. Follow for more Money Lab."
+    }
+  ]
+}

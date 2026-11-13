@@ -1,0 +1,27 @@
+{
+  "method": "computed",
+  "code": "moneylab/episodes.py",
+  "results": "moneylab/05-volatility-drag_results.json",
+  "kept": [
+    {
+      "claim": "$10,000 growing 5% a year for 20 years reaches $26,533",
+      "computed": 26533
+    },
+    {
+      "claim": "Alternating +30% and −20% for 20 years turns $10,000 into $14,802",
+      "computed": 14802
+    },
+    {
+      "claim": "+30% and −20% have an arithmetic average of +5%",
+      "computed": 5.0
+    },
+    {
+      "claim": "That bumpy path compounds at 2.0% a year",
+      "computed": 2.0
+    },
+    {
+      "claim": "−50% followed by +50% turns $100 into $75",
+      "computed": 75
+    }
+  ]
+}

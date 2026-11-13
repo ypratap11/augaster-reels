@@ -62,3 +62,10 @@ One-time setup (repo Settings → Secrets and variables → Actions):
 - Variables: `AUTO_PUBLISH` = `true` to turn posting on (anything else = off); `LINK_IN_BIO` = `1` once the profile has the augaster.com link.
 - Keep the repo public: direct byte upload is tried first, but Meta currently rejects it, so posting falls back to Meta fetching `reel.mp4` from raw.githubusercontent.com.
 - To retry a failed post: Actions → Publish episode → Run workflow, with the episode folder name.
+
+## Queue and Money Lab (15-day buffer)
+- `queue/<name>/` holds finished episodes (reel.mp4, posts.md, script.json, verification.json). `post_from_queue.py` posts the next one and moves it to `episodes/<date>-<name>`.
+- The 12:30 PM slot on Tuesdays and Fridays posts Money Lab from the queue. Any other slot that can't make a verified news episode posts from the queue instead of skipping.
+- Money Lab episodes are computed, not reported: `moneylab/episodes.py` (and `ep04_expectancy.py`) produce every number; the publish gate checks the code and results files exist and every claim carries a computed value.
+- The health step opens a "Reels pipeline needs attention" GitHub issue (GitHub emails the owner) when a slot posts nothing, a publish fails, or fewer than 5 queue episodes remain.
+- Add an episode: add a function to `moneylab/episodes.py`, run it, render with `python3 render_reel.py queue/<name>/script.json --voice kokoro:af_heart`, check the frames, commit.

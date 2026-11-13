@@ -1,0 +1,151 @@
+{
+  "episode": "MONEY LAB 08",
+  "series": "Augaster Money Lab",
+  "brand_tag": "MONEY LAB",
+  "story": "Can $10,000 become $1 million?",
+  "sources": [
+    {
+      "name": "Augaster calculation (moneylab/episodes.py)",
+      "url": "https://github.com/ypratap11/augaster-reels/blob/main/moneylab/episodes.py"
+    }
+  ],
+  "source_line": "Calculation code: github.com/ypratap11/augaster-reels",
+  "disclaimer": "Education only. Not financial advice.",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "MONEY LAB",
+      "title": "$10,000 to $1 million?",
+      "point": "Compounding needs time, or help",
+      "narration": "Can ten thousand dollars become a million? Yes. The question is how long."
+    },
+    {
+      "kind": "news",
+      "label": "ALONE",
+      "title": "68 years at 7%",
+      "point": "$10,000 must grow 100×",
+      "narration": "At seven percent a year, ten thousand alone needs about 68 years to reach a million. It has to grow one hundred times."
+    },
+    {
+      "kind": "news",
+      "label": "WITH $500 A MONTH",
+      "title": "About 36 years",
+      "point": "",
+      "chart": {
+        "unit": "$",
+        "x_label": "Years: 0 to 36",
+        "zero": true,
+        "series": [
+          {
+            "name": "$10,000 + $500/month",
+            "color": "accent",
+            "values": [
+              10000,
+              16890,
+              24263,
+              32151,
+              40592,
+              49623,
+              59287,
+              69627,
+              80692,
+              92530,
+              105197,
+              118751,
+              133254,
+              148772,
+              165376,
+              183143,
+              202153,
+              222494,
+              244258,
+              267547,
+              292465,
+              319128,
+              347657,
+              378183,
+              410846,
+              445795,
+              483191,
+              523205,
+              566019,
+              611831,
+              660849,
+              713298,
+              769419,
+              829469,
+              893722,
+              962473,
+              1004779
+            ]
+          },
+          {
+            "name": "$10,000 alone",
+            "color": "bad",
+            "values": [
+              10000,
+              10700,
+              11449,
+              12250,
+              13108,
+              14026,
+              15007,
+              16058,
+              17182,
+              18385,
+              19672,
+              21049,
+              22522,
+              24098,
+              25785,
+              27590,
+              29522,
+              31588,
+              33799,
+              36165,
+              38697,
+              41406,
+              44304,
+              47405,
+              50724,
+              54274,
+              58074,
+              62139,
+              66488,
+              71143,
+              76123,
+              81451,
+              87153,
+              93253,
+              99781,
+              106766,
+              111064
+            ]
+          }
+        ]
+      },
+      "narration": "Add five hundred dollars a month, and it takes about 36 years. By then, the lump sum alone is only near 111,000."
+    },
+    {
+      "kind": "analysis",
+      "label": "THE MATH",
+      "title": "Contributions do the early work",
+      "point": "Compounding does the late work",
+      "narration": "In the early years, your deposits do most of the growing. Later, compounding takes over and the curve bends upward."
+    },
+    {
+      "kind": "analysis",
+      "label": "THE LESSON",
+      "title": "Start early, add steadily",
+      "point": "Time and contributions beat chasing returns",
+      "narration": "The biggest levers are time and steady contributions, not chasing a higher return with more risk."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER MONEY LAB",
+      "title": "The math behind money",
+      "point": "augaster.com",
+      "narration": "Education only, not advice. Follow for more Money Lab."
+    }
+  ]
+}

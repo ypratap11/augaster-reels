@@ -1,0 +1,108 @@
+1
+00:00:00,100 --> 00:00:01,566
+This strategy wins eighty
+
+2
+00:00:01,566 --> 00:00:02,875
+percent of its trades.
+
+3
+00:00:02,875 --> 00:00:04,132
+It still loses money.
+
+4
+00:00:04,432 --> 00:00:05,832
+Strategy A wins eighty
+
+5
+00:00:05,832 --> 00:00:07,401
+percent: plus one hundred
+
+6
+00:00:07,401 --> 00:00:08,633
+per win, minus five
+
+7
+00:00:08,633 --> 00:00:10,258
+hundred per loss. Strategy
+
+8
+00:00:10,258 --> 00:00:11,602
+B wins forty percent:
+
+9
+00:00:11,602 --> 00:00:13,170
+plus three hundred, minus
+
+10
+00:00:13,170 --> 00:00:14,011
+one hundred.
+
+11
+00:00:14,311 --> 00:00:15,919
+Over two hundred simulated
+
+12
+00:00:15,919 --> 00:00:17,250
+trades, A drifts down
+
+13
+00:00:17,250 --> 00:00:18,415
+to six thousand. B
+
+14
+00:00:18,415 --> 00:00:20,135
+climbs past twenty thousand.
+
+15
+00:00:20,435 --> 00:00:22,154
+The reason is expectancy.
+
+16
+00:00:22,154 --> 00:00:23,750
+A averages minus twenty
+
+17
+00:00:23,750 --> 00:00:25,039
+dollars a trade. B
+
+18
+00:00:25,039 --> 00:00:26,451
+averages plus sixty.
+
+19
+00:00:26,751 --> 00:00:28,612
+Across twenty thousand simulated
+
+20
+00:00:28,612 --> 00:00:29,889
+runs, A finished down
+
+21
+00:00:29,889 --> 00:00:31,484
+eighty-eight percent of the
+
+22
+00:00:31,484 --> 00:00:32,867
+time. Judge the average
+
+23
+00:00:32,867 --> 00:00:33,984
+trade, not the win
+
+24
+00:00:33,984 --> 00:00:34,409
+rate.
+
+25
+00:00:34,709 --> 00:00:36,493
+Education only, not advice.
+
+26
+00:00:36,493 --> 00:00:37,920
+Follow for more Money
+
+27
+00:00:37,920 --> 00:00:38,336
+Lab.
+

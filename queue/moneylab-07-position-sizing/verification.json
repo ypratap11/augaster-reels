@@ -1,0 +1,23 @@
+{
+  "method": "computed",
+  "code": "moneylab/episodes.py",
+  "results": "moneylab/07-position-sizing_results.json",
+  "kept": [
+    {
+      "claim": "With 55% wins at even payoff, risking 2% a trade, the median $10,000 account after 100 trades is $11,972",
+      "computed": 11972
+    },
+    {
+      "claim": "Risking 25% a trade, the median account is $5,103",
+      "computed": 5103
+    },
+    {
+      "claim": "Risking 25%, the account fell to half or less at some point in 80% of 10,000 runs",
+      "computed": 80
+    },
+    {
+      "claim": "Risking 2%, that happened in 0.0% of runs",
+      "computed": 0.0
+    }
+  ]
+}

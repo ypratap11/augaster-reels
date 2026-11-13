@@ -1,0 +1,16 @@
+{
+  "duration_sec": 38.54,
+  "segments": 6,
+  "captions": 27,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/tmp/repos/augaster-reels/queue/moneylab-04-expectancy/reel.mp4",
+  "voice": "kokoro:af_heart",
+  "sources": [
+    {
+      "name": "Augaster simulation (moneylab/ep04_expectancy.py)",
+      "url": "https://github.com/ypratap11/augaster-reels/blob/main/moneylab/ep04_expectancy.py"
+    }
+  ],
+  "approved": false
+}

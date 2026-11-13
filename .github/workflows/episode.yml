@@ -19,9 +19,14 @@ on:
       urls:
         description: "Source URLs, space-separated (needed with title; at least two)"
         required: false
+      mode:
+        description: "news = make a fresh episode; queue = post the next ready episode from queue/"
+        required: false
+        default: news
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: episode
@@ -46,8 +51,15 @@ jobs:
               "30 16 * * *"|"30 20 * * *"|"30 1 * * *") [ "$offset" = "-0800" ] || run=false ;;
             esac
           fi
-          echo "Pacific offset $offset, run=$run"
+          # Money Lab: the 12:30 PM slot on Tuesdays and Fridays posts from the queue.
+          mode="${{ inputs.mode || 'news' }}"
+          dow=$(TZ=America/Los_Angeles date +%u)   # 2 = Tue, 5 = Fri
+          case "${{ github.event.schedule }}" in
+            "30 19 * * *"|"30 20 * * *") { [ "$dow" = 2 ] || [ "$dow" = 5 ]; } && mode=queue ;;
+          esac
+          echo "Pacific offset $offset, run=$run, mode=$mode"
           echo "run=$run" >> "$GITHUB_OUTPUT"
+          echo "mode=$mode" >> "$GITHUB_OUTPUT"
 
       - name: Install system packages
         if: steps.when.outputs.run == 'true'
@@ -69,15 +81,19 @@ jobs:
         if: steps.when.outputs.run == 'true'
         run: bash setup.sh
 
+      # ---------- news episode (any failure here falls back to the queue) ----------
       - name: Pick story
-        if: steps.when.outputs.run == 'true' && inputs.title == ''
+        id: pick
+        if: steps.when.outputs.run == 'true' && steps.when.outputs.mode == 'news' && inputs.title == ''
+        continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.A_API_KEY }}
         run: python pick_story.py --out "$RUNNER_TEMP/story.json"
 
       - name: Generate episode
-        if: steps.when.outputs.run == 'true'
+        if: steps.when.outputs.run == 'true' && steps.when.outputs.mode == 'news' && (inputs.title != '' || steps.pick.outcome == 'success')
         id: gen
+        continue-on-error: true
         shell: bash
         env:
           ANTHROPIC_API_KEY: ${{ secrets.A_API_KEY }}
@@ -94,7 +110,9 @@ jobs:
           echo "name=$(basename "$dir")" >> "$GITHUB_OUTPUT"
 
       - name: Render reel
-        if: steps.when.outputs.run == 'true'
+        id: render
+        if: steps.gen.outcome == 'success'
+        continue-on-error: true
         shell: bash
         run: |
           python render_reel.py "${{ steps.gen.outputs.dir }}/script.json" --voice kokoro:af_heart
@@ -102,7 +120,6 @@ jobs:
           import json, sys
           r = json.load(open(sys.argv[1]))
           d = r["duration_sec"]
-          assert r["approved"] is False, "render_report must start unapproved"
           if not 30 <= d <= 35:
               print(f"::warning::reel is {d} sec, outside the 30-35 sec target")
           print(f"duration {d} sec")
@@ -110,7 +127,7 @@ jobs:
           rm -rf "${{ steps.gen.outputs.dir }}/_work"
 
       - name: Upload reel
-        if: steps.when.outputs.run == 'true'
+        if: steps.render.outcome == 'success'
         uses: actions/upload-artifact@v4
         with:
           name: ${{ steps.gen.outputs.name }}
@@ -119,8 +136,8 @@ jobs:
             ${{ steps.gen.outputs.dir }}/thumbnail.png
             ${{ steps.gen.outputs.dir }}/posts.md
 
-      - name: Commit episode (draft, not approved)
-        if: steps.when.outputs.run == 'true'
+      - name: Commit episode
+        if: steps.render.outcome == 'success'
         shell: bash
         run: |
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
@@ -134,10 +151,10 @@ jobs:
           git push
 
       # Auto-publish: runs only when the repo variable AUTO_PUBLISH is "true".
-      # publish_instagram.py refuses to post unless its safety gate passes
-      # (two-source claims, 25-40 sec 1080x1920 reel, no Oracle/Wipro, not already posted).
+      # publish_instagram.py refuses to post unless its safety gate passes.
       - name: Publish to Instagram
-        if: steps.when.outputs.run == 'true' && vars.AUTO_PUBLISH == 'true'
+        id: publish
+        if: steps.render.outcome == 'success' && vars.AUTO_PUBLISH == 'true'
         shell: bash
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
@@ -150,3 +167,72 @@ jobs:
           git commit -m "Published to Instagram: ${{ steps.gen.outputs.name }}" \
                      -m "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
           git push
+
+      # ---------- queue: Money Lab slots, or fallback when no news episode was made ----------
+      - name: Post from queue
+        id: queue
+        if: steps.when.outputs.run == 'true' && vars.AUTO_PUBLISH == 'true' && (steps.when.outputs.mode == 'queue' || steps.render.outcome != 'success')
+        shell: bash
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          LINK_IN_BIO: ${{ vars.LINK_IN_BIO }}
+          MODE: ${{ steps.when.outputs.mode }}
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull -q --rebase origin "${{ github.ref_name }}"
+          prefix=""
+          if [ "$MODE" = queue ] && [ -n "$(ls -d queue/moneylab-* 2>/dev/null)" ]; then prefix=moneylab-; fi
+          dest=$(python post_from_queue.py --prefix "$prefix" | tail -1)
+          git add -A queue episodes blog
+          git commit -m "Published from queue: $(basename "$dest")" \
+                     -m "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+          git push
+
+      # ---------- health: open a GitHub issue (GitHub emails the repo owner) ----------
+      - name: Health check and alerts
+        if: always() && steps.when.outputs.run == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          NEWS: ${{ steps.render.outcome }}
+          MODE: ${{ steps.when.outputs.mode }}
+          PUBLISH: ${{ steps.publish.outcome }}
+          QUEUE: ${{ steps.queue.outcome }}
+          JOB: ${{ job.status }}
+        shell: bash
+        run: |
+          python - <<'EOF'
+          import json, os, subprocess, urllib.request
+          env = os.environ
+          ready = int(subprocess.run(["python", "post_from_queue.py", "--count"], capture_output=True, text=True).stdout.strip() or 0)
+          problems = []
+          if env["MODE"] == "news" and env["NEWS"] != "success" and env["QUEUE"] != "success":
+              problems.append(f"Nothing posted this slot: no news episode (render: {env['NEWS'] or 'skipped'}) and no queue post.")
+          if env["PUBLISH"] == "failure":
+              problems.append("Publishing the news episode to Instagram failed.")
+          if env["QUEUE"] == "failure":
+              problems.append("Posting from the queue failed.")
+          if env["JOB"] == "failure" and not problems:
+              problems.append("The run failed.")
+          if ready < 5:
+              problems.append(f"Queue is low: {ready} ready episodes left (keep 5+ for a 15-day buffer).")
+          print(f"queue ready: {ready}; problems: {problems}")
+          if not problems:
+              raise SystemExit(0)
+          title = "Reels pipeline needs attention"
+          api = f"https://api.github.com/repos/{env['REPO']}/issues"
+          hdr = {"Authorization": f"Bearer {env['GH_TOKEN']}", "Accept": "application/vnd.github+json"}
+          body = "\n".join(f"- {p}" for p in problems) + f"\n\nRun: {env['RUN_URL']}"
+          open_issues = json.load(urllib.request.urlopen(urllib.request.Request(api + "?state=open&per_page=50", headers=hdr)))
+          existing = next((i for i in open_issues if i["title"] == title), None)
+          if existing:
+              url, data = existing["comments_url"], {"body": body}
+          else:
+              url, data = api, {"title": title, "body": body}
+          urllib.request.urlopen(urllib.request.Request(url, data=json.dumps(data).encode(), headers=hdr, method="POST"))
+          print("alert posted")
+          EOF

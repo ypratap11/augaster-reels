@@ -50,7 +50,7 @@ def wav_duration(path):
     with wave.open(path) as w:
         return w.getnframes() / w.getframerate()
 
-KOKORO_DIR = os.environ.get("KOKORO_DIR", "voices")
+KOKORO_DIR = os.environ.get("KOKORO_DIR", os.path.join(os.path.dirname(os.path.abspath(__file__)), "voices"))
 KOKORO_SPEED = 1.05  # >1 speaks faster
 _kokoro = None
 
@@ -155,6 +155,55 @@ def srt_time(s):
     ms = int(round(s * 1000)); h, ms = divmod(ms, 3600000); m, ms = divmod(ms, 60000); sec, ms = divmod(ms, 1000)
     return f"{h:02}:{m:02}:{sec:02},{ms:03}"
 
+CHART_COLORS = {"accent": BRAND["accent"], "accent2": BRAND["accent2"], "bad": (244, 114, 114), "muted": BRAND["muted"]}
+F_AXIS = font("Medium", 28)
+
+def fmt_num(v, unit):
+    if unit == "$":
+        return ("-$" if v < 0 else "$") + f"{abs(v):,.0f}"
+    if unit == "%":
+        return f"{v:,.0f}%"
+    return f"{v:,.0f}"
+
+def draw_chart(ld, chart, box, progress, alpha):
+    """Line chart drawn left to right as progress goes 0 -> 1. Values come from the script, never invented here."""
+    x0, y0, x1, y1 = box
+    series = chart["series"]
+    allv = [v for s in series for v in s["values"]] + ([0] if chart.get("zero", True) else [])
+    lo, hi = min(allv), max(allv)
+    pad = (hi - lo) * 0.08 or 1
+    lo, hi = lo - pad, hi + pad
+    unit = chart.get("unit", "")
+    span0 = hi - lo - 2 * pad
+    step0 = 10 ** max(0, len(str(int(abs(span0) / 2))) - 1) if span0 >= 10 else 1
+    widest = max(ld.textlength(fmt_num(round((lo + pad + span0 * f) / step0) * step0, unit), font=F_AXIS) for f in (0, 0.5, 1))
+    left = x0 + max(150, int(widest) + 30)
+    Y = lambda v: y1 - (v - lo) / (hi - lo) * (y1 - y0)
+    y0 += 80  # room for the legend above the plot
+    ld.rounded_rectangle([x0 - 20, y0 - 110, x1 + 20, y1 + 70], radius=24, fill=(255, 255, 255, int(alpha * 0.05)))
+    span = hi - lo - 2 * pad
+    step = 10 ** max(0, len(str(int(abs(span) / 2))) - 1) if span >= 10 else 1
+    for frac in (0, 0.5, 1):
+        v = round((lo + pad + span * frac) / step) * step
+        ld.line([left, Y(v), x1, Y(v)], fill=(255, 255, 255, int(alpha * 0.12)), width=2)
+        ld.text((x0, Y(v) - 16), fmt_num(v, unit), font=F_AXIS, fill=BRAND["muted"] + (alpha,))
+    if lo < 0 < hi:
+        ld.line([left, Y(0), x1, Y(0)], fill=(255, 255, 255, int(alpha * 0.45)), width=3)
+    if chart.get("x_label"):
+        ld.text((left, y1 + 18), chart["x_label"], font=F_AXIS, fill=BRAND["muted"] + (alpha,))
+    ly, lx = y0 - 10, left
+    for s in series:
+        col = CHART_COLORS.get(s.get("color", "accent"), BRAND["accent"])
+        n = len(s["values"])
+        upto = max(2, int(round(n * progress)))
+        pts = [(left + (x1 - left) * i / (n - 1), Y(v)) for i, v in enumerate(s["values"][:upto])]
+        ld.line(pts, fill=col + (alpha,), width=7, joint="curve")
+        ex, ey = pts[-1]
+        ld.ellipse([ex - 10, ey - 10, ex + 10, ey + 10], fill=col + (alpha,))
+        tag = s["name"] + (f"  {fmt_num(s['values'][upto - 1], unit)}" if progress >= 0.999 else "")
+        ld.text((lx, ly), tag, font=F_AXIS, fill=col + (alpha,))
+        ly += 40
+
 def draw_frame(base, glows, seg, local_t, global_t, total, cue, script):
     img = base.copy().convert("RGBA")
     # drifting glows
@@ -168,7 +217,7 @@ def draw_frame(base, glows, seg, local_t, global_t, total, cue, script):
     # header
     d.rounded_rectangle([M, 110, M + 22, 132], radius=4, fill=BRAND["accent"])
     d.text((M + 40, 100), "AUGASTER", font=F_BRAND, fill=BRAND["text"])
-    d.text((M + 40 + d.textlength("AUGASTER ", font=F_BRAND), 100), "AI DIGEST", font=F_BRAND, fill=BRAND["accent"])
+    d.text((M + 40 + d.textlength("AUGASTER ", font=F_BRAND), 100), script.get("brand_tag", "AI DIGEST"), font=F_BRAND, fill=BRAND["accent"])
     d.text((W - M - d.textlength(script["episode"], font=F_SMALL), 108), script["episode"], font=F_SMALL, fill=BRAND["muted"])
 
     a_in = ease(local_t / 0.45)
@@ -207,6 +256,11 @@ def draw_frame(base, glows, seg, local_t, global_t, total, cue, script):
             ld.rectangle([M, y + 8, M + 8, y + 8 + 56 * len(wrap(ld, seg["point"], F_POINT, W - 2 * M - 40))], fill=BRAND["accent"] + (pa,))
             for line in wrap(ld, seg["point"], F_POINT, W - 2 * M - 40):
                 ld.text((M + 36, y), line, font=F_POINT, fill=BRAND["muted"] + (pa,)); y += 60
+        if seg.get("chart"):
+            span = max(1.0, seg.get("speech_dur", seg["dur"]) * 0.85)
+            prog = ease((local_t - 0.3) / span)
+            top = max(y + 90, 900)
+            draw_chart(ld, seg["chart"], (M + 20, top, W - M - 20, 1330), max(prog, 0.02), alpha)
     img.alpha_composite(layer)
 
     # caption box
@@ -224,6 +278,8 @@ def draw_frame(base, glows, seg, local_t, global_t, total, cue, script):
             yy += 80
 
     # footer: source + progress
+    if script.get("disclaimer"):
+        d.text((M, H - 215), script["disclaimer"], font=F_SMALL, fill=BRAND["muted"])
     d.text((M, H - 170), script.get("source_line", ""), font=F_SMALL, fill=BRAND["muted"])
     d.rounded_rectangle([M, H - 110, W - M, H - 100], radius=5, fill=(255, 255, 255, 40))
     d.rounded_rectangle([M, H - 110, M + int((W - 2 * M) * min(1, global_t / total)), H - 100], radius=5, fill=BRAND["accent"])

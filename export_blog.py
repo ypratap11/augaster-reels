@@ -32,7 +32,7 @@ def export(epdir):
         "slug": name[11:] or name,
         "description": desc,
         "tags": [t for t in tags if t != "AugasterAIDigest"][:6],
-        "series": "Augaster AI Digest",
+        "series": json.load(open(os.path.join(epdir, "script.json"))).get("series", "Augaster AI Digest") if os.path.exists(os.path.join(epdir, "script.json")) else "Augaster AI Digest",
     }
     pub = os.path.join(epdir, "published.json")
     if os.path.exists(pub):

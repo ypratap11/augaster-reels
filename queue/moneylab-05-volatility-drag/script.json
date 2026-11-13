@@ -1,0 +1,119 @@
+{
+  "episode": "MONEY LAB 05",
+  "series": "Augaster Money Lab",
+  "brand_tag": "MONEY LAB",
+  "story": "Same average return, very different result: volatility drag",
+  "sources": [
+    {
+      "name": "Augaster calculation (moneylab/episodes.py)",
+      "url": "https://github.com/ypratap11/augaster-reels/blob/main/moneylab/episodes.py"
+    }
+  ],
+  "source_line": "Calculation code: github.com/ypratap11/augaster-reels",
+  "disclaimer": "Education only. Not financial advice.",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "MONEY LAB",
+      "title": "Same average. Far less money.",
+      "point": "Meet volatility drag",
+      "narration": "Two investments average the same five percent a year. One ends with 1.8 times the money of the other."
+    },
+    {
+      "kind": "news",
+      "label": "THE SETUP",
+      "title": "A: +5% every year",
+      "point": "B: +30%, then −20%, repeating",
+      "narration": "Investment A gains five percent every year. Investment B swings: up thirty, then down twenty. Its average is also five percent."
+    },
+    {
+      "kind": "news",
+      "label": "20 YEARS LATER",
+      "title": "Both start with $10,000",
+      "point": "",
+      "chart": {
+        "unit": "$",
+        "x_label": "Years: 0 to 20",
+        "zero": false,
+        "series": [
+          {
+            "name": "A · steady",
+            "color": "accent",
+            "values": [
+              10000,
+              10500,
+              11025,
+              11576,
+              12155,
+              12763,
+              13401,
+              14071,
+              14775,
+              15513,
+              16289,
+              17103,
+              17959,
+              18856,
+              19799,
+              20789,
+              21829,
+              22920,
+              24066,
+              25270,
+              26533
+            ]
+          },
+          {
+            "name": "B · bumpy",
+            "color": "bad",
+            "values": [
+              10000,
+              13000,
+              10400,
+              13520,
+              10816,
+              14061,
+              11249,
+              14623,
+              11699,
+              15208,
+              12167,
+              15816,
+              12653,
+              16449,
+              13159,
+              17107,
+              13686,
+              17791,
+              14233,
+              18503,
+              14802
+            ]
+          }
+        ]
+      },
+      "narration": "After twenty years, A has about 26,500 dollars. B has about 14,800."
+    },
+    {
+      "kind": "analysis",
+      "label": "THE MATH",
+      "title": "Losses hurt more than gains help",
+      "point": "−50% then +50% leaves you at $75 from $100",
+      "narration": "Losses cut the base that gains grow from. Lose fifty percent, gain fifty, and one hundred dollars becomes 75."
+    },
+    {
+      "kind": "analysis",
+      "label": "THE LESSON",
+      "title": "B really compounds at 2.0%",
+      "point": "Average return ≠ what you earn",
+      "narration": "So B's real yearly growth is only 2.0 percent. When comparing investments, look at compound growth, not average return."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER MONEY LAB",
+      "title": "The math behind money",
+      "point": "augaster.com",
+      "narration": "Education only, not advice. Follow for more Money Lab."
+    }
+  ]
+}

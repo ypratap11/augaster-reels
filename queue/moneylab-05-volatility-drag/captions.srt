@@ -1,0 +1,108 @@
+1
+00:00:00,100 --> 00:00:01,797
+Two investments average the
+
+2
+00:00:01,797 --> 00:00:03,042
+same five percent a
+
+3
+00:00:03,042 --> 00:00:04,286
+year. One ends with
+
+4
+00:00:04,286 --> 00:00:05,531
+1.8 times the money
+
+5
+00:00:05,531 --> 00:00:06,436
+of the other.
+
+6
+00:00:06,736 --> 00:00:08,337
+Investment A gains five
+
+7
+00:00:08,337 --> 00:00:10,368
+percent every year. Investment
+
+8
+00:00:10,368 --> 00:00:11,784
+B swings: up thirty,
+
+9
+00:00:11,784 --> 00:00:13,262
+then down twenty. Its
+
+10
+00:00:13,262 --> 00:00:14,677
+average is also five
+
+11
+00:00:14,677 --> 00:00:15,355
+percent.
+
+12
+00:00:15,655 --> 00:00:17,910
+After twenty years, A
+
+13
+00:00:17,910 --> 00:00:20,542
+has about 26,500 dollars.
+
+14
+00:00:20,542 --> 00:00:22,609
+B has about 14,800.
+
+15
+00:00:22,909 --> 00:00:24,243
+Losses cut the base
+
+16
+00:00:24,243 --> 00:00:25,698
+that gains grow from.
+
+17
+00:00:25,698 --> 00:00:27,335
+Lose fifty percent, gain
+
+18
+00:00:27,335 --> 00:00:28,850
+fifty, and one hundred
+
+19
+00:00:28,850 --> 00:00:30,184
+dollars becomes 75.
+
+20
+00:00:30,484 --> 00:00:31,838
+So B's real yearly
+
+21
+00:00:31,838 --> 00:00:33,193
+growth is only 2.0
+
+22
+00:00:33,193 --> 00:00:35,708
+percent. When comparing investments,
+
+23
+00:00:35,708 --> 00:00:37,449
+look at compound growth,
+
+24
+00:00:37,449 --> 00:00:38,868
+not average return.
+
+25
+00:00:39,168 --> 00:00:40,952
+Education only, not advice.
+
+26
+00:00:40,952 --> 00:00:42,379
+Follow for more Money
+
+27
+00:00:42,379 --> 00:00:42,795
+Lab.
+

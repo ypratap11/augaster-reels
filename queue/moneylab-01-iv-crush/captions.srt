@@ -1,0 +1,128 @@
+1
+00:00:00,100 --> 00:00:01,157
+The stock went up
+
+2
+00:00:01,157 --> 00:00:02,531
+four percent. Your call
+
+3
+00:00:02,531 --> 00:00:03,958
+option still lost money.
+
+4
+00:00:03,958 --> 00:00:04,751
+Here is why.
+
+5
+00:00:05,051 --> 00:00:06,776
+Before earnings, the stock
+
+6
+00:00:06,776 --> 00:00:07,965
+is at one hundred
+
+7
+00:00:07,965 --> 00:00:09,750
+dollars. A one-oh-five call
+
+8
+00:00:09,750 --> 00:00:10,880
+with a week left
+
+9
+00:00:10,880 --> 00:00:12,664
+costs 2.48 dollars, because
+
+10
+00:00:12,664 --> 00:00:14,508
+implied volatility is eighty
+
+11
+00:00:14,508 --> 00:00:15,163
+percent.
+
+12
+00:00:15,463 --> 00:00:17,251
+Earnings land. The stock
+
+13
+00:00:17,251 --> 00:00:18,442
+rises to one oh
+
+14
+00:00:18,442 --> 00:00:20,628
+four. But volatility collapses
+
+15
+00:00:20,628 --> 00:00:22,283
+to thirty percent, and
+
+16
+00:00:22,283 --> 00:00:23,475
+the call is now
+
+17
+00:00:23,475 --> 00:00:24,932
+worth 1.18. Down 52
+
+18
+00:00:24,932 --> 00:00:25,660
+percent.
+
+19
+00:00:25,960 --> 00:00:27,446
+After the crush, the
+
+20
+00:00:27,446 --> 00:00:28,933
+stock needs to reach
+
+21
+00:00:28,933 --> 00:00:30,742
+about 106.50 dollars just
+
+22
+00:00:30,742 --> 00:00:32,035
+to get your money
+
+23
+00:00:32,035 --> 00:00:32,552
+back.
+
+24
+00:00:32,852 --> 00:00:34,667
+Before earnings, option prices
+
+25
+00:00:34,667 --> 00:00:35,987
+already include a big
+
+26
+00:00:35,987 --> 00:00:37,307
+expected move. If the
+
+27
+00:00:37,307 --> 00:00:38,627
+real move is smaller,
+
+28
+00:00:38,627 --> 00:00:39,726
+you lose, even if
+
+29
+00:00:39,726 --> 00:00:41,321
+you guessed the direction.
+
+30
+00:00:41,621 --> 00:00:43,405
+Education only, not advice.
+
+31
+00:00:43,405 --> 00:00:44,832
+Follow for more Money
+
+32
+00:00:44,832 --> 00:00:45,248
+Lab.
+

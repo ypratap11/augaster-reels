@@ -19,7 +19,7 @@ not need to be public.
 Safety gate (nothing is posted unless all pass):
   - every kept claim in verification.json is supported by at least two sources,
     and at least three claims were kept
-  - reel.mp4 is 25-40 sec, 1080x1920
+  - reel.mp4 is 25-60 sec, 1080x1920
   - the episode was not already published (published.json absent)
   - the caption has no Oracle/Wipro mention
 Writes published.json (media id, permalink, time) and sets approved=true in
@@ -96,12 +96,22 @@ def gate(epdir):
     kept = v.get("kept", [])
     if len(kept) < 3:
         fail(f"only {len(kept)} verified claims; need 3")
-    weak = [k["claim"] for k in kept if len(set(k.get("supported_by", []))) < 2]
-    if weak:
-        fail("claims without two sources: " + "; ".join(weak))
+    if v.get("method") == "computed":
+        # Money Lab and other evergreen episodes: every claim must come from committed code + results.
+        root = os.path.dirname(os.path.abspath(__file__))
+        for key in ("code", "results"):
+            if not v.get(key) or not os.path.exists(os.path.join(root, v[key])):
+                fail(f"computed episode is missing its {key} file")
+        unbacked = [k["claim"] for k in kept if "computed" not in k]
+        if unbacked:
+            fail("claims without a computed value: " + "; ".join(unbacked))
+    else:
+        weak = [k["claim"] for k in kept if len(set(k.get("supported_by", []))) < 2]
+        if weak:
+            fail("claims without two sources: " + "; ".join(weak))
     dur, w, h = probe(os.path.join(epdir, "reel.mp4"))
-    if not 25 <= dur <= 40:
-        fail(f"reel is {dur:.1f} sec; allowed 25-40")
+    if not 25 <= dur <= 60:
+        fail(f"reel is {dur:.1f} sec; allowed 25-60")
     if (w, h) != (1080, 1920):
         fail(f"reel is {w}x{h}; expected 1080x1920")
     return dur

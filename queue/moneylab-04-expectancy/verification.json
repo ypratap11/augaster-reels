@@ -1,0 +1,26 @@
+{
+  "method": "computed",
+  "code": "moneylab/ep04_expectancy.py",
+  "results": "moneylab/ep04_results.json",
+  "kept": [
+    {
+      "claim": "Strategy A (80% wins, +$100/-$500) has expectancy -$20 per trade",
+      "computed": -20.0
+    },
+    {
+      "claim": "Strategy B (40% wins, +$300/-$100) has expectancy +$60 per trade",
+      "computed": 60.0
+    },
+    {
+      "claim": "Illustrative run: A ends at $6,000, B at $20,400 from $10,000 after 200 trades",
+      "computed": [
+        6000,
+        20400
+      ]
+    },
+    {
+      "claim": "In 20,000 simulated runs A finished below $10,000 88% of the time",
+      "computed": 0.87865
+    }
+  ]
+}

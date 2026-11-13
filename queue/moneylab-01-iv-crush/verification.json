@@ -1,0 +1,23 @@
+{
+  "method": "computed",
+  "code": "moneylab/episodes.py",
+  "results": "moneylab/01-iv-crush_results.json",
+  "kept": [
+    {
+      "claim": "A $105 call with 7 days left, stock $100, IV 80% is worth about $2.48 (Black-Scholes, r=4%)",
+      "computed": 2.48
+    },
+    {
+      "claim": "After earnings, stock $104, IV 30%, 6 days left, the same call is worth about $1.18",
+      "computed": 1.18
+    },
+    {
+      "claim": "That is a change of -52% despite the stock rising 4%",
+      "computed": -52
+    },
+    {
+      "claim": "After the IV drop the stock must reach about $106.5 to break even",
+      "computed": 106.5
+    }
+  ]
+}

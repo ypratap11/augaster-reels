@@ -1,0 +1,19 @@
+{
+  "method": "computed",
+  "code": "moneylab/episodes.py",
+  "results": "moneylab/06-fees_results.json",
+  "kept": [
+    {
+      "claim": "$100,000 at 7% minus a 0.1% fee for 30 years grows to $740,169",
+      "computed": 740169
+    },
+    {
+      "claim": "The same with a 1% fee grows to $574,349",
+      "computed": 574349
+    },
+    {
+      "claim": "The difference is $165,820, about 22% of the low-fee result",
+      "computed": 165820
+    }
+  ]
+}

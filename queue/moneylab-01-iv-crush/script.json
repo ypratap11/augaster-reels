@@ -1,0 +1,119 @@
+{
+  "episode": "MONEY LAB 01",
+  "series": "Augaster Money Lab",
+  "brand_tag": "MONEY LAB",
+  "story": "The stock went up. Why did your call lose money?",
+  "sources": [
+    {
+      "name": "Augaster calculation (moneylab/episodes.py)",
+      "url": "https://github.com/ypratap11/augaster-reels/blob/main/moneylab/episodes.py"
+    }
+  ],
+  "source_line": "Calculation code: github.com/ypratap11/augaster-reels",
+  "disclaimer": "Education only. Not financial advice.",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "MONEY LAB",
+      "title": "Stock up 4%. Your call down.",
+      "point": "Welcome to IV crush",
+      "narration": "The stock went up four percent. Your call option still lost money. Here is why."
+    },
+    {
+      "kind": "news",
+      "label": "THE SETUP",
+      "title": "Bought a $105 call for $2.48",
+      "point": "Stock $100, 7 days left, implied volatility 80%",
+      "narration": "Before earnings, the stock is at one hundred dollars. A one-oh-five call with a week left costs 2.48 dollars, because implied volatility is eighty percent."
+    },
+    {
+      "kind": "news",
+      "label": "AFTER EARNINGS",
+      "title": "Stock $104. Call $1.18.",
+      "point": "Implied volatility collapses from 80% to 30%",
+      "narration": "Earnings land. The stock rises to one oh four. But volatility collapses to thirty percent, and the call is now worth 1.18. Down 52 percent."
+    },
+    {
+      "kind": "analysis",
+      "label": "THE CHART",
+      "title": "Breakeven: stock at $106.50",
+      "point": "",
+      "chart": {
+        "unit": "$",
+        "x_label": "Stock price after earnings: $96 to $116",
+        "zero": true,
+        "series": [
+          {
+            "name": "Call value after",
+            "color": "accent",
+            "values": [
+              0.01,
+              0.03,
+              0.06,
+              0.11,
+              0.2,
+              0.33,
+              0.53,
+              0.81,
+              1.18,
+              1.65,
+              2.21,
+              2.87,
+              3.61,
+              4.42,
+              5.29,
+              6.2,
+              7.15,
+              8.11,
+              9.09,
+              10.08,
+              11.08
+            ]
+          },
+          {
+            "name": "What you paid",
+            "color": "bad",
+            "values": [
+              2.48,
+              2.48,
+              2.48,
+              2.48,
+              2.48,
+              2.48,
+              2.48,
+              2.48,
+              2.48,
+              2.48,
+              2.48,
+              2.48,
+              2.48,
+              2.48,
+              2.48,
+              2.48,
+              2.48,
+              2.48,
+              2.48,
+              2.48,
+              2.48
+            ]
+          }
+        ]
+      },
+      "narration": "After the crush, the stock needs to reach about 106.50 dollars just to get your money back."
+    },
+    {
+      "kind": "analysis",
+      "label": "THE LESSON",
+      "title": "You paid for the expected move",
+      "point": "High implied volatility = expensive options",
+      "narration": "Before earnings, option prices already include a big expected move. If the real move is smaller, you lose, even if you guessed the direction."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER MONEY LAB",
+      "title": "The math behind money",
+      "point": "augaster.com",
+      "narration": "Education only, not advice. Follow for more Money Lab."
+    }
+  ]
+}

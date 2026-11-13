@@ -1,0 +1,16 @@
+{
+  "duration_sec": 37.66,
+  "segments": 6,
+  "captions": 28,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/tmp/repos/augaster-reels/queue/moneylab-08-million/reel.mp4",
+  "voice": "kokoro:af_heart",
+  "sources": [
+    {
+      "name": "Augaster calculation (moneylab/episodes.py)",
+      "url": "https://github.com/ypratap11/augaster-reels/blob/main/moneylab/episodes.py"
+    }
+  ],
+  "approved": false
+}

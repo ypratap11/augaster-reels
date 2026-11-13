@@ -1,0 +1,116 @@
+1
+00:00:00,100 --> 00:00:01,405
+This strategy wins more
+
+2
+00:00:01,405 --> 00:00:02,459
+than it loses. Bet
+
+3
+00:00:02,459 --> 00:00:03,362
+too big, and it
+
+4
+00:00:03,362 --> 00:00:04,416
+can still cut your
+
+5
+00:00:04,416 --> 00:00:05,369
+account in half.
+
+6
+00:00:05,669 --> 00:00:07,322
+Both traders win fifty-five
+
+7
+00:00:07,322 --> 00:00:09,085
+percent of even-money trades.
+
+8
+00:00:09,085 --> 00:00:10,241
+Trader A risks two
+
+9
+00:00:10,241 --> 00:00:11,784
+percent per trade. Trader
+
+10
+00:00:11,784 --> 00:00:13,051
+B risks twenty-five.
+
+11
+00:00:13,351 --> 00:00:15,178
+After one hundred trades,
+
+12
+00:00:15,178 --> 00:00:16,743
+the typical A account
+
+13
+00:00:16,743 --> 00:00:18,309
+grows to about 12,000
+
+14
+00:00:18,309 --> 00:00:19,941
+dollars. The typical B
+
+15
+00:00:19,941 --> 00:00:21,702
+account shrinks to about
+
+16
+00:00:21,702 --> 00:00:22,289
+5,100.
+
+17
+00:00:22,589 --> 00:00:23,865
+In the simulations, B
+
+18
+00:00:23,865 --> 00:00:25,140
+lost half its account
+
+19
+00:00:25,140 --> 00:00:26,150
+at some point 80
+
+20
+00:00:26,150 --> 00:00:27,372
+percent of the time.
+
+21
+00:00:27,372 --> 00:00:28,541
+A almost never did.
+
+22
+00:00:28,841 --> 00:00:30,747
+Losing twenty-five percent needs
+
+23
+00:00:30,747 --> 00:00:32,380
+a thirty-three percent gain
+
+24
+00:00:32,380 --> 00:00:33,687
+to recover. Size bets
+
+25
+00:00:33,687 --> 00:00:34,831
+so a losing streak
+
+26
+00:00:34,831 --> 00:00:36,137
+cannot knock you out.
+
+27
+00:00:36,437 --> 00:00:38,221
+Education only, not advice.
+
+28
+00:00:38,221 --> 00:00:39,648
+Follow for more Money
+
+29
+00:00:39,648 --> 00:00:40,064
+Lab.
+
