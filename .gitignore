@@ -1,4 +1,5 @@
-voices/
-_work/
-_check/
 __pycache__/
+_check/
+_work/
+site/
+voices/
