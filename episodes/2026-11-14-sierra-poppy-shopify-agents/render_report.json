@@ -32,5 +32,6 @@
       "url": "https://sierra.ai/blog/poppy"
     }
   ],
-  "approved": false
+  "approved": true,
+  "approved_by": "auto-publish gate"
 }

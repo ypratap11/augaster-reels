@@ -5,6 +5,7 @@ slug: "sierra-poppy-shopify-agents"
 description: "Sierra released Personal Agent Protocol (Poppy) version 1.0 on November 13, 2026. Shopify has enabled Poppy for every merchant on its platform, and every Sho..."
 tags: ["AI", "Shopify", "Ecommerce", "SmallBusiness", "AIAgents", "Poppy"]
 series: "Augaster AI Digest"
+video: "https://www.instagram.com/reel/DfvHSk4AfLT/"
 ---
 **What happened.** Sierra released Personal Agent Protocol (Poppy) version 1.0 on November 13, 2026. Shopify has enabled Poppy for every merchant on its platform, and every Shopify store automatically publishes a Poppy file. Sierra notes that Shopify powers businesses in more than 175 countries. Poppy isn't new: it was first announced on October 6, 2026, with Meta, Genesys, Instinct, NiCE, Rocket, Shopify, Stripe and Walmart. A draft followed on October 9, 2026, along with 35 additional design partners. Version 1.0 adds 60 new design partners, bringing the total to more than 100. The new group includes Cisco, Delta Air Lines, Intuit, Twilio and Zoom.
 
