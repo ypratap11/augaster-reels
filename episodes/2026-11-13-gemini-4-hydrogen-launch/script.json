@@ -1,0 +1,64 @@
+{
+  "episode": "2026-11-13",
+  "series": "Augaster AI Digest",
+  "story": "Google launches Gemini 4 Hydrogen, a faster, cheaper everyday AI model, across Search, Sheets and the API",
+  "sources": [
+    {
+      "name": "Google blog (Keyword) – Introducing Gemini 4 Hydrogen",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+    },
+    {
+      "name": "Digital Trends",
+      "url": "https://www.digitaltrends.com/cool-tech/googles-next-gen-gemini-4-hydrogen-ai-model-is-here-touting-faster-intelligence-for-all/"
+    },
+    {
+      "name": "Notebookcheck",
+      "url": "https://www.notebookcheck.net/Gemini-4-Hydrogen-What-free-users-and-Google-AI-Plus-get.1449493.0.html"
+    }
+  ],
+  "source_line": "Sources: Google Keyword blog, Digital Trends, Notebookcheck",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "THIS WEEK IN AI",
+      "title": "Google's everyday AI got 2.5x faster",
+      "point": "vs Gemini 3.8 Flash",
+      "narration": "Google's new everyday AI is two and a half times faster than its last."
+    },
+    {
+      "kind": "news",
+      "label": "WHAT HAPPENED",
+      "title": "Gemini 4 Hydrogen launches",
+      "point": "November 12, 2026",
+      "narration": "Google launched Gemini four Hydrogen on November twelfth, replacing Gemini three point eight Flash as its everyday model."
+    },
+    {
+      "kind": "news",
+      "label": "HOW IT WORKS",
+      "title": "Four thinking levels, one flat API price",
+      "point": "$1.50 per million input tokens",
+      "narration": "It has four thinking levels. API input costs one dollar fifty per million tokens."
+    },
+    {
+      "kind": "analysis",
+      "label": "WHAT IT MEANS FOR YOU",
+      "title": "Faster, but 'cheaper' is unproven",
+      "point": "No price comparison to Flash",
+      "narration": "It may speed up Search and Sheets. The catch: Google hasn't said it's cheaper than Flash."
+    },
+    {
+      "kind": "analysis",
+      "label": "OUR TAKE",
+      "title": "Test it on one real task first",
+      "point": "",
+      "narration": "Our take: test it on one real task before switching."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER AI DIGEST",
+      "title": "Full breakdown + sources",
+      "point": "augaster.com",
+      "narration": "Full breakdown and sources on augaster dot com. Follow for weekly practical AI."
+    }
+  ]
+}
