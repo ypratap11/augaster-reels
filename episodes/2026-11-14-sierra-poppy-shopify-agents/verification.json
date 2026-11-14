@@ -1,0 +1,214 @@
+{
+  "title": "Sierra ships Poppy 1.0, an agent protocol switched on for every Shopify store",
+  "episode_number": 8,
+  "cta": "follow",
+  "sources": [
+    {
+      "index": 0,
+      "url": "https://sierra.ai/blog",
+      "name": "Sierra blog index (snapshot retrieved 2026-10-26; does not list the Nov 13 v1.0 post)",
+      "fetched": true,
+      "published": "",
+      "kind": "primary"
+    },
+    {
+      "index": 1,
+      "url": "https://aiweekly.co/alerts/sierra-ships-poppy-10-personal-agent-protocol-as-shopify-auto-enables-it-and",
+      "name": "AI Weekly alert",
+      "fetched": true,
+      "published": "November 14, 2026 at 04:56 UTC",
+      "kind": "roundup"
+    },
+    {
+      "index": 2,
+      "url": "https://sierra.ai/blog/releasing-poppy",
+      "name": "Sierra blog: Releasing Personal Agent Protocol 1.0",
+      "fetched": true,
+      "published": "November 13, 2026",
+      "kind": "primary"
+    },
+    {
+      "index": 3,
+      "url": "https://thenextweb.com/news/sierra-poppy-1-0-shopify-meta-muse-personal-agents",
+      "name": "The Next Web",
+      "fetched": true,
+      "published": "November 13, 2026 - 6:37 pm GMT",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 4,
+      "url": "https://sierra.ai/blog/introducing-personal-agent-protocol",
+      "name": "Sierra blog: Introducing Personal Agent Protocol",
+      "fetched": true,
+      "published": "October 6, 2026",
+      "kind": "primary"
+    },
+    {
+      "index": 5,
+      "url": "https://sierra.ai/blog/poppy",
+      "name": "Sierra blog: Sharing a draft of Personal Agent Protocol",
+      "fetched": true,
+      "published": "October 9, 2026",
+      "kind": "primary"
+    }
+  ],
+  "kept": [
+    {
+      "claim": "Sierra released Personal Agent Protocol (Poppy) v1.0 on November 13, 2026.",
+      "supported_by": [
+        1,
+        2,
+        3
+      ],
+      "evidence": "Sierra post dated November 13, 2026: 'v1.0 of the protocol is now available'. TNW (Nov 13, 2026) says Sierra released version 1.0, announced Thursday. AI Weekly: 'released ... 1.0 on November 13'."
+    },
+    {
+      "claim": "Shopify has enabled Poppy for every merchant/store on its platform; every Shopify store automatically publishes a Poppy file.",
+      "supported_by": [
+        1,
+        2,
+        3
+      ],
+      "evidence": "Sierra: 'Shopify has enabled Poppy for every merchant on its platform' and 'every Shopify store now automatically publishes a Poppy file'. TNW: Shopify has switched it on for every store. AI Weekly: every Shopify store auto-publishes a Poppy file."
+    },
+    {
+      "claim": "Shopify merchants need no extra implementation or setup for Poppy.",
+      "supported_by": [
+        1,
+        2,
+        3
+      ],
+      "evidence": "Sierra: 'merchants don't need to do any extra implementation'. TNW: 'Shopify stores need to do nothing'. AI Weekly: 'no merchant setup'."
+    },
+    {
+      "claim": "Shopify powers businesses in more than 175 countries (the figure is about Shopify's reach, per Sierra).",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Sierra: 'Shopify powers businesses in more than 175 countries'. AI Weekly: 'Every Shopify store in 175+ countries'."
+    },
+    {
+      "claim": "Meta's Muse agent looks for Poppy on every site it visits; Poppy is on for everyone who uses Muse.",
+      "supported_by": [
+        1,
+        2,
+        3
+      ],
+      "evidence": "Sierra: 'Poppy is now on for everyone who uses Muse ... automatically looks for Poppy first on every site it visits'. TNW: Muse 'now looks for Poppy first on every site it visits'. AI Weekly: Muse 'now searches for Poppy on every site it visits by default'."
+    },
+    {
+      "claim": "Muse looks for Poppy first (before other methods) on each site.",
+      "supported_by": [
+        2,
+        3
+      ],
+      "evidence": "Sierra and TNW both use the word 'first'. AI Weekly does not say 'first'."
+    },
+    {
+      "claim": "60 new companies joined as design partners, bringing the total to more than 100.",
+      "supported_by": [
+        1,
+        2,
+        3
+      ],
+      "evidence": "Sierra: '60 new companies are joining as design partners, bringing the total to more than 100'. TNW: '60 more companies have joined, taking the total to more than 100'. AI Weekly: '60 additional design partners ... past 100 companies'."
+    },
+    {
+      "claim": "The new design partners include Cisco, Delta Air Lines, Intuit, Twilio and Zoom.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Sierra's list includes Cisco, Delta Air Lines, Intuit, Twilio, Zoom. AI Weekly names Cisco, Delta, Intuit, Twilio and Zoom. TNW names Delta Air Lines, Intuit, Salesforce and Zoom."
+    },
+    {
+      "claim": "Mercury and Turkish Airlines are live with Poppy. Mercury agents can check balances and start payments, which still go through the account's approval rules. Turkish Airlines agents can check fares and find business-class upgrades, which customers approve before paying.",
+      "supported_by": [
+        2,
+        3
+      ],
+      "evidence": "Sierra 'Poppy in the wild' section; TNW: 'A few companies are already live. Banking firm Mercury ... Turkish Airlines ...'."
+    },
+    {
+      "claim": "Poppy defines how a personal agent discovers a company and interacts with it through its APIs, websites or company agents.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Sierra: 'enables personal agents to interact with companies through business agents, websites, and APIs'. AI Weekly: 'discovers a company and negotiates allowed actions through APIs, websites or company agents'."
+    },
+    {
+      "claim": "Poppy complements Shopify's Universal Commerce Protocol (UCP). UCP handles shopping (products, cart, checkout). Poppy handles the agent arriving, identifying itself and learning what it is allowed to do.",
+      "supported_by": [
+        2,
+        3
+      ],
+      "evidence": "Sierra: 'UCP handles the shopping itself ... Poppy handles what happens before that'. TNW: 'Shopify's existing shopping protocol handles carts and checkout'."
+    },
+    {
+      "claim": "Under the Poppy commerce extension, the agent must ask the customer before taking certain actions. Shopify co-authored the extension.",
+      "supported_by": [
+        2,
+        3
+      ],
+      "evidence": "Sierra: Shopify co-authored the commerce extension, and it 'makes the agent ask the customer before taking certain actions'. TNW: 'The agent must ask the shopper before taking certain actions.'"
+    },
+    {
+      "claim": "Customers sign in through OAuth and control what their personal agents can do.",
+      "supported_by": [
+        2,
+        3
+      ],
+      "evidence": "Sierra: 'With authentication through OAuth, customers control what personal agents can and can't do'. TNW: 'Customers sign in through standard logins and decide what their agent can access.'"
+    },
+    {
+      "claim": "Poppy was first announced on October 6, 2026, with Meta, Genesys, Instinct, NiCE, Rocket, Shopify, Stripe and Walmart. So the protocol is older than the v1.0 release.",
+      "supported_by": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "evidence": "Sierra post dated October 6, 2026 ('Introducing Personal Agent Protocol'). The blog index lists it with Meta, Genesys, Instinct, Rocket, Shopify, Stripe, Walmart. The v1.0 post says the protocol was first announced 'last month'. TNW says 'in October'."
+    },
+    {
+      "claim": "A draft of Poppy was published on October 9, 2026, along with 35 additional design partners.",
+      "supported_by": [
+        0,
+        5
+      ],
+      "evidence": "Blog index: 'Today we're publishing a draft of Personal Agent Protocol, known as Poppy, and announcing additional 35 design partners. October 9, 2026'. The Oct 9 post says the same."
+    }
+  ],
+  "dropped": [
+    {
+      "claim": "Mercury, Synchrony and Turkish Airlines are named as design partners going live with Poppy. Sierra describes Synchrony's work as 'will bring' and 'explores', so it is not yet fully live.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Sierra: 'Multiple design partners are now going live with Poppy, including Mercury, Synchrony, and Turkish Airlines'. TNW confirms only Mercury and Turkish Airlines as 'already live'."
+    },
+    {
+      "claim": "Sierra provides an implementation kit with a validator for companies adopting Poppy.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Sierra: 'Our implementation kit walks you through setup and includes a validator to check your work.' (single source)"
+    },
+    {
+      "claim": "TNW reports the specification is still labelled a draft and allows changes that could break existing setups, even though it is called version 1.0.",
+      "supported_by": [
+        3
+      ],
+      "evidence": "TNW: 'The rules are not final...'. Only TNW states this. The v1.0 spec page I fetched did not show a draft label, and the Sierra post does not mention it."
+    },
+    {
+      "claim": "Meta's Muse has been set up by more than 10 million people (per TNW).",
+      "supported_by": [
+        3
+      ],
+      "evidence": "TNW: 'Meta's Muse agent, which more than 10 million people have set up'. Single source, linked to an earlier TNW article."
+    }
+  ]
+}

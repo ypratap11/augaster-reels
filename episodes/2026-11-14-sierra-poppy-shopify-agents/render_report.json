@@ -1,0 +1,36 @@
+{
+  "duration_sec": 33.65,
+  "segments": 6,
+  "captions": 24,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/__w/augaster-reels/augaster-reels/episodes/2026-11-14-sierra-poppy-shopify-agents/reel.mp4",
+  "voice": "kokoro:af_heart",
+  "sources": [
+    {
+      "name": "Sierra blog index (snapshot retrieved 2026-10-26; does not list the Nov 13 v1.0 post)",
+      "url": "https://sierra.ai/blog"
+    },
+    {
+      "name": "AI Weekly alert",
+      "url": "https://aiweekly.co/alerts/sierra-ships-poppy-10-personal-agent-protocol-as-shopify-auto-enables-it-and"
+    },
+    {
+      "name": "Sierra blog: Releasing Personal Agent Protocol 1.0",
+      "url": "https://sierra.ai/blog/releasing-poppy"
+    },
+    {
+      "name": "The Next Web",
+      "url": "https://thenextweb.com/news/sierra-poppy-1-0-shopify-meta-muse-personal-agents"
+    },
+    {
+      "name": "Sierra blog: Introducing Personal Agent Protocol",
+      "url": "https://sierra.ai/blog/introducing-personal-agent-protocol"
+    },
+    {
+      "name": "Sierra blog: Sharing a draft of Personal Agent Protocol",
+      "url": "https://sierra.ai/blog/poppy"
+    }
+  ],
+  "approved": false
+}

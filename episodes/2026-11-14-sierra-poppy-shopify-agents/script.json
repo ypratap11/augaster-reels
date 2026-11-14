@@ -1,0 +1,76 @@
+{
+  "episode": "2026-11-14",
+  "series": "Augaster AI Digest",
+  "story": "Sierra ships Poppy 1.0, an agent protocol switched on for every Shopify store",
+  "sources": [
+    {
+      "name": "Sierra blog index (snapshot retrieved 2026-10-26; does not list the Nov 13 v1.0 post)",
+      "url": "https://sierra.ai/blog"
+    },
+    {
+      "name": "AI Weekly alert",
+      "url": "https://aiweekly.co/alerts/sierra-ships-poppy-10-personal-agent-protocol-as-shopify-auto-enables-it-and"
+    },
+    {
+      "name": "Sierra blog: Releasing Personal Agent Protocol 1.0",
+      "url": "https://sierra.ai/blog/releasing-poppy"
+    },
+    {
+      "name": "The Next Web",
+      "url": "https://thenextweb.com/news/sierra-poppy-1-0-shopify-meta-muse-personal-agents"
+    },
+    {
+      "name": "Sierra blog: Introducing Personal Agent Protocol",
+      "url": "https://sierra.ai/blog/introducing-personal-agent-protocol"
+    },
+    {
+      "name": "Sierra blog: Sharing a draft of Personal Agent Protocol",
+      "url": "https://sierra.ai/blog/poppy"
+    }
+  ],
+  "source_line": "Sources: AI Weekly, Sierra, The Next Web",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "THIS WEEK IN AI",
+      "title": "Every Shopify store now greets AI agents",
+      "point": "Zero setup required",
+      "narration": "Every Shopify store now greets AI agents, with zero setup."
+    },
+    {
+      "kind": "news",
+      "label": "WHAT HAPPENED",
+      "title": "Poppy 1.0 is out, and Shopify flipped it on",
+      "point": "Released November 13, 2026",
+      "narration": "Sierra released Poppy one point zero on November thirteenth. Shopify switched it on for every store."
+    },
+    {
+      "kind": "news",
+      "label": "HOW IT WORKS",
+      "title": "Poppy tells agents how to find a company",
+      "point": "Meta's Muse checks for it first",
+      "narration": "Poppy tells a personal agent how to find a company. Meta's Muse checks for it first on every site."
+    },
+    {
+      "kind": "analysis",
+      "label": "WHAT IT MEANS FOR YOU",
+      "title": "No setup, but agents must ask customers",
+      "point": "Approval needed for certain actions",
+      "narration": "Shopify merchants need no setup. The catch: agents must ask customers before certain actions."
+    },
+    {
+      "kind": "analysis",
+      "label": "OUR TAKE",
+      "title": "Check how agents see your store",
+      "point": "Watch customer approvals",
+      "narration": "Our take: check how your store appears to agents, and watch customer approvals."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER AI DIGEST",
+      "title": "Full breakdown + sources",
+      "point": "augaster.com",
+      "narration": "Full breakdown and sources on augaster dot com. Follow for weekly practical AI."
+    }
+  ]
+}

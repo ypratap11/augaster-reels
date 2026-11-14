@@ -1,0 +1,96 @@
+1
+00:00:00,100 --> 00:00:01,730
+Every Shopify store now
+
+2
+00:00:01,730 --> 00:00:03,297
+greets AI agents, with
+
+3
+00:00:03,297 --> 00:00:04,175
+zero setup.
+
+4
+00:00:04,475 --> 00:00:06,047
+Sierra released Poppy one
+
+5
+00:00:06,047 --> 00:00:07,452
+point zero on November
+
+6
+00:00:07,452 --> 00:00:09,362
+thirteenth. Shopify switched it
+
+7
+00:00:09,362 --> 00:00:10,597
+on for every store.
+
+8
+00:00:10,897 --> 00:00:12,287
+Poppy tells a personal
+
+9
+00:00:12,287 --> 00:00:13,399
+agent how to find
+
+10
+00:00:13,399 --> 00:00:14,788
+a company. Meta's Muse
+
+11
+00:00:14,788 --> 00:00:16,011
+checks for it first
+
+12
+00:00:16,011 --> 00:00:16,956
+on every site.
+
+13
+00:00:17,256 --> 00:00:18,902
+Shopify merchants need no
+
+14
+00:00:18,902 --> 00:00:20,488
+setup. The catch: agents
+
+15
+00:00:20,488 --> 00:00:22,134
+must ask customers before
+
+16
+00:00:22,134 --> 00:00:23,251
+certain actions.
+
+17
+00:00:23,551 --> 00:00:24,633
+Our take: check how
+
+18
+00:00:24,633 --> 00:00:25,814
+your store appears to
+
+19
+00:00:25,814 --> 00:00:27,242
+agents, and watch customer
+
+20
+00:00:27,242 --> 00:00:27,881
+approvals.
+
+21
+00:00:28,181 --> 00:00:29,918
+Full breakdown and sources
+
+22
+00:00:29,918 --> 00:00:31,295
+on augaster dot com.
+
+23
+00:00:31,295 --> 00:00:33,091
+Follow for weekly practical
+
+24
+00:00:33,091 --> 00:00:33,451
+AI.
+
