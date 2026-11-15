@@ -1,0 +1,120 @@
+{
+  "title": "llama.cpp reaches v1.0.0, a stable base for running AI models locally",
+  "episode_number": 9,
+  "cta": "service",
+  "sources": [
+    {
+      "index": 0,
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "name": "Hugging Face blog (ggml-org team article)",
+      "fetched": true,
+      "published": "November 13, 2026",
+      "kind": "primary"
+    },
+    {
+      "index": 1,
+      "url": "https://riorundown.substack.com/p/ai-news-nov-14-2026-local-ai-ecosystem",
+      "name": "RIO Rundown (Substack) daily AI news roundup",
+      "fetched": true,
+      "published": "Nov 14, 2026",
+      "kind": "roundup"
+    }
+  ],
+  "kept": [
+    {
+      "claim": "From now on, both llama.cpp and ggml will signal API and ABI incompatibilities with major-version bumps.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "Source 0: 'both llama.cpp and ggml will reflect API and ABI incompatibilities with major-version bumps'. Source 1: major-version bumps will now reflect API and ABI incompatibilities, to ensure stability for downstream consumers."
+    },
+    {
+      "claim": "llama.cpp runs multi-modal LLMs across a wide range of hardware, from consumer machines to enterprise servers, using quantization, optimized backends and a portable C/C++ implementation.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "Source 0 intro, which says the same thing in these terms. Source 1 Spotlight: 'Through quantization and optimized backends, the C/C++ implementation enables multi-modal LLM inference across hardware'."
+    },
+    {
+      "claim": "Hardware support from NVIDIA, AMD, Qualcomm, Arm, IBM and Intel is used to add self-hosted CI runners across major hardware platforms. The roundup words this more loosely, as 'hardware support'.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "Source 0: 'With hardware support from NVIDIA, AMD, Qualcomm, Arm, IBM and Intel, we continue to enroll more self-hosted runners'. Source 1 key point: 'Hardware support includes NVIDIA, AMD, Qualcomm, Arm, IBM, and Intel.'"
+    },
+    {
+      "claim": "CI infrastructure is being expanded to check correctness of every change that lands on the master branches. The post credits Hugging Face's HF Buckets and HF Jobs for the scaling.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "Source 0: HF Buckets and HF Jobs let them 'guarantee correctness for every change that lands on the master branches'. Source 1: CI improvements ensure correctness for changes on master branches. Only source 0 names HF Buckets and HF Jobs."
+    }
+  ],
+  "dropped": [
+    {
+      "claim": "The ggml-org team announced llama.cpp v1.0.0 on November 13, 2026, one day before the RIO Rundown roundup of Nov 14, 2026.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "The Hugging Face post is marked 'Published November 13, 2026' and says 'Today we release libraries v1.0.0'. The roundup is dated Nov 14, 2026 and only repeats the news."
+    },
+    {
+      "claim": "The v1.0.0 releases cover two libraries: llama.cpp (libllama) and ggml (libggml).",
+      "supported_by": [
+        0
+      ],
+      "evidence": "The blog's Releases table lists 'llama.cpp v1.0.0' (libllama) and 'ggml v1.0.0' (libggml). The roundup mentions only llama.cpp."
+    },
+    {
+      "claim": "The roundup says v1.0.0 'provides a stable API and ABI for downstream consumers'. The primary post does not say this outright. It commits to marking breaking changes with major-version bumps and says a stable API is paramount.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Source 1 key point: 'llama.cpp v1.0.0 provides a stable API and ABI for downstream consumers.' Source 0 only describes the versioning policy going forward."
+    },
+    {
+      "claim": "Semantic versioning rules for all ggml-org projects: MAJOR = breaking change to the public C API in ./include; MINOR = backward-compatible feature, backend updates, model support, or API addition; PATCH = bug fix with no API change.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Source 0 'Semantic version update rules' table."
+    },
+    {
+      "claim": "The project is about 3.5 years old and many downstream applications already depend on it.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Source 0: 'During the 3.5 years since its inception... many downstream applications already depend on our work'."
+    },
+    {
+      "claim": "llama.cpp currently supports more than 150 architecture variants, plus all mainstream speculative decoding methods.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Source 0: 'supports more than 150 architecture variants as well as all mainstream speculative decoding methods'."
+    },
+    {
+      "claim": "Distribution channels listed: pre-release artifacts (Linux, macOS, Windows, Android, iOS), Docker (Linux), Debian (Linux), Homebrew (macOS, Linux), conda-forge (Windows, macOS, Linux), MacPorts (macOS), Winget (Windows), XCFramework (iOS, macOS).",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Source 0 'Distribution' table."
+    },
+    {
+      "claim": "The post points readers to Llama desktop apps for MacOS and Windows, shipped by the team behind llama.cpp and Hugging Face.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Source 0 'Additional resources' section."
+    },
+    {
+      "claim": "Verification gap: no second independent original report was read. The GitHub release pages for llama.cpp and ggml v1.0.0 returned only page metadata in my fetch, and the follow-up fetch and web search were blocked by the tool-use limit. Every claim above therefore rests on the primary post plus, at most, a roundup that summarizes it. Claims supported only by source 0 are unconfirmed by a second source.",
+      "supported_by": [],
+      "evidence": "The roundup's llama.cpp item links directly to source 0 as its 'Read More' and adds no independent reporting."
+    }
+  ]
+}

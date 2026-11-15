@@ -1,0 +1,60 @@
+{
+  "episode": "2026-11-15",
+  "series": "Augaster AI Digest",
+  "story": "llama.cpp reaches v1.0.0, a stable base for running AI models locally",
+  "sources": [
+    {
+      "name": "Hugging Face blog (ggml-org team article)",
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+    },
+    {
+      "name": "RIO Rundown (Substack) daily AI news roundup",
+      "url": "https://riorundown.substack.com/p/ai-news-nov-14-2026-local-ai-ecosystem"
+    }
+  ],
+  "source_line": "Sources: Hugging Face blog, RIO Rundown",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "THIS WEEK IN AI",
+      "title": "Local AI just got more dependable",
+      "point": "llama.cpp hits v1.0.0",
+      "narration": "Local AI just got more dependable. Llama C P P hits version one."
+    },
+    {
+      "kind": "news",
+      "label": "WHAT HAPPENED",
+      "title": "llama.cpp reaches version 1.0.0",
+      "point": "Run AI models locally",
+      "narration": "Llama C P P, the tool for running AI models locally, reached version one."
+    },
+    {
+      "kind": "news",
+      "label": "HOW IT WORKS",
+      "title": "Wide hardware reach, clearer change signals",
+      "point": "Breaking changes = major version bump",
+      "narration": "It runs on hardware from consumer machines to enterprise servers. Breaking changes now mean a major version bump."
+    },
+    {
+      "kind": "analysis",
+      "label": "WHAT IT MEANS FOR YOU",
+      "title": "Fewer surprise breakages",
+      "point": "Catch: you still need hardware",
+      "narration": "Fewer surprise breakages. The catch: you still need suitable hardware."
+    },
+    {
+      "kind": "analysis",
+      "label": "OUR TAKE",
+      "title": "Now is a sensible time to test",
+      "point": "Try it for private, in-house AI",
+      "narration": "Our take: for private in-house AI, now is a sensible time to test it."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER TECHNOLOGIES",
+      "title": "Want this set up for your business?",
+      "point": "augaster.com",
+      "narration": "Full breakdown and sources on augaster dot com. Want this set up for your business? Link in bio."
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+1
+00:00:00,100 --> 00:00:01,362
+Local AI just got
+
+2
+00:00:01,362 --> 00:00:03,067
+more dependable. Llama C
+
+3
+00:00:03,067 --> 00:00:04,266
+P P hits version
+
+4
+00:00:04,266 --> 00:00:04,708
+one.
+
+5
+00:00:05,008 --> 00:00:05,898
+Llama C P P,
+
+6
+00:00:05,898 --> 00:00:07,262
+the tool for running
+
+7
+00:00:07,262 --> 00:00:08,982
+AI models locally, reached
+
+8
+00:00:08,982 --> 00:00:09,872
+version one.
+
+9
+00:00:10,172 --> 00:00:11,425
+It runs on hardware
+
+10
+00:00:11,425 --> 00:00:13,019
+from consumer machines to
+
+11
+00:00:13,019 --> 00:00:15,240
+enterprise servers. Breaking changes
+
+12
+00:00:15,240 --> 00:00:16,322
+now mean a major
+
+13
+00:00:16,322 --> 00:00:17,233
+version bump.
+
+14
+00:00:17,533 --> 00:00:19,227
+Fewer surprise breakages. The
+
+15
+00:00:19,227 --> 00:00:20,497
+catch: you still need
+
+16
+00:00:20,497 --> 00:00:21,608
+suitable hardware.
+
+17
+00:00:21,908 --> 00:00:23,214
+Our take: for private
+
+18
+00:00:23,214 --> 00:00:24,412
+in-house AI, now is
+
+19
+00:00:24,412 --> 00:00:25,555
+a sensible time to
+
+20
+00:00:25,555 --> 00:00:26,153
+test it.
+
+21
+00:00:26,453 --> 00:00:28,038
+Full breakdown and sources
+
+22
+00:00:28,038 --> 00:00:29,294
+on augaster dot com.
+
+23
+00:00:29,294 --> 00:00:30,332
+Want this set up
+
+24
+00:00:30,332 --> 00:00:31,752
+for your business? Link
+
+25
+00:00:31,752 --> 00:00:32,299
+in bio.
+
