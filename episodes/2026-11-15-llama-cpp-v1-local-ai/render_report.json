@@ -16,5 +16,6 @@
       "url": "https://riorundown.substack.com/p/ai-news-nov-14-2026-local-ai-ecosystem"
     }
   ],
-  "approved": false
+  "approved": true,
+  "approved_by": "auto-publish gate"
 }

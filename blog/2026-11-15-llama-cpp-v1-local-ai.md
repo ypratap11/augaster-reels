@@ -5,6 +5,7 @@ slug: "llama-cpp-v1-local-ai"
 description: "llama.cpp has reached version 1.0.0. From now on, both llama.cpp and ggml will signal API and ABI incompatibilities with major-version bumps, which gives any..."
 tags: ["AI", "LocalAI", "llamacpp", "OpenModels", "SmallBusiness", "AITools"]
 series: "Augaster AI Digest"
+video: "https://www.instagram.com/reel/DfxuDRUmn7a/"
 ---
 **What happened.** llama.cpp has reached version 1.0.0. From now on, both llama.cpp and ggml will signal API and ABI incompatibilities with major-version bumps, which gives anyone building on them a clearer signal about when changes may break their setup.
 
