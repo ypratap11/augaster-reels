@@ -19,10 +19,11 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 W, H, FPS = 1080, 1920, 30
 LENGTH_SCALE = 0.95  # <1 speaks faster
+# Augaster brand kit (augaster-brand-kit.html): night, gold, amber, starlight, slate.
 BRAND = {
-    "bg_top": (8, 14, 30), "bg_bottom": (18, 30, 58),
-    "accent": (245, 166, 35), "accent2": (56, 189, 248),
-    "text": (245, 247, 250), "muted": (160, 172, 194),
+    "bg_top": (13, 16, 48), "bg_bottom": (20, 25, 56),
+    "accent": (227, 178, 92), "accent2": (226, 136, 90),
+    "text": (242, 238, 227), "muted": (154, 160, 200),
     "card": (255, 255, 255, 18),
 }
 FONT_DIR = "/usr/share/fonts/opentype/inter"
@@ -100,6 +101,20 @@ def make_background():
         c = tuple(int(BRAND["bg_top"][i] * (1 - f) + BRAND["bg_bottom"][i] * f) for i in range(3))
         d.line([(0, y), (W, y)], fill=c)
     return bg
+
+def star_points(cx, cy, size):
+    """Polygon for the four-point star in augaster-mark.svg (52 viewBox units wide), centred at cx, cy."""
+    k = size / 52
+    segs = [((40, 8), (41.6, 31.4), (66, 34)), ((66, 34), (41.6, 36.6), (40, 60)),
+            ((40, 60), (38.4, 36.6), (14, 34)), ((14, 34), (38.4, 31.4), (40, 8))]
+    pts = []
+    for p0, p1, p2 in segs:
+        for i in range(25):
+            t = i / 24
+            x = (1 - t) ** 2 * p0[0] + 2 * (1 - t) * t * p1[0] + t * t * p2[0]
+            y = (1 - t) ** 2 * p0[1] + 2 * (1 - t) * t * p1[1] + t * t * p2[1]
+            pts.append((cx + (x - 40) * k, cy + (y - 34) * k))
+    return pts
 
 def glow(radius, color, alpha):
     size = radius * 4  # extra margin so the blur fades to zero instead of clipping
@@ -214,10 +229,10 @@ def draw_frame(base, glows, seg, local_t, global_t, total, cue, script):
     d = ImageDraw.Draw(img)
     M = 80
 
-    # header
-    d.rounded_rectangle([M, 110, M + 22, 132], radius=4, fill=BRAND["accent"])
-    d.text((M + 40, 100), "AUGASTER", font=F_BRAND, fill=BRAND["text"])
-    d.text((M + 40 + d.textlength("AUGASTER ", font=F_BRAND), 100), script.get("brand_tag", "AI DIGEST"), font=F_BRAND, fill=BRAND["accent"])
+    # header: brand dawn-star mark + name
+    d.polygon(star_points(M + 26, 124, 52), fill=BRAND["accent"])
+    d.text((M + 70, 100), "AUGASTER", font=F_BRAND, fill=BRAND["text"])
+    d.text((M + 70 + d.textlength("AUGASTER ", font=F_BRAND), 100), script.get("brand_tag", "AI DIGEST"), font=F_BRAND, fill=BRAND["accent"])
     d.text((W - M - d.textlength(script["episode"], font=F_SMALL), 108), script["episode"], font=F_SMALL, fill=BRAND["muted"])
 
     a_in = ease(local_t / 0.45)
@@ -313,7 +328,7 @@ def main():
             f.write(f"{i}\n{srt_time(c['start'])} --> {srt_time(c['end'])}\n{c['text']}\n\n")
 
     base = make_background()
-    glows = (glow(420, BRAND["accent2"], 55), glow(380, BRAND["accent"], 45))
+    glows = (glow(420, BRAND["muted"], 40), glow(380, BRAND["accent"], 40))
     silent = os.path.join(work, "video.mp4")
     enc = subprocess.Popen(["ffmpeg", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
                             "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
