@@ -1,0 +1,11 @@
+{
+  "duration_sec": 29.43,
+  "segments": 6,
+  "captions": 26,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/w/samples/crumb-and-kettle/reel.mp4",
+  "voice": "en-us-lessac-medium.onnx",
+  "sources": [],
+  "approved": false
+}
