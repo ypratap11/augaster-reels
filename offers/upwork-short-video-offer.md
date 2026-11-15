@@ -10,7 +10,7 @@ Every video is:
 • Scripted for a 30–35 second watch, with a strong first 3 seconds
 • Narrated (natural AI voice, or your own recording)
 • Captioned word-by-word for silent viewing
-• In your brand colors, fonts and logo
+• In your brand colors, with your logo
 • Fact-checked against the sources you give us
 • Delivered as 1080×1920 MP4 plus caption text and hashtags
 
@@ -38,8 +38,19 @@ Good fit for: local service businesses, consultants, coaches, real estate agents
 **What I need from you:** links or text for each topic (blog post, product update, tip), your logo, brand colors, and website/CTA.
 
 ## Sample-portfolio items
-1. Augaster AI Digest: "Perplexity's AI teammates" (32-sec narrated news reel)
-2. Add 2–3 more Digest reels as they're published
+1. Augaster AI Digest: "Apple Intelligence Usage Packs" (34-sec narrated news reel, Augaster brand)
+2. Client-brand demo: "Crumb & Kettle" holiday pie pre-orders (fictional bakery, its own colors + logo). `samples/crumb-and-kettle/`. It shows a buyer that the output is in *their* brand, not ours. Label it as a demo.
+3. Add 2–3 more Digest reels as they're published
+
+## Making a client's reels
+1. Create `clients/<name>/brand.json` (see `samples/crumb-and-kettle/brand.json`): name, tagline, colors, logo path, CTA footer.
+2. Write `script.json` in the episode schema (six segments, ~80 words of narration; spell out numbers in `narration`).
+3. `python3 render_reel.py clients/<name>/<video>/script.json --voice voices/en-us-lessac-medium.onnx --brand clients/<name>/brand.json`
+4. Send the script for approval *before* rendering; send the MP4 + caption text after.
+
+## Fastest path to a first paid order
+- Offer one free 30-sec test video in proposals (already in the template). Render it in their brand from their own website or Google Business posts. A buyer seeing their own logo moving is the strongest close.
+- Target job posts for "Reels", "YouTube Shorts", "TikTok videos for my business", "faceless video". Skip any Oracle or Wipro-client work.
 
 ## Proposal template (for job posts)
 Hi [Name],

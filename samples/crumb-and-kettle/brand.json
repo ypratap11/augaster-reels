@@ -1,0 +1,14 @@
+{
+  "name": "CRUMB & KETTLE",
+  "tagline": "",
+  "cta_footer": "Demo · fictional bakery · made by Augaster",
+  "logo": "logo.png",
+  "colors": {
+    "bg_top": "#2B1A12",
+    "bg_bottom": "#3E2619",
+    "accent": "#F2B544",
+    "accent2": "#E8846B",
+    "text": "#FFF6EA",
+    "muted": "#D9C3A9"
+  }
+}

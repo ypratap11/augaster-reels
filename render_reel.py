@@ -26,6 +26,30 @@ BRAND = {
     "text": (242, 238, 227), "muted": (154, 160, 200),
     "card": (255, 255, 255, 18),
 }
+# Header text, CTA footer and optional logo; overridden per client with --brand.
+IDENTITY = {"name": "AUGASTER", "tagline": "AI DIGEST", "cta_footer": None, "logo": None}
+
+def hex_rgb(h):
+    h = h.lstrip("#")
+    return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))
+
+def load_brand(path):
+    """Apply a client brand.json: {"name", "tagline", "cta_footer", "logo", "colors": {key: "#hex"}}.
+
+    colors keys: bg_top, bg_bottom, accent, accent2, text, muted (any subset).
+    logo: image path relative to brand.json, drawn in the header instead of the star.
+    """
+    b = json.load(open(path, encoding="utf-8"))
+    for k, v in b.get("colors", {}).items():
+        if k not in BRAND or k == "card":
+            raise SystemExit(f"brand.json: unknown color '{k}'")
+        BRAND[k] = hex_rgb(v)
+    for k in ("name", "tagline", "cta_footer"):
+        if k in b: IDENTITY[k] = b[k]
+    if b.get("logo"):
+        logo = Image.open(os.path.join(os.path.dirname(os.path.abspath(path)), b["logo"])).convert("RGBA")
+        logo.thumbnail((400, 64), Image.LANCZOS)
+        IDENTITY["logo"] = logo
 FONT_DIR = "/usr/share/fonts/opentype/inter"
 def font(weight, size):
     return ImageFont.truetype(os.path.join(FONT_DIR, f"Inter-{weight}.otf"), size)
@@ -229,10 +253,20 @@ def draw_frame(base, glows, seg, local_t, global_t, total, cue, script):
     d = ImageDraw.Draw(img)
     M = 80
 
-    # header: brand dawn-star mark + name
-    d.polygon(star_points(M + 26, 124, 52), fill=BRAND["accent"])
-    d.text((M + 70, 100), "AUGASTER", font=F_BRAND, fill=BRAND["text"])
-    d.text((M + 70 + d.textlength("AUGASTER ", font=F_BRAND), 100), script.get("brand_tag", "AI DIGEST"), font=F_BRAND, fill=BRAND["accent"])
+    # header: brand mark (client logo, or the Augaster dawn-star) + name + tag
+    if IDENTITY["logo"]:
+        lg = IDENTITY["logo"]
+        img.alpha_composite(lg, (M, 124 - lg.height // 2))
+        x = M + lg.width + 18
+    else:
+        d.polygon(star_points(M + 26, 124, 52), fill=BRAND["accent"])
+        x = M + 70
+    if IDENTITY["name"]:
+        d.text((x, 100), IDENTITY["name"], font=F_BRAND, fill=BRAND["text"])
+        x += d.textlength(IDENTITY["name"] + " ", font=F_BRAND)
+    tag = script.get("brand_tag", IDENTITY["tagline"])  # per-episode tag (e.g. Money Lab) wins
+    if tag:
+        d.text((x, 100), tag, font=F_BRAND, fill=BRAND["accent"])
     d.text((W - M - d.textlength(script["episode"], font=F_SMALL), 108), script["episode"], font=F_SMALL, fill=BRAND["muted"])
 
     a_in = ease(local_t / 0.45)
@@ -248,11 +282,16 @@ def draw_frame(base, glows, seg, local_t, global_t, total, cue, script):
             ld.text((M, y), line, font=F_TITLE, fill=BRAND["text"] + (alpha,)); y += 108
         y += 50
         url = seg["point"]
-        tw = ld.textlength(url, font=F_CTA_URL)
+        f_url = F_CTA_URL
+        tw = ld.textlength(url, font=f_url)
+        if tw + 80 > W - 2 * M:  # longer CTAs (client sites, "link in bio") shrink to fit
+            f_url = font("Black", int(110 * (W - 2 * M - 80) / tw))
+            tw = ld.textlength(url, font=f_url)
         box = [M, y, M + tw + 80, y + 170]
         ld.rounded_rectangle(box, radius=28, fill=BRAND["accent"] + (alpha,))
-        ld.text((M + 40, y + 22), url, font=F_CTA_URL, fill=BRAND["bg_top"] + (alpha,))
-        footer = "Link in bio · Follow for weekly practical AI" if "Follow" in seg["narration"] else "Link in bio"
+        _, t_, _, b_ = ld.textbbox((0, 0), url, font=f_url)
+        ld.text((M + 40, y + (170 - (b_ - t_)) / 2 - t_), url, font=f_url, fill=BRAND["bg_top"] + (alpha,))
+        footer = IDENTITY["cta_footer"] or ("Link in bio · Follow for weekly practical AI" if "Follow" in seg["narration"] else "Link in bio")
         ld.text((M, y + 220), footer, font=F_POINT, fill=BRAND["muted"] + (alpha,))
     else:
         # label chip
@@ -306,9 +345,12 @@ def main():
     ap.add_argument("--voice", help="Piper .onnx voice model")
     ap.add_argument("--voiceover", help="your own narration .wav/.m4a for the whole reel")
     ap.add_argument("--out", default=None)
+    ap.add_argument("--brand", help="client brand.json (colors, name, logo); default is Augaster")
     args = ap.parse_args()
     if not (args.voice or args.voiceover):
         raise SystemExit("pass --voice or --voiceover")
+    if args.brand:
+        load_brand(args.brand)
 
     script = json.load(open(args.script))
     epdir = os.path.dirname(os.path.abspath(args.script))

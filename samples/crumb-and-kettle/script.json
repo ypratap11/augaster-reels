@@ -1,0 +1,51 @@
+{
+  "episode": "DEMO",
+  "series": "Client sample (fictional business)",
+  "story": "Holiday pie pre-orders for a neighborhood bakery",
+  "sources": [],
+  "source_line": "Sample reel for a fictional bakery",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "HOLIDAY PIES",
+      "title": "Our pies sold out by noon last year",
+      "point": "This year, skip the line",
+      "narration": "Last year our holiday pies sold out by noon. This year, you can skip the line."
+    },
+    {
+      "kind": "news",
+      "label": "WHAT'S NEW",
+      "title": "Pre-orders are open now",
+      "point": "Apple, pecan and pumpkin",
+      "narration": "Pre-orders are open now for apple, pecan and pumpkin, baked fresh the morning you pick up."
+    },
+    {
+      "kind": "news",
+      "label": "HOW IT WORKS",
+      "title": "Order online, pick up warm",
+      "point": "Choose your pickup time",
+      "narration": "Order online, choose a pickup time, and walk past the line to grab your pie still warm."
+    },
+    {
+      "kind": "analysis",
+      "label": "WHY PRE-ORDER",
+      "title": "Batches are small on purpose",
+      "point": "Every pie made by hand",
+      "narration": "Every pie is made by hand, so batches are small. Once a day is full, it's full."
+    },
+    {
+      "kind": "analysis",
+      "label": "BAKER'S TIP",
+      "title": "Warm it ten minutes at 350°",
+      "point": "Tastes like it just came out",
+      "narration": "Baker's tip: warm it for ten minutes at three fifty. It tastes like it just came out."
+    },
+    {
+      "kind": "cta",
+      "label": "CRUMB & KETTLE",
+      "title": "Reserve your pie today",
+      "point": "Order: link in bio",
+      "narration": "Reserve your pie today. The order link is in our bio."
+    }
+  ]
+}
