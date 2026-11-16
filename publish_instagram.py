@@ -74,7 +74,23 @@ def caption_from(posts_md, link_in_bio):
     cap = m.group(1).strip()
     if not link_in_bio:
         cap = cap.replace(" (link in bio)", "").replace("Link in bio.", "Visit augaster.com.")
-    return cap
+    return with_ai_voice_note(cap)
+
+
+AI_VOICE_NOTE = "🎙️ Narrated with an AI voice."
+
+
+def with_ai_voice_note(caption):
+    """Disclose the AI narration on every reel (Digest and Money Lab alike), just above the hashtags."""
+    caption = caption.strip()
+    if AI_VOICE_NOTE in caption:
+        return caption
+    lines = caption.split("\n")
+    i = len(lines)
+    while i > 0 and (lines[i - 1].lstrip().startswith("#") or not lines[i - 1].strip()):
+        i -= 1
+    body, tags = "\n".join(lines[:i]).rstrip(), "\n".join(lines[i:]).strip()
+    return f"{body}\n\n{AI_VOICE_NOTE}" + (f"\n\n{tags}" if tags else "")
 
 
 def probe(path):
