@@ -5,6 +5,7 @@ slug: "chatgpt-wallet-agent-payments"
 description: "OpenAI began rolling out ChatGPT Wallet on Friday, November 13, 2026. The wallet lets OpenAI's dots agents, which are its AI agents, complete purchases on a ..."
 tags: ["ChatGPT", "OpenAI", "AIAgents", "SmallBusiness", "Ecommerce", "AIForBusiness"]
 series: "Augaster AI Digest"
+video: "https://www.instagram.com/reel/Df0Ck2SAVT4/"
 ---
 **What happened.** OpenAI began rolling out ChatGPT Wallet on Friday, November 13, 2026. The wallet lets OpenAI's dots agents, which are its AI agents, complete purchases on a user's behalf. OpenAI describes it as the first wallet that lets agents pay without access to actual card details and requires a security check for every purchase. That "first" is OpenAI's own claim and is not independently verified.
 
