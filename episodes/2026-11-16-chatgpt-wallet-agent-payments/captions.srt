@@ -1,0 +1,92 @@
+1
+00:00:00,100 --> 00:00:01,404
+ChatGPT can now shop
+
+2
+00:00:01,404 --> 00:00:02,708
+for you without ever
+
+3
+00:00:02,708 --> 00:00:04,239
+seeing your card number.
+
+4
+00:00:04,539 --> 00:00:06,311
+OpenAI began rolling out
+
+5
+00:00:06,311 --> 00:00:08,214
+ChatGPT Wallet on November
+
+6
+00:00:08,214 --> 00:00:10,182
+thirteenth. Its dots agents
+
+7
+00:00:10,182 --> 00:00:11,429
+can buy for you.
+
+8
+00:00:11,729 --> 00:00:13,294
+You approve items, total
+
+9
+00:00:13,294 --> 00:00:14,511
+and card with Face
+
+10
+00:00:14,511 --> 00:00:15,844
+ID or a fingerprint.
+
+11
+00:00:15,844 --> 00:00:17,235
+A payment token hides
+
+12
+00:00:17,235 --> 00:00:18,279
+your real card.
+
+13
+00:00:18,579 --> 00:00:20,109
+The catch: it starts
+
+14
+00:00:20,109 --> 00:00:21,573
+with US ChatGPT Pro
+
+15
+00:00:21,573 --> 00:00:23,835
+subscribers, and sites blocking
+
+16
+00:00:23,835 --> 00:00:25,299
+AI agents may fail.
+
+17
+00:00:25,599 --> 00:00:26,584
+Our take: if you
+
+18
+00:00:26,584 --> 00:00:27,984
+sell online, don't block
+
+19
+00:00:27,984 --> 00:00:28,969
+verified agents.
+
+20
+00:00:29,269 --> 00:00:31,006
+Full breakdown and sources
+
+21
+00:00:31,006 --> 00:00:32,383
+on augaster dot com.
+
+22
+00:00:32,383 --> 00:00:34,179
+Follow for weekly practical
+
+23
+00:00:34,179 --> 00:00:34,539
+AI.
+

@@ -1,0 +1,262 @@
+{
+  "title": "OpenAI launches ChatGPT Wallet so its dots AI agents can buy things for users",
+  "episode_number": 10,
+  "cta": "follow",
+  "sources": [
+    {
+      "index": 0,
+      "url": "https://community.openai.com/t/introducing-chatgpt-wallet/1416044",
+      "name": "OpenAI Developer Community announcement post",
+      "fetched": true,
+      "published": "November 13, 2026, 9:27pm",
+      "kind": "primary"
+    },
+    {
+      "index": 1,
+      "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+      "name": "TechCrunch (Sarah Perez)",
+      "fetched": true,
+      "published": "8:00 AM PST · November 13, 2026",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 2,
+      "url": "https://9to5mac.com/2026/11/13/openai-launches-chatgpt-wallet-enabling-dot-agents-to-make-purchases/",
+      "name": "9to5Mac (Zac Hall)",
+      "fetched": true,
+      "published": "Nov 13 2026 - 7:46 am PT",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 3,
+      "url": "https://thepaypers.com/payments/news/openai-launches-chatgpt-wallet-for-agentic-payments-in-the-us",
+      "name": "The Paypers (Sinziana Albu)",
+      "fetched": true,
+      "published": "16 Nov 2026",
+      "kind": "original_reporting"
+    }
+  ],
+  "kept": [
+    {
+      "claim": "OpenAI launched/began rolling out ChatGPT Wallet on Friday, November 13, 2026 (not later).",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "[0] OpenAI's announcement post is dated November 13, 2026 and begins 'We're introducing ChatGPT Wallet'. [1] TechCrunch, dated Nov 13, 2026: 'On Friday, OpenAI launched a new wallet feature'. [2] 9to5Mac, dated Nov 13 2026, embeds an @ChatGPT post dated November 13, 2026 saying Wallet is 'rolling out starting today to dots'."
+    },
+    {
+      "claim": "ChatGPT Wallet lets OpenAI's dots agents complete purchases on the user's behalf.",
+      "supported_by": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "evidence": "[0] available through dots, agents pay. [1] 'lets its agents, called dots, help you decide what to buy and then complete the purchase on your behalf'. [2] headline and body: enables dot agents to make purchases. [3] allows AI agents to complete purchases on behalf of users."
+    },
+    {
+      "claim": "Dots are OpenAI's AI agents.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "[1] 'its agents, called dots'. [2] 'OpenAI's \"dots\" agent feature'."
+    },
+    {
+      "claim": "Agents pay without access to the user's actual card details.",
+      "supported_by": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "evidence": "[0] 'first wallet that lets agents pay without access to users' actual card details'. [1] card details 'aren't shared with either the dot or the merchant'. [2] same OpenAI wording quoted. [3] 'without accessing their actual card details'."
+    },
+    {
+      "claim": "OpenAI describes it as the first wallet that lets agents pay without access to actual card details and requires a security check for every purchase. This is OpenAI's own 'first' claim and is not independently verified.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "[0] 'It's the first wallet that lets agents pay without access to users' actual card details and requires a security check for every purchase'. [2] quotes the same sentence, attributed to OpenAI."
+    },
+    {
+      "claim": "The user reviews the items, total and selected card before each purchase and approves it with a security check.",
+      "supported_by": [
+        1,
+        2,
+        3
+      ],
+      "evidence": "[1] users 'review the items, the total, and the payment card' before checkout and approve with a security check. [2] 'Before each purchase, the user reviews the items, total, and selected card'. [3] same flow before each transaction."
+    },
+    {
+      "claim": "The security check is a biometric such as Face ID or a fingerprint scan, and each approval creates a record of the purchase the user authorized.",
+      "supported_by": [
+        1,
+        2,
+        3
+      ],
+      "evidence": "[1] 'a security check like Face ID or a fingerprint... creates a record'. [2] 'Face ID or a fingerprint scan... clear record'. [3] 'Face ID or a fingerprint scan... a record of what the user authorised'."
+    },
+    {
+      "claim": "Payment uses a payment token (a substitute for the real card number, security code and expiry) and the selected card is charged.",
+      "supported_by": [
+        1,
+        2,
+        3
+      ],
+      "evidence": "[1] 'charges the selected card using a payment token, which is a substitute for the user's actual card details'. [2] the payment network provides a payment token; the card is charged. [3] same."
+    },
+    {
+      "claim": "Users add their card once; they do not re-enter payment details for each purchase.",
+      "supported_by": [
+        1,
+        3
+      ],
+      "evidence": "[1] 'This setup is a one-time thing'. [3] 'Users add a card once and then approve each purchase without re-entering payment details'."
+    },
+    {
+      "claim": "Initial availability: through dots, for ChatGPT Pro subscribers in the US.",
+      "supported_by": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "evidence": "[0] 'initially be available through dots for ChatGPT Pro subscribers in the US'. [1] 'initially be available to a limited number of U.S. ChatGPT Pro subscribers'. [2] 'only available to ChatGPT Pro subscribers... in the United States'. [3] 'initially for ChatGPT Pro subscribers in the US'."
+    },
+    {
+      "claim": "Eligible users must be aged 18 or older.",
+      "supported_by": [
+        1,
+        2,
+        3
+      ],
+      "evidence": "[1] 'ages 18 and up'. [2] '18 or older'. [3] 'aged 18 and older'."
+    },
+    {
+      "claim": "The launch is limited, so OpenAI can learn from real-world use and improve compatibility and reliability with businesses, banks and payment networks before expanding.",
+      "supported_by": [
+        1,
+        2,
+        3
+      ],
+      "evidence": "[1] 'limited availability at launch will allow OpenAI to test and improve the feature'. [2] quotes OpenAI: 'We're starting with limited availability to ChatGPT Pro users'. [3] 'limited rollout will allow it to learn from real-world use'."
+    },
+    {
+      "claim": "Users keep existing card rewards and protections for eligible disputes.",
+      "supported_by": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "evidence": "[0] 'preserving existing card rewards and protections for eligible disputes'. [1] rewards still earned, dispute protections kept. [2] same OpenAI sentence quoted. [3] 'Users retain existing card rewards and protections for eligible disputes'."
+    },
+    {
+      "claim": "The wallet is designed to work with existing commerce infrastructure; existing checkout pages should work without a Wallet-specific integration.",
+      "supported_by": [
+        0,
+        3
+      ],
+      "evidence": "[0] 'Existing checkout pages should work without a Wallet-specific integration'. [3] 'The wallet's tokens work with existing checkout flows'."
+    },
+    {
+      "claim": "OpenAI advises merchants to allow verified ChatGPT cloud-browser requests using Web Bot Auth.",
+      "supported_by": [
+        0,
+        3
+      ],
+      "evidence": "[0] 'Allowing verified ChatGPT cloud-browser requests using Web Bot Auth'. [3] recommends configuring CDNs or firewalls to recognise signed requests using Web Bot Auth."
+    },
+    {
+      "claim": "Businesses can build plugins that let agents handle product discovery, availability, carts and checkout. [0] calls these MCP-based. [3] mentions plugins and WebMCP tools.",
+      "supported_by": [
+        0,
+        3
+      ],
+      "evidence": "[0] 'Building MCP-based plugins for product discovery, availability, carts, and checkout'. [3] 'plugins that let agents check availability or manage carts, or add WebMCP tools'."
+    },
+    {
+      "claim": "OpenAI released a Commerce Partner Playbook and other tools and guidance to help businesses support customers using agents.",
+      "supported_by": [
+        0,
+        1,
+        3
+      ],
+      "evidence": "[0] 'we're releasing tools and guidance to help businesses support customers using agents' and links the Commerce Partner Playbook. [1] OpenAI 'published a Commerce Partner Playbook'. [3] 'has published a Commerce Partner Playbook'."
+    },
+    {
+      "claim": "Sites that block AI agents are a limit: Wallet purchases may fail on them.",
+      "supported_by": [
+        1,
+        2,
+        3
+      ],
+      "evidence": "[1] retailers are 'blocking AI agents from using their site'. [2] 'The feature won't work with websites that block agents'. [3] some sites and payment systems 'may unintentionally block purchases'."
+    },
+    {
+      "claim": "OpenAI plans to let users set spending limits, purchase categories or time periods and pre-approve purchases, so agents can act more autonomously. This is a future plan, not available now.",
+      "supported_by": [
+        1,
+        3
+      ],
+      "evidence": "[1] plans to allow users to 'set spending limits or configure other parameters around purchase categories or time periods'. [3] same parameters, with pre-approved purchases and biometric safeguards."
+    }
+  ],
+  "dropped": [
+    {
+      "claim": "The Paypers article is dated 16 Nov 2026, three days after the Nov 13 launch. The launch is not a Nov 16 event.",
+      "supported_by": [
+        3
+      ],
+      "evidence": "[3] byline date '16 Nov 2026'. The articles from [0], [1] and [2] are dated Nov 13."
+    },
+    {
+      "claim": "The wallet was built in partnership with American Express, Mastercard and Visa. The full OpenAI page could not be fetched; a search snippet of it appears to list Chase as well, but I could not read it, so that is unconfirmed.",
+      "supported_by": [
+        0,
+        2,
+        3
+      ],
+      "evidence": "[0] 'Built in partnership with American Express, Mastercard, and Visa'. [2] 'includes a partnership with American Express, MasterCard, and Visa'. [3] 'Developed in partnership with American Express, Mastercard, and Visa'."
+    },
+    {
+      "claim": "Eligible cards are US-issued Visa, Mastercard or American Express.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "[1] 'with a U.S.-issued Visa, Mastercard, or American Express'. [3] says only 'eligible US-issued cards'."
+    },
+    {
+      "claim": "Amazon is the largest retailer banning AI agents. Single source.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "[1] 'the largest retailer to ban AI agents is Amazon'."
+    },
+    {
+      "claim": "For American Express, this is the first integration of its Agentic Commerce Experiences. Single source.",
+      "supported_by": [
+        3
+      ],
+      "evidence": "[3] 'the wallet is the first integration of its Agentic Commerce Experiences'."
+    },
+    {
+      "claim": "OpenAI is working with fraud providers Forter, Riskified, Sardine and Signifyd, and payment service providers Adyen, Checkout.com and Stripe, to recognise legitimate agent transactions. Single source.",
+      "supported_by": [
+        3
+      ],
+      "evidence": "[3] names these providers."
+    },
+    {
+      "claim": "Merchants keep control of customer relationships, pricing, fulfilment, returns and customer service. Single source.",
+      "supported_by": [
+        3
+      ],
+      "evidence": "[3] 'merchants keep control over customer relationships, pricing, fulfilment, returns, and customer service'."
+    }
+  ]
+}

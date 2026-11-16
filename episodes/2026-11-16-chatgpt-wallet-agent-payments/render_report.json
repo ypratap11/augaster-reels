@@ -1,0 +1,28 @@
+{
+  "duration_sec": 34.74,
+  "segments": 6,
+  "captions": 23,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/__w/augaster-reels/augaster-reels/episodes/2026-11-16-chatgpt-wallet-agent-payments/reel.mp4",
+  "voice": "kokoro:af_heart",
+  "sources": [
+    {
+      "name": "OpenAI Developer Community announcement post",
+      "url": "https://community.openai.com/t/introducing-chatgpt-wallet/1416044"
+    },
+    {
+      "name": "TechCrunch (Sarah Perez)",
+      "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/"
+    },
+    {
+      "name": "9to5Mac (Zac Hall)",
+      "url": "https://9to5mac.com/2026/11/13/openai-launches-chatgpt-wallet-enabling-dot-agents-to-make-purchases/"
+    },
+    {
+      "name": "The Paypers (Sinziana Albu)",
+      "url": "https://thepaypers.com/payments/news/openai-launches-chatgpt-wallet-for-agentic-payments-in-the-us"
+    }
+  ],
+  "approved": false
+}
