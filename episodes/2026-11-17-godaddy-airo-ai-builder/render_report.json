@@ -1,0 +1,28 @@
+{
+  "duration_sec": 31.6,
+  "segments": 6,
+  "captions": 25,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/__w/augaster-reels/augaster-reels/episodes/2026-11-17-godaddy-airo-ai-builder/reel.mp4",
+  "voice": "kokoro:af_heart",
+  "sources": [
+    {
+      "name": "GoDaddy press release (PR Newswire)",
+      "url": "https://www.prnewswire.com/news-releases/new-godaddy-airo-ai-builder-lets-small-businesses-turn-ideas-into-websites-and-apps-302940437.html"
+    },
+    {
+      "name": "TechRadar Pro (Craig Hale)",
+      "url": "https://www.techradar.com/pro/godaddys-new-ai-builder-app-lets-smbs-turn-an-idea-into-a-website-faster-than-ever"
+    },
+    {
+      "name": "Investing.com (AI-assisted rewrite of the press release)",
+      "url": "https://www.investing.com/news/company-news/godaddy-launches-ai-website-builder-for-small-businesses-93CH-5030164"
+    },
+    {
+      "name": "GoDaddy AI Website Builder product page",
+      "url": "https://www.godaddy.com/websites/ai-website-builder"
+    }
+  ],
+  "approved": false
+}

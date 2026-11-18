@@ -1,0 +1,68 @@
+{
+  "episode": "2026-11-17",
+  "series": "Augaster AI Digest",
+  "story": "GoDaddy launches Airo AI Builder: build a website or online store by typing or talking, with a free tier",
+  "sources": [
+    {
+      "name": "GoDaddy press release (PR Newswire)",
+      "url": "https://www.prnewswire.com/news-releases/new-godaddy-airo-ai-builder-lets-small-businesses-turn-ideas-into-websites-and-apps-302940437.html"
+    },
+    {
+      "name": "TechRadar Pro (Craig Hale)",
+      "url": "https://www.techradar.com/pro/godaddys-new-ai-builder-app-lets-smbs-turn-an-idea-into-a-website-faster-than-ever"
+    },
+    {
+      "name": "Investing.com (AI-assisted rewrite of the press release)",
+      "url": "https://www.investing.com/news/company-news/godaddy-launches-ai-website-builder-for-small-businesses-93CH-5030164"
+    },
+    {
+      "name": "GoDaddy AI Website Builder product page",
+      "url": "https://www.godaddy.com/websites/ai-website-builder"
+    }
+  ],
+  "source_line": "Sources: GoDaddy (PR Newswire), TechRadar Pro, Investing.com, GoDaddy AI Website Builder product page",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "THIS WEEK IN AI",
+      "title": "Build a site or store by talking",
+      "point": "And you can start free",
+      "narration": "Build a website or online store by talking, starting free."
+    },
+    {
+      "kind": "news",
+      "label": "WHAT HAPPENED",
+      "title": "GoDaddy launches Airo AI Builder",
+      "point": "Type or speak, no coding",
+      "narration": "GoDaddy released Airo AI Builder. Type or speak, and it builds a site or store without coding."
+    },
+    {
+      "kind": "news",
+      "label": "HOW IT WORKS",
+      "title": "Refine it by chatting",
+      "point": "90+ tools, export code anytime",
+      "narration": "You keep refining by conversation. It connects to more than ninety tools, and you can export your code anytime."
+    },
+    {
+      "kind": "analysis",
+      "label": "WHAT IT MEANS FOR YOU",
+      "title": "Paid plans from $9.99 a month",
+      "point": "Full store tools: US and Canada only",
+      "narration": "Paid plans start at nine dollars ninety-nine a month. The catch: full store tools work only in the US and Canada."
+    },
+    {
+      "kind": "analysis",
+      "label": "OUR TAKE",
+      "title": "Start on the free tier",
+      "point": "Test before you pay",
+      "narration": "Our take: try the free tier first."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER AI DIGEST",
+      "title": "Full breakdown + sources",
+      "point": "augaster.com",
+      "narration": "Full breakdown and sources on augaster dot com. Follow for weekly practical AI."
+    }
+  ]
+}

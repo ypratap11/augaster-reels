@@ -1,0 +1,241 @@
+{
+  "title": "GoDaddy launches Airo AI Builder: build a website or online store by typing or talking, with a free tier",
+  "episode_number": 13,
+  "cta": "follow",
+  "sources": [
+    {
+      "index": 0,
+      "url": "https://www.prnewswire.com/news-releases/new-godaddy-airo-ai-builder-lets-small-businesses-turn-ideas-into-websites-and-apps-302940437.html",
+      "name": "GoDaddy press release (PR Newswire)",
+      "fetched": true,
+      "published": "Nov. 16, 2026",
+      "kind": "primary"
+    },
+    {
+      "index": 1,
+      "url": "https://www.techradar.com/pro/godaddys-new-ai-builder-app-lets-smbs-turn-an-idea-into-a-website-faster-than-ever",
+      "name": "TechRadar Pro (Craig Hale)",
+      "fetched": true,
+      "published": "17 November 2026",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 2,
+      "url": "https://www.investing.com/news/company-news/godaddy-launches-ai-website-builder-for-small-businesses-93CH-5030164",
+      "name": "Investing.com (AI-assisted rewrite of the press release)",
+      "fetched": true,
+      "published": "Nov 16, 2026, 09:20 AM",
+      "kind": "roundup"
+    },
+    {
+      "index": 3,
+      "url": "https://www.godaddy.com/websites/ai-website-builder",
+      "name": "GoDaddy AI Website Builder product page",
+      "fetched": true,
+      "published": "",
+      "kind": "primary"
+    },
+    {
+      "index": 4,
+      "url": "https://www.prnewswire.com/news-releases/godaddy-brings-agentic-ai-to-small-businesses-with-launch-of-airoai-302614911.html",
+      "name": "GoDaddy press release, Airo.ai beta launch (PR Newswire)",
+      "fetched": true,
+      "published": "Nov. 13, 2025",
+      "kind": "primary"
+    }
+  ],
+  "kept": [
+    {
+      "claim": "GoDaddy announced the release of Airo AI Builder on Nov. 16, 2026.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "[0] dateline 'TEMPE, Ariz., Nov. 16, 2026'. [2] published Nov 16, 2026 and says GoDaddy 'announced today the release of Airo AI Builder'. [1] TechRadar (17 Nov 2026) says GoDaddy 'has launched' it but gives no announcement date."
+    },
+    {
+      "claim": "GoDaddy describes Airo AI Builder as an agentic operating system for small businesses.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "[0] 'an agentic operating system for small businesses'. [1] 'its own agentic operating system designed to create advanced websites'."
+    },
+    {
+      "claim": "Users can build websites, web apps and online stores without coding, and can then keep refining them through conversation.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "[0] zero coding experience required; refine through conversation. [1] create and refine sites via a conversational interface, including web apps and online stores. [2] websites, web applications and online stores 'without coding experience'."
+    },
+    {
+      "claim": "Users can create by written or voice prompts.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "[0] 'written or voice prompts'. [2] 'through text or voice prompts'. TechRadar says 'conversational interface' and does not mention voice."
+    },
+    {
+      "claim": "Airo AI Builder has a free tier.",
+      "supported_by": [
+        0,
+        2,
+        3
+      ],
+      "evidence": "[0] FAQ: 'Start for free'. [2] 'The service offers a free tier'. [3] product page: 'You can start for free and upgrade as your needs grow.'"
+    },
+    {
+      "claim": "Paid plans start at $9.99 per month. Higher tiers with more credits and site allowances are available.",
+      "supported_by": [
+        0,
+        2,
+        3
+      ],
+      "evidence": "[0] 'paid plans for those just starting out from $9.99 per month'. [2] 'paid plans starting at $9.99 per month'. [3] 'an affordable $9.99/mo. plan'. Only [0] mentions higher tiers with additional credit and site allowances."
+    },
+    {
+      "claim": "Airo AI Builder is available in more than 150 countries with multi-language support.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "[0] 'available in more than 150 countries with multi-language support'. [2] repeats this."
+    },
+    {
+      "claim": "Airo AI Builder connects to more than 90 third-party tools, including Slack, Notion and HubSpot.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "[0] 'connectors to more than 90 tools, such as Slack, Notion and HubSpot'. [1] 'over 90 third-party tools including Slack, Notion and HubSpot'. [2] 'more than 90 third-party tools including Slack, Notion and HubSpot'."
+    },
+    {
+      "claim": "For online stores, users can accept payments through GoDaddy Payments or connect Stripe. More payment providers are coming.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "[0] 'GoDaddy Payments or connect Stripe, with more payment provider integrations coming soon'. [1] GoDaddy Payments plus a Stripe partnership, 'more are set to come'. [2] GoDaddy Payments or Stripe; it does not mention more providers coming."
+    },
+    {
+      "claim": "GoDaddy Payments is available only in the US and Canada, and proceeds can reach a bank account as soon as the same business day.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "[0] 'currently available in the US and Canada only'; 'as soon as the same business day'. [2] available in the United States and Canada; proceeds deposited 'as soon as the same business day'."
+    },
+    {
+      "claim": "The full integrated online store experience (product catalogue, shopping cart, checkout, shipping and sales tax tools) is currently supported only in the U.S. and Canada. Elsewhere, customers can connect Stripe for service payments or deposits.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "[0] FAQ 5 lists the full store features as 'currently supported in the U.S. and Canada'. [2] 'currently limited to the U.S. and Canada'. Only [0] mentions Stripe outside those markets."
+    },
+    {
+      "claim": "Users can download or export their code at any time.",
+      "supported_by": [
+        0,
+        3
+      ],
+      "evidence": "[0] 'Download your code at any time.' [3] 'export your code anytime'."
+    },
+    {
+      "claim": "GoDaddy's Airo surpassed $100 million in annualized bookings run rate in the third quarter, more than doubling from the previous quarter. This is an annualized bookings run rate for Airo overall, not revenue and not AI Builder alone.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "[0] 'surpassed $100 million in annualized bookings run rate in the third quarter, more than doubling from the previous quarter'. [2] says the same, citing the press release."
+    },
+    {
+      "claim": "GoDaddy analyzed an anonymized sample of more than 100,000 customer-created projects from a six-week period during its beta in summer 2026.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "[0] 'more than 100,000 customer-created projects from a six-week period during its beta this summer'. [2] 'more than 100,000 customer-created projects from a six-week beta period this summer'. [1] mentions only a summer beta, with no sample size."
+    },
+    {
+      "claim": "Airo AI Builder had a beta phase in summer 2026.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "[0] 'during its beta this summer'. [1] 'During Airo AI Builder's beta phase in the summer'. [2] 'six-week beta period this summer'."
+    },
+    {
+      "claim": "In the beta sample, Health, Wellness and Beauty accounted for 13% of creations.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "[0] 'Health, Wellness and Beauty (13%)'; its table says 'Health & Body 13 %'. [1] 'health and body (13%)'. [2] 'Health, Wellness and Beauty businesses accounted for 13%'."
+    },
+    {
+      "claim": "In the beta sample, Home & Property accounted for 12% and Business Services for 11%. Together with Health these accounted for more than one-third of creations.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "[0] 'Home & Property (12%) and Business Services (11%) together accounted for more than one-third'. [1] same figures, 'more than one-third'. [2] 12% and 11%."
+    },
+    {
+      "claim": "Version A: Food & Travel accounted for 12.5% of creations (1 in 8).",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "[0] body text: 'Food & Travel accounted for 1 in 8 creations (12.5%)'. [2] 'Food & Travel projects made up 12.5% of the sample'."
+    },
+    {
+      "claim": "Version B: Food & Travel accounted for 13% of creations.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "[0] its own table lists 'Food & Travel 13 %', which conflicts with the 12.5% in its body text. [1] 'Food and travel (13%)'."
+    },
+    {
+      "claim": "Roughly one-tenth of beta creations were Rebuild/Reimagine projects, meaning users who already had a website and wanted to improve it.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "[0] 'Nearly 1 in 10 creations were classified as Rebuild/Reimagine'; table lists 10%. [1] 'around one-tenth of the use cases'."
+    },
+    {
+      "claim": "GoDaddy marketing VP Selina Bieber said Airo AI Builder lets people create, test ideas and make updates through natural conversation.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "[0] quote from Selina Bieber, vice president of marketing-led growth. [2] quotes the same sentence about natural conversation. [1] quotes a different line from her."
+    }
+  ],
+  "dropped": [
+    {
+      "claim": "Airo AI Builder includes preview environments for testing changes before publishing, plus a custom database backend and admin panel.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "[0] FAQ features list: 'Test before publishing' and 'Manage your data'. No other source states these."
+    },
+    {
+      "claim": "The announcement is older than the Nov 2026 coverage implies. GoDaddy first launched Airo.ai, a Beta agentic AI website and experience, on Nov. 13, 2025. The Nov. 16, 2026 release is the launch of Airo AI Builder as a product, after a summer 2026 beta.",
+      "supported_by": [
+        4
+      ],
+      "evidence": "[4] 'GoDaddy today launched Airo.ai, a Beta agentic artificial intelligence (AI) website and experience' dated Nov. 13, 2025. I found no second fetched source for this claim."
+    }
+  ]
+}
