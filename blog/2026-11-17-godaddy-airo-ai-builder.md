@@ -5,6 +5,7 @@ slug: "godaddy-airo-ai-builder"
 description: "GoDaddy announced the release of Airo AI Builder on Nov. 16, 2026. GoDaddy describes it as an agentic operating system for small businesses. Users can build ..."
 tags: ["AI", "SmallBusiness", "GoDaddy", "WebsiteBuilder", "Ecommerce", "AITools"]
 series: "Augaster AI Digest"
+video: "https://www.instagram.com/reel/Df3f0Fjjm49/"
 ---
 **What happened.** GoDaddy announced the release of Airo AI Builder on Nov. 16, 2026. GoDaddy describes it as an agentic operating system for small businesses. Users can build websites, web apps and online stores without coding, then keep refining them through conversation. GoDaddy marketing VP Selina Bieber said it lets people create, test ideas and make updates through natural conversation.
 
