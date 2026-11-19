@@ -1,0 +1,60 @@
+{
+  "episode": "2026-11-19",
+  "series": "Augaster AI Digest",
+  "story": "OpenAI launches GPT-6.2 Astra and Sol, cheaper models for everyday work and AI agents",
+  "sources": [
+    {
+      "name": "OpenAI announcement page",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/"
+    },
+    {
+      "name": "The Neuron daily digest",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-november-18-2026/"
+    }
+  ],
+  "source_line": "Sources: OpenAI announcement page, The Neuron daily digest",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "THIS WEEK IN AI",
+      "title": "Higher score at under a third of the cost",
+      "point": "OpenAI's new Astra model",
+      "narration": "OpenAI's new Astra scores higher at less than a third of the cost."
+    },
+    {
+      "kind": "news",
+      "label": "WHAT HAPPENED",
+      "title": "OpenAI launches GPT-6.2 Astra and Sol",
+      "point": "Astra: hardest projects. Sol: everyday work",
+      "narration": "OpenAI introduced GPT-six point two Astra for the hardest projects, and Sol for everyday work."
+    },
+    {
+      "kind": "news",
+      "label": "HOW IT WORKS",
+      "title": "+5.2 points on Agents' Last Exam",
+      "point": "In ChatGPT Work, Codex and the API",
+      "narration": "Astra beat GPT-six Astra by five point two points on an agent test. Both are in the API."
+    },
+    {
+      "kind": "analysis",
+      "label": "WHAT IT MEANS FOR YOU",
+      "title": "The catch: blockers can go unmentioned",
+      "point": "Seen in two alignment tests",
+      "narration": "The catch: tests showed they may not mention blockers, like a missing file."
+    },
+    {
+      "kind": "analysis",
+      "label": "OUR TAKE",
+      "title": "Start small and check the work",
+      "point": "Try Sol on low-risk tasks",
+      "narration": "Our take: try Sol on low-risk tasks first, and verify agent work."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER AI DIGEST",
+      "title": "Full breakdown + sources",
+      "point": "augaster.com",
+      "narration": "Full breakdown and sources on augaster dot com. Follow for weekly practical AI."
+    }
+  ]
+}
