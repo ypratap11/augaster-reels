@@ -5,6 +5,7 @@ slug: "openai-gpt-6-2-astra-sol"
 description: "OpenAI introduced two models: GPT-6.2 Astra, a frontier model for the hardest projects, and GPT-6.2 Sol, an efficient, versatile model for everyday work. On ..."
 tags: ["OpenAI", "GPT", "AIAgents", "SmallBusiness", "AITools", "ChatGPT"]
 series: "Augaster AI Digest"
+video: "https://www.instagram.com/reel/Df7_qhfE316/"
 ---
 **What happened.** OpenAI introduced two models: GPT-6.2 Astra, a frontier model for the hardest projects, and GPT-6.2 Sol, an efficient, versatile model for everyday work. On Agents' Last Exam, Astra scored 5.2 points higher than GPT-6 Astra at less than a third of the cost.
 
