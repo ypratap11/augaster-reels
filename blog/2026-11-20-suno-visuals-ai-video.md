@@ -5,6 +5,7 @@ slug: "suno-visuals-ai-video"
 description: "On 17 November 2026, Suno announced and launched Visuals, a new tool that creates lyric videos, album art and video clips from songs, including a clip re-ima..."
 tags: ["Suno", "AIVideo", "SmallBusiness", "MusicMarketing", "AITools", "ContentCreation"]
 series: "Augaster AI Digest"
+video: "https://www.instagram.com/reel/Df-VVQ8Ao0J/"
 ---
 **What happened.** On 17 November 2026, Suno announced and launched Visuals, a new tool that creates lyric videos, album art and video clips from songs, including a clip re-imagined from a user's photo. The announcement was written by Jack Brody, Suno's Chief Product Officer. It follows Suno's Speech (beta) tool, launched on October 1, 2026, for spoken audio such as poems and meditations.
 
