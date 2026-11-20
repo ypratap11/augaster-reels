@@ -1,0 +1,44 @@
+{
+  "cover": {
+    "kicker": "Save this",
+    "title": "**5 AI prompts** every small business owner should keep",
+    "sub": "Paste them into ChatGPT, Claude or Gemini. Fill the [brackets]. Each saves an hour a week."
+  },
+  "slides": [
+    {
+      "title": "Read your **competitors' reviews**",
+      "use": "before you change prices, menus or services.",
+      "prompt": "You are a market researcher for a [BUSINESS TYPE] in [CITY].\nBelow are 30 Google reviews of three competitors.\n[PASTE REVIEWS]\nList: 1) the 5 things customers praise most, 2) the 5 complaints that repeat, 3) three gaps none of them fill that I could own, each with one sentence on how to test it this month.",
+      "tip": "Copy reviews from Google Maps. Use 1-star and 5-star ones."
+    },
+    {
+      "title": "Reply to **every review** in your voice",
+      "use": "once a week, for all new reviews.",
+      "prompt": "You write review replies for [BUSINESS NAME], a [BUSINESS TYPE]. Our tone: [warm / brief / playful].\nFor each review below, write a reply under 50 words. Thank them by name, mention one detail they wrote, and for complaints offer a fix and a way to reach me at [PHONE/EMAIL]. Never argue.\n[PASTE REVIEWS]",
+      "tip": "Replying to reviews helps your Google ranking, not just the customer."
+    },
+    {
+      "title": "Find **10 post ideas** people actually want",
+      "use": "when you don't know what to post.",
+      "prompt": "You are a social media strategist for a [BUSINESS TYPE] whose customers are [WHO THEY ARE].\nGive me 10 short post ideas. For each: a hook under 8 words, why someone would stop scrolling, and the format (photo, reel, carousel or story). Avoid generic advice; use these real questions customers ask me: [PASTE 3-5 QUESTIONS].",
+      "tip": "The questions customers ask you are your best content."
+    },
+    {
+      "title": "Rewrite your **homepage headline**",
+      "use": "if visitors leave without calling or booking.",
+      "prompt": "You are a conversion copywriter. My website: [PASTE HOMEPAGE TEXT].\nMy best customers are [WHO] and they choose us because [WHY].\nWrite 5 headline + subheadline options that say what we do, who it is for and why us, in plain words under 12 words each. Then tell me which one you would test first and why.",
+      "tip": "Read the winner out loud. If it sounds like an ad, simplify."
+    },
+    {
+      "title": "Plan a **30-day posting calendar**",
+      "use": "on the first day of each month.",
+      "prompt": "You plan content for a [BUSINESS TYPE] in [CITY] that can post [N] times a week and has [N] minutes a day for it.\nMake a 30-day calendar: date, post idea, format, a one-line caption, and which posts promote [OFFER OR EVENT THIS MONTH]. Mix tips, behind-the-scenes, customer stories and offers. Keep it realistic for one person.",
+      "tip": "Batch-make a week's posts in one sitting."
+    }
+  ],
+  "cta": {
+    "title": "Save it. Use one this week.",
+    "body": "Follow @augaster.ai for AI news and tools that matter to small businesses, explained in 30 seconds."
+  },
+  "caption": "5 AI prompts every small business owner should keep 👇\n\n1️⃣ Read your competitors' reviews\n2️⃣ Reply to every review in your voice\n3️⃣ Find 10 post ideas people actually want\n4️⃣ Rewrite your homepage headline\n5️⃣ Plan a 30-day posting calendar\n\nWorks in ChatGPT, Claude or Gemini. Fill in the [brackets] with your business.\n\nSave this for later, and send it to a business owner who's drowning in to-dos.\n\nMore AI for small business: augaster.com (link in bio)\n\n#AIforSmallBusiness #SmallBusinessTips #ChatGPTPrompts #ClaudeAI #AItools #SmallBusinessOwner #AugasterAIDigest"
+}
