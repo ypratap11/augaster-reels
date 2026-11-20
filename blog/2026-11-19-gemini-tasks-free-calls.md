@@ -5,6 +5,7 @@ slug: "gemini-tasks-free-calls"
 description: "On November 17, 2026, Google announced an expansion of Tasks in Gemini. The announcement came in a blog post written by Josh Woodward, Google's VP of Labs, G..."
 tags: ["Gemini", "GoogleAI", "AIAgents", "SmallBusiness", "AITools", "Productivity"]
 series: "Augaster AI Digest"
+video: "https://www.instagram.com/reel/Df8lyEoDzla/"
 ---
 **What happened.** On November 17, 2026, Google announced an expansion of Tasks in Gemini. The announcement came in a blog post written by Josh Woodward, Google's VP of Labs, Gemini app and AI Studio. The feature is older than the expansion: it was announced at Google I/O 2026 in May as Gemini Spark, a 24/7 personal agent. TechCrunch says it first went to select testers and later to U.S. Google AI Ultra subscribers. Gemini Spark was then folded into the main Gemini app as Task mode, a redesign 9to5Google reported on October 12, 2026, with Chat and Task buttons above the prompt box.
 

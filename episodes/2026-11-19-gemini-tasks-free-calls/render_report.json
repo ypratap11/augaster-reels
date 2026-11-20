@@ -20,5 +20,6 @@
       "url": "https://9to5google.com/2026/10/12/gemini-spark-task-redesign/"
     }
   ],
-  "approved": false
+  "approved": true,
+  "approved_by": "auto-publish gate"
 }
