@@ -1,0 +1,50 @@
+name: Publish carousel
+
+# Posts the oldest approved, unpublished carousel in carousels/ (Mon and Thu evenings),
+# or a named one when run by hand. Only folders with approved.json ever post.
+on:
+  schedule:
+    - cron: "45 1 * * 2,5"   # Mon and Thu 5:45 PM Pacific (PST)
+  workflow_dispatch:
+    inputs:
+      carousel:
+        description: "Folder name in carousels/ (blank = oldest approved, unpublished)"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: episode
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: vars.AUTO_PUBLISH == 'true' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Pillow
+        run: pip install -q pillow
+      - name: Publish to Instagram
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          LINK_IN_BIO: ${{ vars.LINK_IN_BIO }}
+          NAME: ${{ inputs.carousel }}
+        run: |
+          if [ -z "$NAME" ]; then
+            for d in $(ls -d carousels/*/ 2>/dev/null | sort); do
+              if [ -f "$d/approved.json" ] && [ ! -f "$d/published.json" ]; then NAME=$(basename "$d"); break; fi
+            done
+            [ -z "$NAME" ] && { echo "no approved, unpublished carousel; nothing to post"; exit 0; }
+          fi
+          case "$NAME" in *[!A-Za-z0-9._-]*) echo "bad carousel name"; exit 1;; esac
+          python3 publish_instagram.py "carousels/$NAME"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull -q --rebase origin "${{ github.ref_name }}"
+          git add "carousels/$NAME"
+          git commit -m "Published carousel to Instagram: $NAME" -m "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+          git push

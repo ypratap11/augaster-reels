@@ -24,6 +24,12 @@ Safety gate (nothing is posted unless all pass):
   - the caption has no Oracle/Wipro mention
 Writes published.json (media id, permalink, time) and sets approved=true in
 render_report.json on success.
+
+Carousels (carousels/<slug>, made by render_carousel.py) are evergreen how-to
+posts with no news claims. Their gate: approved.json from Pratap, not already
+published, 2-10 JPEG slides at 1080x1350, caption.txt within limits and free of
+Oracle/Wipro, and every slide publicly reachable (Instagram fetches carousel
+images by URL from the public repo).
 """
 import argparse, json, os, re, subprocess, sys, time, urllib.parse, urllib.request
 from datetime import datetime, timezone
@@ -133,12 +139,95 @@ def gate(epdir):
     return dur
 
 
+def carousel_gate(cdir):
+    """Carousels are evergreen how-to posts, so instead of the two-source check they need
+    Pratap's explicit approval (approved.json, written only on his say-so)."""
+    if os.path.exists(os.path.join(cdir, "published.json")):
+        fail(f"{cdir} is already published")
+    ap = os.path.join(cdir, "approved.json")
+    if not os.path.exists(ap) or not json.load(open(ap)).get("approved_by"):
+        fail(f"{cdir} has no approved.json; Pratap must approve a carousel before it posts")
+    slides = sorted(f for f in os.listdir(cdir) if re.fullmatch(r"slide-\d\d\.jpg", f))
+    if not 2 <= len(slides) <= 10:
+        fail(f"carousel has {len(slides)} slides; Instagram allows 2-10")
+    from PIL import Image
+    for f in slides:
+        if Image.open(os.path.join(cdir, f)).size != (1080, 1350):
+            fail(f"{f} is not 1080x1350")
+    cap_path = os.path.join(cdir, "caption.txt")
+    if not os.path.exists(cap_path):
+        fail("carousel has no caption.txt")
+    return slides
+
+
+def wait_ready(cid, token):
+    for _ in range(40):  # up to ~10 min
+        st = api("GET", cid, {"fields": "status_code,status", "access_token": token})
+        code = st.get("status_code")
+        if code in (None, "FINISHED"):
+            return
+        if code in ("ERROR", "EXPIRED"):
+            fail(f"container {cid} {code}: {st.get('status')}")
+        time.sleep(15)
+    fail(f"container {cid} still processing after 10 min")
+
+
+def publish_carousel(cdir, dry_run):
+    slides = carousel_gate(cdir)
+    cap = open(os.path.join(cdir, "caption.txt"), encoding="utf-8").read().strip()
+    if os.environ.get("LINK_IN_BIO") != "1":
+        cap = cap.replace(" (link in bio)", "").replace("Link in bio.", "Visit augaster.com.")
+    if BLOCKED.search(cap):
+        fail("caption mentions Oracle or Wipro")
+    if len(cap) > 2200:
+        fail(f"caption is {len(cap)} chars; Instagram max is 2200")
+    root = os.path.dirname(os.path.abspath(__file__))
+    rel = os.path.relpath(os.path.abspath(cdir), root).replace(os.sep, "/")
+    repo, ref = os.environ.get("GITHUB_REPOSITORY"), os.environ.get("GITHUB_REF_NAME", "main")
+    base = os.environ.get("CAROUSEL_BASE_URL") or (repo and f"https://raw.githubusercontent.com/{repo}/{ref}")
+    print(f"gate passed: carousel of {len(slides)} slides, caption {len(cap)} chars")
+    if dry_run:
+        print(cap)
+        return
+    if not base:
+        fail("set GITHUB_REPOSITORY or CAROUSEL_BASE_URL so Instagram can fetch the slides")
+    urls = [f"{base}/{urllib.parse.quote(rel)}/{f}" for f in slides]
+    for u in urls:  # Instagram fetches the images itself; make sure they are public first
+        try:
+            urllib.request.urlopen(urllib.request.Request(u, method="HEAD"), timeout=30)
+        except Exception as e:
+            fail(f"slide not publicly reachable (pushed?): {u} ({e})")
+
+    token = os.environ.get("IG_ACCESS_TOKEN") or fail("IG_ACCESS_TOKEN not set")
+    user = os.environ.get("IG_USER_ID") or fail("IG_USER_ID not set")
+    children = []
+    for u in urls:
+        c = api("POST", f"{user}/media", {"image_url": u, "is_carousel_item": "true", "access_token": token})
+        children.append(c["id"])
+    for cid in children:
+        wait_ready(cid, token)
+    parent = api("POST", f"{user}/media", {"media_type": "CAROUSEL", "children": ",".join(children),
+                                            "caption": cap, "access_token": token})
+    wait_ready(parent["id"], token)
+    pub = api("POST", f"{user}/media_publish", {"creation_id": parent["id"], "access_token": token})
+    info = api("GET", pub["id"], {"fields": "permalink", "access_token": token})
+    rec = {"platform": "instagram", "type": "carousel", "media_id": pub["id"], "permalink": info.get("permalink"),
+           "published_at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+    json.dump(rec, open(os.path.join(cdir, "published.json"), "w"), indent=2)
+    print(f"published: {rec['permalink']}")
+    gh = os.environ.get("GITHUB_STEP_SUMMARY")
+    if gh:
+        open(gh, "a").write(f"Published carousel to Instagram: {rec['permalink']}\n")
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("episode_dir")
+    ap.add_argument("episode_dir", help="episodes/<slug> for a reel, or carousels/<slug> for a carousel")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
     epdir = a.episode_dir.rstrip("/")
+    if os.path.exists(os.path.join(epdir, "carousel.json")):
+        return publish_carousel(epdir, a.dry_run)
 
     dur = gate(epdir)
     cap = caption_from(open(os.path.join(epdir, "posts.md"), encoding="utf-8").read(),

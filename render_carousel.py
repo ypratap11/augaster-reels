@@ -8,7 +8,8 @@ carousel.json:
    "slides": [{"title": "...", "use": "when to use it", "prompt": "the prompt text", "tip": "..."}],
    "cta": {"title": "...", "body": "..."},
    "caption": "Instagram caption"}
-Words wrapped in **double asterisks** get a gold highlighter. Writes slide-01.png ...
+Words wrapped in **double asterisks** get a gold highlighter. Writes slide-01.jpg ...
+(JPEG: the Instagram API only accepts JPEG for carousel images)
 next to the JSON, plus caption.txt. Brand: augaster-brand-kit (night, gold, amber, starlight).
 """
 import json, os, random, re, sys
@@ -241,7 +242,7 @@ def main(path):
         imgs.append(img)
     imgs.append(cta_slide(c["cta"], total, total, 99))
     for i, img in enumerate(imgs, 1):
-        img.convert("RGB").save(os.path.join(out, f"slide-{i:02d}.png"))
+        img.convert("RGB").save(os.path.join(out, f"slide-{i:02d}.jpg"), quality=92, optimize=True)
     if c.get("caption"):
         open(os.path.join(out, "caption.txt"), "w", encoding="utf-8").write(c["caption"].strip() + "\n")
     print(f"wrote {len(imgs)} slides to {out}")
