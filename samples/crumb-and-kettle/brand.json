@@ -3,6 +3,7 @@
   "tagline": "",
   "cta_footer": "Demo · fictional bakery · made by Augaster",
   "logo": "logo.png",
+  "starfield": false,
   "colors": {
     "bg_top": "#2B1A12",
     "bg_bottom": "#3E2619",

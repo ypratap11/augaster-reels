@@ -14,7 +14,7 @@ Voice options:
   --voiceover  your own recording for the whole reel; captions are spread
                across it in proportion to the script text.
 """
-import argparse, json, math, os, subprocess, sys, wave, textwrap, re
+import argparse, json, math, os, random, subprocess, sys, wave, textwrap, re
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 W, H, FPS = 1080, 1920, 30
@@ -27,7 +27,7 @@ BRAND = {
     "card": (255, 255, 255, 18),
 }
 # Header text, CTA footer and optional logo; overridden per client with --brand.
-IDENTITY = {"name": "AUGASTER", "tagline": "AI DIGEST", "cta_footer": None, "logo": None}
+IDENTITY = {"name": "AUGASTER", "tagline": "AI DIGEST", "cta_footer": None, "logo": None, "starfield": True}
 
 def hex_rgb(h):
     h = h.lstrip("#")
@@ -38,13 +38,14 @@ def load_brand(path):
 
     colors keys: bg_top, bg_bottom, accent, accent2, text, muted (any subset).
     logo: image path relative to brand.json, drawn in the header instead of the star.
+    starfield: false turns off the animated star background (on by default; it is Augaster's look).
     """
     b = json.load(open(path, encoding="utf-8"))
     for k, v in b.get("colors", {}).items():
         if k not in BRAND or k == "card":
             raise SystemExit(f"brand.json: unknown color '{k}'")
         BRAND[k] = hex_rgb(v)
-    for k in ("name", "tagline", "cta_footer"):
+    for k in ("name", "tagline", "cta_footer", "starfield"):
         if k in b: IDENTITY[k] = b[k]
     if b.get("logo"):
         logo = Image.open(os.path.join(os.path.dirname(os.path.abspath(path)), b["logo"])).convert("RGBA")
@@ -243,6 +244,40 @@ def draw_chart(ld, chart, box, progress, alpha):
         ld.text((lx, ly), tag, font=F_AXIS, fill=col + (alpha,))
         ly += 40
 
+def make_stars(seed=7):
+    """Fixed starfield: same stars every render, so episodes look consistent."""
+    rnd = random.Random(seed)
+    dots = []
+    for _ in range(130):
+        depth = rnd.random()  # nearer stars are bigger, brighter and drift faster (parallax)
+        dots.append({"x": rnd.uniform(0, W), "y": rnd.uniform(0, H), "r": 2.0 + 3.5 * depth ** 2,
+                     "a": 90 + 140 * depth, "f": rnd.uniform(0.6, 1.8), "p": rnd.uniform(0, 6.28),
+                     "v": 8 + 30 * depth, "gold": rnd.random() < 0.2})
+    sparkles = [{"x": x, "y": y, "s": s, "p": p} for x, y, s, p in
+                [(900, 330, 54, 0.0), (140, 1260, 40, 2.1), (970, 1170, 32, 4.0), (330, 390, 24, 1.2), (560, 1340, 20, 3.1)]]
+    return dots, sparkles
+
+STARS = make_stars()
+
+def draw_starfield(img, t):
+    """Slow upward-drifting, twinkling stars plus a few pulsing dawn-star sparkles (brand mark)."""
+    dots, sparkles = STARS
+    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    ld = ImageDraw.Draw(layer)
+    for s in dots:
+        y = (s["y"] - s["v"] * t) % H
+        a = s["a"] * (0.55 + 0.45 * math.sin(t * s["f"] + s["p"]))
+        if 430 < y < 1000 or y < 180 or y > H - 210:  # keep headline, header and footer text calm
+            a *= 0.4
+        col = BRAND["accent"] if s["gold"] else BRAND["text"]
+        r = s["r"]
+        ld.ellipse([s["x"] - r, y - r, s["x"] + r, y + r], fill=col + (int(a),))
+    for s in sparkles:
+        pulse = 0.5 + 0.5 * math.sin(t * 0.9 + s["p"])
+        size = s["s"] * (0.75 + 0.25 * pulse)
+        ld.polygon(star_points(s["x"], s["y"], size), fill=BRAND["accent"] + (int(90 + 140 * pulse),))
+    img.alpha_composite(layer)
+
 def draw_frame(base, glows, seg, local_t, global_t, total, cue, script):
     img = base.copy().convert("RGBA")
     # drifting glows
@@ -250,6 +285,8 @@ def draw_frame(base, glows, seg, local_t, global_t, total, cue, script):
     x1 = int(-600 + 120 * math.sin(global_t * 0.35)); y1 = int(-140 + 80 * math.cos(global_t * 0.3))
     x2 = int(W - 1000 + 100 * math.cos(global_t * 0.28)); y2 = int(H - 1500 + 120 * math.sin(global_t * 0.32))
     img.alpha_composite(g1, (x1, y1)); img.alpha_composite(g2, (x2, y2))
+    if IDENTITY["starfield"]:
+        draw_starfield(img, global_t)
     d = ImageDraw.Draw(img)
     M = 80
 
