@@ -1,0 +1,192 @@
+{
+  "title": "Google makes Tasks in Gemini free: it can call businesses, book appointments and pay via Google Pay",
+  "episode_number": 17,
+  "cta": "follow",
+  "sources": [
+    {
+      "index": 0,
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+      "name": "Google blog (The Keyword), Josh Woodward",
+      "fetched": true,
+      "published": "Nov 17, 2026",
+      "kind": "primary"
+    },
+    {
+      "index": 1,
+      "url": "https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases/",
+      "name": "TechCrunch (Lucas Ropek, In Brief)",
+      "fetched": true,
+      "published": "November 17, 2026",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 2,
+      "url": "https://9to5google.com/2026/10/12/gemini-spark-task-redesign/",
+      "name": "9to5Google (Abner Li)",
+      "fetched": true,
+      "published": "Oct 12 2026",
+      "kind": "original_reporting"
+    }
+  ],
+  "kept": [
+    {
+      "claim": "Google announced the Tasks in Gemini expansion on November 17, 2026.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "Google blog is dated Nov 17, 2026 (published_time 2026-11-17). TechCrunch was posted 11:02 AM PST, November 17, 2026."
+    },
+    {
+      "claim": "The blog post announcing the update was written by Josh Woodward, Google's VP of Labs, Gemini app and AI Studio.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "The blog byline reads Josh Woodward, Vice President, Labs, Gemini app, and AI Studio. TechCrunch cites a blog post by Josh Woodword, VP of Gemini, and misspells his surname."
+    },
+    {
+      "claim": "Tasks in Gemini is a toggle that switches the Gemini app from Chat to Task. In that mode Gemini acts on the user's behalf instead of only answering questions.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "Google: 'flip the home-screen toggle from Chat to Task'. TechCrunch: Tasks is a toggle that converts the chatbot into a more active helper, and users flip it from Chat to Tasks."
+    },
+    {
+      "claim": "Gemini in Task mode can call businesses and book appointments for the user.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "Google's example has Gemini calling two dealerships, finding a free slot and adding the appointment to Google Calendar. TechCrunch: Google says the app can call businesses and book appointments on users' behalf."
+    },
+    {
+      "claim": "Gemini can complete purchases using a Google Pay integration.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "Google: Gemini 'helped me check out using the new Google Pay integration'. TechCrunch: it can complete purchases via Google Pay."
+    },
+    {
+      "claim": "Gemini can sign into websites or portals on the user's behalf. Google ties this to a Google Password Manager integration, and TechCrunch says it happens securely if prompted.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "Google: permission to access a utility portal 'with the new Google Password Manager integration'. TechCrunch: it can 'sign into websites securely if prompted'."
+    },
+    {
+      "claim": "Tasks is now free of charge to hundreds of millions of people, using the new Gemini 4 Hydrogen model.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "Google: 'rolling out free of charge for hundreds of millions of people... using our new Gemini 4 Hydrogen model'. TechCrunch: now making the feature available for free to hundreds of millions of people using the Gemini 4 Hydrogen model."
+    },
+    {
+      "claim": "Users can also text Gemini to give it tasks. Google says this is on Android or iOS via Settings > Channels > Text with Gemini, with a verified phone number. The RCS text integration needs a US phone number with an eligible mobile carrier.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "Google lists the setup steps and the footnote on US carriers. TechCrunch: users can send texts to Gemini to give it commands."
+    },
+    {
+      "claim": "The feature is older than the Nov 17 expansion. It was announced at Google I/O 2026 in May as Gemini Spark, a 24/7 personal agent. TechCrunch says it first went to select testers and later to U.S. Google AI Ultra subscribers.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "TechCrunch: 'initially launched to select testers back in May as Gemini Spark' and expanded to U.S. subscribers of Google AI Ultra. 9to5Google: 'Announced at I/O 2026 in May' and says 'Task' is Gemini Spark."
+    },
+    {
+      "claim": "Gemini Spark was folded into the main Gemini app as 'Task' mode. 9to5Google reported the redesign on Oct 12, 2026, adding Chat and Task buttons above the prompt box.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "TechCrunch: Gemini Spark 'eventually became' Task Mode. 9to5Google, Oct 12 2026: Google is combining Spark with the main chat experience, and 'Task' is Gemini Spark."
+    }
+  ],
+  "dropped": [
+    {
+      "claim": "The free rollout covers six countries: the U.S., Japan, Korea, Canada, Australia, and India.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Google blog names the six countries. TechCrunch does not list countries."
+    },
+    {
+      "claim": "A set of advanced features is rolling out starting in the U.S.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Google: 'We're also rolling out a set of advanced features, starting in the U.S.' TechCrunch does not say this."
+    },
+    {
+      "claim": "Users can forward emails to gemini@google.com, starting in the U.S.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Google: 'Starting in the U.S., you can also forward emails to gemini@google.com'."
+    },
+    {
+      "claim": "TechCrunch says users can also call the app to give it commands. Google's post does not say this.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "TechCrunch: 'Users can also send texts to Gemini or call the app to give it commands.'"
+    },
+    {
+      "claim": "Before the Nov 17 expansion, Gemini Spark required an AI Pro or AI Ultra subscription. This is 9to5Google's Oct 12 report. TechCrunch only mentions Ultra subscribers.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "9to5Google: 'Gemini Spark requires an AI Pro or AI Ultra subscription.' TechCrunch mentions only the Ultra tier."
+    },
+    {
+      "claim": "On calls, Gemini discloses right away that it is an AI. Businesses can opt out, and Gemini won't give out payment or private account info unless the user says so.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Google blog (Woodward's dealership example and opt-out link)."
+    },
+    {
+      "claim": "Calling through Gemini is not currently available in Indiana, Louisiana, Minnesota, Montana, and Nebraska.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Google blog footnote 1."
+    },
+    {
+      "claim": "Gemini uses the Agent Payments Protocol (AP2) for purchases. Google says it is working with American Express (coming soon), Mastercard and Visa on digital tokens, and users can set a hard spending cap upfront.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Google blog payments section."
+    },
+    {
+      "claim": "Gemini is designed to ask for confirmation or pre-approval before clicking 'Buy'. Users can set routine actions to 'Always allow'.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Google blog security section."
+    },
+    {
+      "claim": "Each task runs in a hardware-isolated virtual machine dedicated to the user's account, using Google Cloud's Agent Compute Engine.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Google blog: 'hardware-isolated virtual machine that's dedicated to your account and never shared with other users'."
+    },
+    {
+      "claim": "Google says it has not eliminated all mistakes. On some sites Gemini may hand the screen back to the user to click the final button.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Google blog: 'we haven't eliminated all of them'; Gemini 'can make it most of the way through and then hand the screen back to you'."
+    }
+  ]
+}

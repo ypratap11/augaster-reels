@@ -1,0 +1,64 @@
+{
+  "episode": "2026-11-19",
+  "series": "Augaster AI Digest",
+  "story": "Google makes Tasks in Gemini free: it can call businesses, book appointments and pay via Google Pay",
+  "sources": [
+    {
+      "name": "Google blog (The Keyword), Josh Woodward",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
+    },
+    {
+      "name": "TechCrunch (Lucas Ropek, In Brief)",
+      "url": "https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases/"
+    },
+    {
+      "name": "9to5Google (Abner Li)",
+      "url": "https://9to5google.com/2026/10/12/gemini-spark-task-redesign/"
+    }
+  ],
+  "source_line": "Sources: Google blog (The Keyword), TechCrunch, 9to5Google",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "THIS WEEK IN AI",
+      "title": "Gemini can now call and book for you",
+      "point": "And it's free",
+      "narration": "Gemini can now call businesses and book appointments for you, free."
+    },
+    {
+      "kind": "news",
+      "label": "WHAT HAPPENED",
+      "title": "Google expands Tasks in Gemini",
+      "point": "Announced November 17",
+      "narration": "Google expanded Tasks in Gemini on November seventeenth, free to hundreds of millions of people."
+    },
+    {
+      "kind": "news",
+      "label": "HOW IT WORKS",
+      "title": "Switch from Chat to Task mode",
+      "point": "Calls, bookings, Google Pay",
+      "narration": "Switch Gemini from Chat to Task. It acts for you: calling, booking, paying with Google Pay."
+    },
+    {
+      "kind": "analysis",
+      "label": "WHAT IT MEANS FOR YOU",
+      "title": "Customers may send AI to book you",
+      "point": "Catch: texting needs a US number",
+      "narration": "Customers could send AI to call or book you. The catch: texting Gemini needs a U S number."
+    },
+    {
+      "kind": "analysis",
+      "label": "OUR TAKE",
+      "title": "Test it, then tidy your booking info",
+      "point": "",
+      "narration": "Our take: test it on your errands first. Keep hours and booking details clear."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER AI DIGEST",
+      "title": "Full breakdown + sources",
+      "point": "augaster.com",
+      "narration": "Full breakdown and sources on augaster dot com. Follow for weekly practical AI."
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+1
+00:00:00,100 --> 00:00:01,204
+Gemini can now call
+
+2
+00:00:01,204 --> 00:00:02,959
+businesses and book appointments
+
+3
+00:00:02,959 --> 00:00:03,812
+for you, free.
+
+4
+00:00:04,112 --> 00:00:05,621
+Google expanded Tasks in
+
+5
+00:00:05,621 --> 00:00:07,520
+Gemini on November seventeenth,
+
+6
+00:00:07,520 --> 00:00:08,749
+free to hundreds of
+
+7
+00:00:08,749 --> 00:00:09,979
+millions of people.
+
+8
+00:00:10,279 --> 00:00:11,715
+Switch Gemini from Chat
+
+9
+00:00:11,715 --> 00:00:12,765
+to Task. It acts
+
+10
+00:00:12,765 --> 00:00:14,367
+for you: calling, booking,
+
+11
+00:00:14,367 --> 00:00:15,804
+paying with Google Pay.
+
+12
+00:00:16,104 --> 00:00:17,653
+Customers could send AI
+
+13
+00:00:17,653 --> 00:00:18,725
+to call or book
+
+14
+00:00:18,725 --> 00:00:20,273
+you. The catch: texting
+
+15
+00:00:20,273 --> 00:00:21,405
+Gemini needs a U
+
+16
+00:00:21,405 --> 00:00:22,120
+S number.
+
+17
+00:00:22,420 --> 00:00:23,425
+Our take: test it
+
+18
+00:00:23,425 --> 00:00:24,682
+on your errands first.
+
+19
+00:00:24,682 --> 00:00:25,939
+Keep hours and booking
+
+20
+00:00:25,939 --> 00:00:26,793
+details clear.
+
+21
+00:00:27,093 --> 00:00:28,830
+Full breakdown and sources
+
+22
+00:00:28,830 --> 00:00:30,207
+on augaster dot com.
+
+23
+00:00:30,207 --> 00:00:32,003
+Follow for weekly practical
+
+24
+00:00:32,003 --> 00:00:32,363
+AI.
+
