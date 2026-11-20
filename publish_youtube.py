@@ -36,9 +36,16 @@ def metadata(epdir):
     caption = caption.replace(" (link in bio)", "").replace("Link in bio.", "")
     lines = caption.split("\n")
     tags = [w.lstrip("#") for w in re.findall(r"#\w+", caption)]
-    body = "\n".join(l for l in lines if not l.strip().startswith("#")).strip()
+    body = "\n".join(l for l in lines if not l.strip().startswith("#")
+                     and not l.lower().startswith("full breakdown")).strip()
     story = script.get("story") or lines[0]
-    title = story if len(story) <= 90 else story[:87].rsplit(" ", 1)[0] + "…"
+    hook = re.sub(r"[^\w)\]!?.,'’$%]+$", "", lines[0]).strip() if lines else ""
+    fits = [t for t in (story, hook) if t and len(t) <= 85]
+    if fits:
+        title = min(fits, key=len) if len(story) > 70 else story
+    else:  # cut at the last clause break, never mid-phrase
+        cut = max(story.rfind(", ", 0, 85), story.rfind(": ", 0, 85))
+        title = story[:cut] if cut > 30 else story[:84].rsplit(" ", 1)[0] + "…"
     title = f"{title} #Shorts"
     src = script.get("source_line") or ""
     desc = (f"{body}\n\n{AI_NOTE}\n"
