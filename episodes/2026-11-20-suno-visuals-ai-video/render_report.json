@@ -1,0 +1,28 @@
+{
+  "duration_sec": 30.13,
+  "segments": 6,
+  "captions": 23,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/__w/augaster-reels/augaster-reels/episodes/2026-11-20-suno-visuals-ai-video/reel.mp4",
+  "voice": "kokoro:af_heart",
+  "sources": [
+    {
+      "name": "Suno blog (Introducing Visuals, Jack Brody)",
+      "url": "https://suno.com/blog/introducing-visuals"
+    },
+    {
+      "name": "Music In Africa",
+      "url": "https://musicinafrica.net/magazine/suno-launches-ai-video-tool-amid-copyright-disputes/"
+    },
+    {
+      "name": "Suno Visuals product page and FAQ",
+      "url": "https://suno.com/visuals"
+    },
+    {
+      "name": "Music Business Worldwide",
+      "url": "https://www.musicbusinessworldwide.com/suno-launches-ai-music-video-tool-built-on-model-from-minimax-the-chinese-ai-firm-being-sued-by-disney-and-other-hollywood-studios/"
+    }
+  ],
+  "approved": false
+}

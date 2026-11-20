@@ -1,0 +1,68 @@
+{
+  "episode": "2026-11-20",
+  "series": "Augaster AI Digest",
+  "story": "Suno launches Visuals: turn songs into lyric videos, album art and 15-second AI video clips",
+  "sources": [
+    {
+      "name": "Suno blog (Introducing Visuals, Jack Brody)",
+      "url": "https://suno.com/blog/introducing-visuals"
+    },
+    {
+      "name": "Music In Africa",
+      "url": "https://musicinafrica.net/magazine/suno-launches-ai-video-tool-amid-copyright-disputes/"
+    },
+    {
+      "name": "Suno Visuals product page and FAQ",
+      "url": "https://suno.com/visuals"
+    },
+    {
+      "name": "Music Business Worldwide",
+      "url": "https://www.musicbusinessworldwide.com/suno-launches-ai-music-video-tool-built-on-model-from-minimax-the-chinese-ai-firm-being-sued-by-disney-and-other-hollywood-studios/"
+    }
+  ],
+  "source_line": "Sources: Suno blog, Music In Africa, Music Business Worldwide, Suno Visuals product page and FAQ",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "THIS WEEK IN AI",
+      "title": "Suno turns songs into videos",
+      "point": "Lyric videos, album art, AI clips",
+      "narration": "Suno now turns songs into lyric videos, album art and AI clips."
+    },
+    {
+      "kind": "news",
+      "label": "WHAT HAPPENED",
+      "title": "Suno launches Visuals",
+      "point": "Launched Nov 17, 2026",
+      "narration": "Suno launched Visuals on November seventeenth. Clips run up to fifteen seconds."
+    },
+    {
+      "kind": "news",
+      "label": "HOW IT WORKS",
+      "title": "Drag a song into the Visuals tab",
+      "point": "Lip-sync, extend, edit, re-prompt",
+      "narration": "Drag a song into the Visuals tab. The model lip-syncs to your lyrics. Clips can be edited."
+    },
+    {
+      "kind": "analysis",
+      "label": "WHAT IT MEANS FOR YOU",
+      "title": "Handy for promo, but credits are separate",
+      "point": "Shared clips are watermarked",
+      "narration": "Great for promo clips, but credits are separate from song credits, and shared clips are watermarked."
+    },
+    {
+      "kind": "analysis",
+      "label": "OUR TAKE",
+      "title": "Test one clip on fast quality",
+      "point": "Before buying credit packs",
+      "narration": "Our take: test one short clip on fast quality first."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER TECHNOLOGIES",
+      "title": "Want this set up for your business?",
+      "point": "augaster.com",
+      "narration": "Full breakdown and sources on augaster dot com. Want this set up for your business? Link in bio."
+    }
+  ]
+}
