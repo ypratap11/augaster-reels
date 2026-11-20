@@ -183,6 +183,23 @@ jobs:
                      -m "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
           git push
 
+      # YouTube Shorts: same reel, only after the Instagram gate passed. Off unless YT_PUBLISH is "true"
+      # (keep it off until the Google Cloud project passes YouTube's API audit; see publish_youtube.py).
+      - name: Upload to YouTube
+        if: steps.publish.outcome == 'success' && vars.YT_PUBLISH == 'true'
+        continue-on-error: true
+        shell: bash
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          python publish_youtube.py "${{ steps.gen.outputs.dir }}"
+          git add "${{ steps.gen.outputs.dir }}/youtube.json"
+          git commit -m "Uploaded to YouTube: ${{ steps.gen.outputs.name }}" \
+                     -m "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+          git push
+
       # ---------- queue: Money Lab slots, or fallback when no news episode was made ----------
       - name: Post from queue
         id: queue
