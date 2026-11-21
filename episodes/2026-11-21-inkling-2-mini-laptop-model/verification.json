@@ -1,0 +1,270 @@
+{
+  "title": "Thinking Machines releases Inkling 2 Mini, a free open-weights AI model that runs on a laptop",
+  "episode_number": 20,
+  "cta": "follow",
+  "sources": [
+    {
+      "index": 0,
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "name": "Thinking Machines Lab announcement (Introducing Inkling 2 Mini)",
+      "fetched": true,
+      "published": "Nov 20, 2026",
+      "kind": "primary"
+    },
+    {
+      "index": 1,
+      "url": "https://thenextweb.com/news/inkling-2-mini-thinking-machines-looped-open-weights-laptop",
+      "name": "The Next Web (Ana Maria Constantin)",
+      "fetched": true,
+      "published": "November 21, 2026 - 3:49 pm GMT",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 2,
+      "url": "https://venturebeat.com/technology/thinking-machines-wows-with-inkling-2-mini-looped-transformer-model-that-runs-locally-on-laptops",
+      "name": "VentureBeat (Carl Franzen)",
+      "fetched": true,
+      "published": "10:29 am, PT, November 21, 2026",
+      "kind": "original_reporting"
+    }
+  ],
+  "kept": [
+    {
+      "claim": "Thinking Machines Lab announced and released Inkling 2 Mini on November 20, 2026. The coverage is a day later, so the release is not older than the sources imply.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0 is dated 'Nov 20, 2026' and says 'Today we are releasing Inkling 2 Mini'. Source 1 (dated Nov 21, 2026) says the lab 'announced the model on Friday'. Source 2 (Nov 21) says 'the release yesterday'."
+    },
+    {
+      "claim": "Inkling 2 Mini is a looped transformer that runs the middle layers of the model three times for every token, so it can reason more while writing fewer tokens.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0: 'running the middle layers of the model three times for every token'. Source 1: 'runs its middle layers three times for every token'. Source 2: the 'middle 12 layers run three times using shared weights'."
+    },
+    {
+      "claim": "The model is a Mixture-of-Experts model with 26.4B total parameters and 3.4B active parameters. Counting the loops, it uses 5.4B weight activations per token. It has 24 layers, giving 48 layer applications per token.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0: '26.4B total parameters, 3.4B active, and 5.4B weight activations per token to account for looping' and '48 layer applications per token from 24 stored layers'. Source 1 gives the same figures in 'bn'. Source 2 says '26.4 billion total parameters', '3.4 billion' active, '48 effective layer applications' and '5.4 billion effective active parameters'."
+    },
+    {
+      "claim": "Total memory footprint is about 20GB, small enough to run on consumer laptops and desktop AI computers.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0: 'total memory footprint of Inkling 2 Mini is ~20GB'. Source 1: 'takes up about 20GB of memory'. Source 2: '~20GB memory footprint'."
+    },
+    {
+      "claim": "Most weights were trained and deployed natively in 4-bit NVFP4. The last four layers are in 8-bit MXFP8, so there is no conversion loss from quantization.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0: 'trained and are deployed natively in NVFP4, with the last four layers in MXFP8'. Source 2: 'first 20 layers natively in 4-bit NVFP4 ... final four layers in 8-bit MXFP8'. Source 1 mentions only NVFP4."
+    },
+    {
+      "claim": "Two-thirds of the experts were pruned during training, from 384 down to 128. The model was then trained on 1T tokens distilled from a larger internal Inkling model.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0: 'pruned two-thirds of the experts, leaving the 128 experts' and '1T tokens distilled from a larger internal Inkling model'. Source 1: 'cut two-thirds of the model's experts ... 1tn tokens'. Source 2: 'from 384 down to 128 ... 1 trillion tokens'."
+    },
+    {
+      "claim": "Full weights are published openly on Hugging Face.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0: 'The full weights of Inkling 2 Mini ... are available on Hugging Face'. Source 1: 'The weights are on Hugging Face'. Source 2: 'released ... full weights on Hugging Face'."
+    },
+    {
+      "claim": "The model is released under the Apache 2.0 license, paired with a Model Acceptable Use Policy. The primary announcement page I fetched does not state the license. I saw it on the model card only as a search snippet and did not fetch that page. Only the two press articles I fetched state it.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Source 1: 'released under an Apache 2.0 licence'. Source 2: 'full weights on Hugging Face under the Apache 2.0 license, paired with a standard Model Acceptable Use Policy'."
+    },
+    {
+      "claim": "The model has a 1M-token (1 million) context window. The primary page I fetched does not state this.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Source 1: 'context window of 1m tokens'. Source 2: 'across a 1-million-token context window'."
+    },
+    {
+      "claim": "The model runs on laptops: at launch it is supported on any Mac (MacBook, Mac Mini) with at least 32GB RAM via Ollama. It also runs on NVIDIA DGX Spark.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0: 'any Mac system (MacBook, Mac Mini) with at least 32GB RAM via Ollama' and 'DGX Spark'. Source 1: 'runs through Ollama on Macs with at least 32GB of memory'. Source 2: 'offline on a 32GB MacBook Pro or a single desktop GPU' and lists '32GB+ Macs (Ollama, EXO), DGX Spark, 16GB+ via GGUF'."
+    },
+    {
+      "claim": "Quantized GGUF versions are available via Unsloth and llama.cpp for local inference.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0: 'Quantized GGUF versions are available via Unsloth and llama.cpp'. Source 2 quotes Unsloth's GGUF builds with llama.cpp support and lists '16GB+ via GGUF'."
+    },
+    {
+      "claim": "Thinking Machines reports Inkling 2 Mini leads every open-weights model with fewer than 100B total parameters on benchmarks such as DeepSWE v1.1, where it scores 48.2%.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0: 'leads every open-weights model with less than 100B total parameters on benchmarks such as DeepSWE v1.1 (48.2%)'. Source 1: 'The lab reports 48.2% on DeepSWE v1.1'. Source 2: 'leads all sub-100B open-weights models on DeepSWE v1.1 (48.2%)'."
+    },
+    {
+      "claim": "Inkling 2 Mini scores 46.5% on Vals Index v2.2.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0: 'Vals Index v2.2 (46.5%)'. Source 2: 'Vals Index v2.2 (46.5%)'."
+    },
+    {
+      "claim": "Inkling 2 Mini scores 77.9% on SWE-bench Pro v2 Hard.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0 benchmark table: 'SWEBench Pro v2 (Hard) ... 77.9%'. Source 1: '77.9% on a hard set of SWE-bench Pro tasks'. Source 2: 'SWE-bench Pro v2 Hard (77.9%)'."
+    },
+    {
+      "claim": "Inkling 2 Mini scores 79.2% on SWE-bench Verified.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0 table: 'SWEBench Verified ... 79.2%'. Source 2: 'scoring 79.2% on SWE-bench Verified'."
+    },
+    {
+      "claim": "Inkling 2 Mini scores 20.1 on the Artificial Analysis Intelligence Index (v5.0), tying Alibaba's Qwen3.8-27B. Source 1 rounds this to 20.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0 table: 'AA Index (v5.0) 20.1', the same as Qwen3.8-27B. Source 1: 'put Inkling 2 Mini at 20 on its Intelligence Index. That matches Qwen3.8 27B'. Source 2: 'both tie at 20.1'."
+    },
+    {
+      "claim": "Artificial Analysis (a third-party tester, not fetched) reportedly found Inkling 2 Mini about six times cheaper and four times faster per task than Qwen3.8-27B. It cost $0.59 and took 9 minutes per task, against $3.53 and 38.2 minutes. The primary page I fetched does not state these figures.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Source 1: 'Each task cost $0.59 and took nine minutes, against $3.53 and 38.2 minutes'. Source 2: 'runs four times faster (9.0 minutes per task versus 38.2 minutes), and costs six times less per task ($0.59 versus $3.53 at first-party API rates)'."
+    },
+    {
+      "claim": "Qwen3.8-27B scored 42.2% on DeepSWE v1.1, against Inkling 2 Mini's 48.2%.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Source 1: 'Alibaba's Qwen3.8-27B scored 42.2%'. Source 2 table: 'Qwen3.8-27B ... 42.2%'."
+    },
+    {
+      "claim": "The lab built an offline demo: researchers flew with the model, and on a MacBook Pro (M5 Pro, 48GB) in airplane mode it built a playable flight simulator in a few minutes.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0: 'it ran offline on a MacBook Pro and built a playable flight simulator in a few minutes'; the caption reads 'MacBook Pro (M5 Pro, 48GB) Airplane mode'. Source 1: 'built a playable flight simulator in a few minutes'. Source 2: 'a 48GB M5 Pro MacBook Pro to build a playable flight simulator in minutes'."
+    },
+    {
+      "claim": "In a second demo, one offline MacBook ran all 20 villagers of a pixel town built by the model.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0: 'the same model powers all 20 villagers on one offline MacBook'. Source 1: 'a single offline MacBook ran all 20 villagers'. Source 2: 'powering 20 persistent autonomous villagers'."
+    },
+    {
+      "claim": "In the lab's scaling test, a non-looping model cost 7.5% less compute to train but needed 140% more inference compute to match the looped model's loss on 512k-token agentic traces. Source 2 states only the 140% figure.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "Source 0: 'cost 7.5% less compute to train, but required 140% more inference compute ... on 512k-token agentic traces'. Source 1: 'cost 7.5% less to train, but needed 140% more compute at run time'. Source 2 gives only '140% more inference compute ... 512K-token agentic traces'."
+    },
+    {
+      "claim": "Limitations: it is not the strongest small model for multi-turn chat or instructions with many constraints. It scores 50.0% on MultiChallenge and 33.4% on ComplexConstraints v1.1, behind Qwen3.8-27B on both. It also trails larger models on hard reasoning tests, and looping does not let the weights store more facts.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0: 'scores 50.0% on MultiChallenge and 33.4% on ComplexConstraints v1.1, behind Qwen3.8-27B on both'. Source 1 gives the same weaknesses without the percentages. Source 2 gives 50.0% and 33.4%, and notes factual recall scales with total parameter count."
+    },
+    {
+      "claim": "Alongside Inkling 2 Mini, the lab released a research-specific variable-loop variant (TML-d24-varloop-research). Its no-CoT time horizon improved from 16 seconds at one pass to 37 seconds at three passes. Source 1 describes the model as looping one to five times.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0: 'research-specific variable-loop variant we are releasing alongside it' and 'improved from 16 seconds at one pass to 37 seconds with three'. Source 1: 'releasing a research model that can loop one to five' times. Source 2: 'companion variable-loop checkpoint ... trained for one to five passes' and '16 seconds ... 37 seconds'."
+    },
+    {
+      "claim": "Stanford's intelligence-per-joule benchmark on an NVIDIA DGX Spark gave Inkling 2 Mini 0.703, against 0.430 for Qwen3.6-35B-A3B and 0.159 for Gemma-4-26B-A4B. The Gemma figure is read from source 2 only.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0: 'scored 0.703 running on NVIDIA DGX Spark ... 0.430 for Qwen3.6-35B-A3B'. Source 2: 'scored 0.703, comfortably ahead of Qwen3.6-35B-A3B (0.430) and Gemma-4-26B-A4B (0.159)'."
+    },
+    {
+      "claim": "Thinking Machines Lab is Mira Murati's startup, and Murati is the former OpenAI CTO. This is background, not a claim of the primary announcement.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Source 1: 'Mira Murati's startup'. Source 2: 'started and led by former OpenAI chief technology officer Mira Murati'."
+    }
+  ],
+  "dropped": [
+    {
+      "claim": "The model is multimodal: it accepts text and images as input and outputs text. The primary page I fetched does not state this.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Source 2: 'natively multimodal, accepting UTF-8 text and pixel-based images ... and outputting text'. Only one fetched source says this, so it is not double-confirmed."
+    },
+    {
+      "claim": "The model is available on Tinker for inference and fine-tuning, and in the Tinker Playground for chat. Only the primary source states this.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Source 0: 'available for inference and fine-tuning on Tinker, and for chat on the Tinker Playground'. Sources 1 and 2 do not say this about the release."
+    },
+    {
+      "claim": "Price: the weights are free to download under Apache 2.0, which source 2 describes as allowing royalty-free commercial use. Neither the primary page I fetched nor source 1 states a price for the weights. Hosted API pricing of $0.15 input / $0.50 output per 1M tokens (first-party), and from $0.08 / $0.35 on OpenRouter, appears only in source 2.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Source 2: 'royalty-free' under Apache 2.0, and a table listing '$0.15 / $0.50 (first-party); from $0.08 / $0.35 on OpenRouter'. Only one fetched source, so not double-confirmed."
+    }
+  ]
+}

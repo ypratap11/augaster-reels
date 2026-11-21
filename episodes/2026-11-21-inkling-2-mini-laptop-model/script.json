@@ -1,0 +1,64 @@
+{
+  "episode": "2026-11-21",
+  "series": "Augaster AI Digest",
+  "story": "Thinking Machines releases Inkling 2 Mini, a free open-weights AI model that runs on a laptop",
+  "sources": [
+    {
+      "name": "Thinking Machines Lab announcement (Introducing Inkling 2 Mini)",
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini/"
+    },
+    {
+      "name": "The Next Web (Ana Maria Constantin)",
+      "url": "https://thenextweb.com/news/inkling-2-mini-thinking-machines-looped-open-weights-laptop"
+    },
+    {
+      "name": "VentureBeat (Carl Franzen)",
+      "url": "https://venturebeat.com/technology/thinking-machines-wows-with-inkling-2-mini-looped-transformer-model-that-runs-locally-on-laptops"
+    }
+  ],
+  "source_line": "Sources: Thinking Machines Lab, The Next Web, VentureBeat",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "THIS WEEK IN AI",
+      "title": "A free AI model that runs on your laptop",
+      "point": "Even offline",
+      "narration": "A free AI model now runs on your laptop, even offline."
+    },
+    {
+      "kind": "news",
+      "label": "WHAT HAPPENED",
+      "title": "Inkling 2 Mini is released",
+      "point": "Open weights, Nov 20",
+      "narration": "Thinking Machines Lab released Inkling two Mini on November twentieth, with open weights."
+    },
+    {
+      "kind": "news",
+      "label": "HOW IT WORKS",
+      "title": "It loops its middle layers 3 times",
+      "point": "About 20GB of memory",
+      "narration": "It loops its middle layers three times per token. It needs about twenty gigabytes of memory."
+    },
+    {
+      "kind": "analysis",
+      "label": "WHAT IT MEANS FOR YOU",
+      "title": "Local AI, with one catch",
+      "point": "Weaker at chat and complex instructions",
+      "narration": "Your data can stay on your own machine. The catch: it is weaker at multi-turn chat and complex instructions."
+    },
+    {
+      "kind": "analysis",
+      "label": "OUR TAKE",
+      "title": "Test it on one task first",
+      "point": "Before trusting it with customers",
+      "narration": "Our take: test it on one task before trusting it with customers."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER AI DIGEST",
+      "title": "Full breakdown + sources",
+      "point": "augaster.com",
+      "narration": "Full breakdown and sources on augaster dot com. Follow for weekly practical AI."
+    }
+  ]
+}

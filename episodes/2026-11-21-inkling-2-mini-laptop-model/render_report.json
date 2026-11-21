@@ -1,0 +1,24 @@
+{
+  "duration_sec": 31.09,
+  "segments": 6,
+  "captions": 23,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/__w/augaster-reels/augaster-reels/episodes/2026-11-21-inkling-2-mini-laptop-model/reel.mp4",
+  "voice": "kokoro:af_heart",
+  "sources": [
+    {
+      "name": "Thinking Machines Lab announcement (Introducing Inkling 2 Mini)",
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini/"
+    },
+    {
+      "name": "The Next Web (Ana Maria Constantin)",
+      "url": "https://thenextweb.com/news/inkling-2-mini-thinking-machines-looped-open-weights-laptop"
+    },
+    {
+      "name": "VentureBeat (Carl Franzen)",
+      "url": "https://venturebeat.com/technology/thinking-machines-wows-with-inkling-2-mini-looped-transformer-model-that-runs-locally-on-laptops"
+    }
+  ],
+  "approved": false
+}

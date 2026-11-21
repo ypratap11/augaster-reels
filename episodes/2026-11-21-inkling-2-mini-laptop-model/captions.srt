@@ -1,0 +1,92 @@
+1
+00:00:00,100 --> 00:00:01,170
+A free AI model
+
+2
+00:00:01,170 --> 00:00:02,300
+now runs on your
+
+3
+00:00:02,300 --> 00:00:03,727
+laptop, even offline.
+
+4
+00:00:04,027 --> 00:00:05,708
+Thinking Machines Lab released
+
+5
+00:00:05,708 --> 00:00:06,828
+Inkling two Mini on
+
+6
+00:00:06,828 --> 00:00:08,458
+November twentieth, with open
+
+7
+00:00:08,458 --> 00:00:09,019
+weights.
+
+8
+00:00:09,319 --> 00:00:10,471
+It loops its middle
+
+9
+00:00:10,471 --> 00:00:11,781
+layers three times per
+
+10
+00:00:11,781 --> 00:00:13,038
+token. It needs about
+
+11
+00:00:13,038 --> 00:00:14,609
+twenty gigabytes of memory.
+
+12
+00:00:14,909 --> 00:00:16,091
+Your data can stay
+
+13
+00:00:16,091 --> 00:00:17,386
+on your own machine.
+
+14
+00:00:17,386 --> 00:00:18,456
+The catch: it is
+
+15
+00:00:18,456 --> 00:00:20,032
+weaker at multi-turn chat
+
+16
+00:00:20,032 --> 00:00:21,608
+and complex instructions.
+
+17
+00:00:21,908 --> 00:00:22,869
+Our take: test it
+
+18
+00:00:22,869 --> 00:00:23,879
+on one task before
+
+19
+00:00:23,879 --> 00:00:25,321
+trusting it with customers.
+
+20
+00:00:25,621 --> 00:00:27,358
+Full breakdown and sources
+
+21
+00:00:27,358 --> 00:00:28,735
+on augaster dot com.
+
+22
+00:00:28,735 --> 00:00:30,531
+Follow for weekly practical
+
+23
+00:00:30,531 --> 00:00:30,891
+AI.
+
