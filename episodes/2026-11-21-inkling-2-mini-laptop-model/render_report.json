@@ -20,5 +20,6 @@
       "url": "https://venturebeat.com/technology/thinking-machines-wows-with-inkling-2-mini-looped-transformer-model-that-runs-locally-on-laptops"
     }
   ],
-  "approved": false
+  "approved": true,
+  "approved_by": "auto-publish gate"
 }

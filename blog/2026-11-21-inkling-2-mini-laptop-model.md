@@ -5,6 +5,7 @@ slug: "inkling-2-mini-laptop-model"
 description: "Thinking Machines Lab, the startup founded by former OpenAI CTO Mira Murati, announced and released Inkling 2 Mini on November 20, 2026. It is an open-weight..."
 tags: ["AI", "OpenSourceAI", "LocalAI", "SmallBusiness", "Ollama", "GenerativeAI"]
 series: "Augaster AI Digest"
+video: "https://www.instagram.com/reel/DgBPZBYDAmg/"
 ---
 **What happened.** Thinking Machines Lab, the startup founded by former OpenAI CTO Mira Murati, announced and released Inkling 2 Mini on November 20, 2026. It is an open-weights model small enough to run on consumer laptops and desktop AI computers. The lab showed it off with an offline demo. Researchers flew with the model, and on a MacBook Pro (M5 Pro, 48GB) in airplane mode it built a playable flight simulator in a few minutes. In a second demo, one offline MacBook ran all 20 villagers of a pixel town the model had built.
 
