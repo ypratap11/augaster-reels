@@ -5,6 +5,7 @@ slug: "canva-ai-controls-switch"
 description: "Canva has added two new AI settings. The first turns generative AI features off or on. The second reduces how much AI-generated content appears in the conten..."
 tags: ["Canva", "GenerativeAI", "SmallBusiness", "AITools", "GraphicDesign", "MarketingTips"]
 series: "Augaster AI Digest"
+video: "https://www.instagram.com/reel/DgEBlxhiDRV/"
 ---
 **What happened.** Canva has added two new AI settings. The first turns generative AI features off or on. The second reduces how much AI-generated content appears in the content library. Engadget and PetaPixel both covered the announcement, which was dated Nov. 19, 2026. We could not fetch Canva's own page to confirm the date, so it rests on those two reports.
 

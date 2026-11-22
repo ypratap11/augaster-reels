@@ -16,5 +16,6 @@
       "url": "https://petapixel.com/2026/11/19/canva-now-lets-users-turn-off-generative-ai-features/"
     }
   ],
-  "approved": false
+  "approved": true,
+  "approved_by": "auto-publish gate"
 }
