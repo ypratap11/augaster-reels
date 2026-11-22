@@ -1,0 +1,68 @@
+{
+  "episode": "2026-11-22",
+  "series": "Augaster AI Digest",
+  "story": "Walmart launches Agent Gateway to control which outside AI shopping agents can buy from it",
+  "sources": [
+    {
+      "name": "RIO Rundown (Substack) daily digest, Nov 21, 2026",
+      "url": "https://riorundown.substack.com/p/ai-news-nov-21-2026-enterprise-infrastructure"
+    },
+    {
+      "name": "Walmart corporate newsroom: Agent Profiles, Agent Gateway and AI agent terms",
+      "url": "https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers"
+    },
+    {
+      "name": "PPC Land (Luis Rijo)",
+      "url": "https://ppc.land/walmart-lets-ai-agents-buy-within-customer-set-limits-such-as-50-or-100/"
+    },
+    {
+      "name": "Walmart corporate newsroom: Q3 FY27 earnings page",
+      "url": "https://corporate.walmart.com/news/2026/11/walmart-releases-q3-fy27-earnings"
+    }
+  ],
+  "source_line": "Sources: Walmart corporate newsroom, PPC Land, RIO Rundown",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "THIS WEEK IN AI",
+      "title": "Walmart gates its AI shopping agents",
+      "point": "Customers set the limits",
+      "narration": "Walmart built a gate for AI shopping agents. Customers set the limits."
+    },
+    {
+      "kind": "news",
+      "label": "WHAT HAPPENED",
+      "title": "Walmart announces Agent Gateway",
+      "point": "Announced Oct 21, 2026",
+      "narration": "Walmart announced Agent Gateway on October twenty-first, twenty twenty-six. Agents that break its terms get blocked."
+    },
+    {
+      "kind": "news",
+      "label": "HOW IT WORKS",
+      "title": "Agent Profiles, approvals, spending limits",
+      "point": "Agents never get card details",
+      "narration": "Each agent gets its own profile. Customers approve purchases or set a spending limit. Agents never get card details."
+    },
+    {
+      "kind": "analysis",
+      "label": "WHAT IT MEANS FOR YOU",
+      "title": "AI agents are becoming shoppers",
+      "point": "Beta, invitation only",
+      "narration": "AI agents are becoming shoppers. The catch: it's an invitation-only beta, suspendable anytime."
+    },
+    {
+      "kind": "analysis",
+      "label": "OUR TAKE",
+      "title": "Learn the approval rules now",
+      "point": "",
+      "narration": "Our take: learn these approval rules now. Customers may expect them elsewhere."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER AI DIGEST",
+      "title": "Full breakdown + sources",
+      "point": "augaster.com",
+      "narration": "Full breakdown and sources on augaster dot com. Follow for weekly practical AI."
+    }
+  ]
+}

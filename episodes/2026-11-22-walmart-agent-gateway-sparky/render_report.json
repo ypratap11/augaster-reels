@@ -1,0 +1,28 @@
+{
+  "duration_sec": 37.09,
+  "segments": 6,
+  "captions": 23,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/__w/augaster-reels/augaster-reels/episodes/2026-11-22-walmart-agent-gateway-sparky/reel.mp4",
+  "voice": "kokoro:af_heart",
+  "sources": [
+    {
+      "name": "RIO Rundown (Substack) daily digest, Nov 21, 2026",
+      "url": "https://riorundown.substack.com/p/ai-news-nov-21-2026-enterprise-infrastructure"
+    },
+    {
+      "name": "Walmart corporate newsroom: Agent Profiles, Agent Gateway and AI agent terms",
+      "url": "https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers"
+    },
+    {
+      "name": "PPC Land (Luis Rijo)",
+      "url": "https://ppc.land/walmart-lets-ai-agents-buy-within-customer-set-limits-such-as-50-or-100/"
+    },
+    {
+      "name": "Walmart corporate newsroom: Q3 FY27 earnings page",
+      "url": "https://corporate.walmart.com/news/2026/11/walmart-releases-q3-fy27-earnings"
+    }
+  ],
+  "approved": false
+}

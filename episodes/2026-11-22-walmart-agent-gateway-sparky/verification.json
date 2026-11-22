@@ -1,0 +1,190 @@
+{
+  "title": "Walmart launches Agent Gateway to control which outside AI shopping agents can buy from it",
+  "episode_number": 22,
+  "cta": "follow",
+  "sources": [
+    {
+      "index": 0,
+      "url": "https://riorundown.substack.com/p/ai-news-nov-21-2026-enterprise-infrastructure",
+      "name": "RIO Rundown (Substack) daily digest, Nov 21, 2026",
+      "fetched": true,
+      "published": "Nov 21, 2026",
+      "kind": "roundup"
+    },
+    {
+      "index": 1,
+      "url": "https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini",
+      "name": "Google Research blog (Google Duplex in Gemini)",
+      "fetched": true,
+      "published": "",
+      "kind": "primary"
+    },
+    {
+      "index": 2,
+      "url": "https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers",
+      "name": "Walmart corporate newsroom: Agent Profiles, Agent Gateway and AI agent terms",
+      "fetched": true,
+      "published": "Oct. 21, 2026",
+      "kind": "primary"
+    },
+    {
+      "index": 3,
+      "url": "https://ppc.land/walmart-lets-ai-agents-buy-within-customer-set-limits-such-as-50-or-100/",
+      "name": "PPC Land (Luis Rijo)",
+      "fetched": true,
+      "published": "October 22, 2026",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 4,
+      "url": "https://corporate.walmart.com/news/2026/11/walmart-releases-q3-fy27-earnings",
+      "name": "Walmart corporate newsroom: Q3 FY27 earnings page",
+      "fetched": true,
+      "published": "Nov. 19, 2026",
+      "kind": "primary"
+    }
+  ],
+  "kept": [
+    {
+      "claim": "Walmart announced the Walmart Agent Gateway on October 21, 2026, together with Agent Profiles and terms for AI agents. This is about a month before the Nov 21, 2026 roundup that presents it as news.",
+      "supported_by": [
+        2,
+        3
+      ],
+      "evidence": "Source 2 is dated Oct. 21, 2026 and says Walmart is introducing Agent Profiles, the Walmart Agent Gateway and terms for AI agents. Source 3 says Walmart on October 21, 2026 set out these three pieces of infrastructure."
+    },
+    {
+      "claim": "The Agent Gateway is a channel for AI agents to shop on Walmart. It is meant to be faster and more reliable than agents using the website through a browser. It uses an MCP, which Walmart's post spells out as 'model text protocol'.",
+      "supported_by": [
+        2,
+        3
+      ],
+      "evidence": "Source 2 says the gateway will give agents a faster, more reliable way to shop by using an MCP (model text protocol). Source 3 quotes the same line and notes that MCP actually stands for Model Context Protocol."
+    },
+    {
+      "claim": "The gateway starts as a beta for companies and developers. Access is limited, by invitation only, and may be suspended at any time. It is not a general launch.",
+      "supported_by": [
+        2,
+        3
+      ],
+      "evidence": "Source 2: 'We'll begin with a beta for companies and developers.' Source 3 quotes the Walmart.com beta page: early beta program, limited access, invitation only, may be suspended at any time."
+    },
+    {
+      "claim": "Walmart's control over outside agents works through its published terms for AI agents. Agents that do not follow the terms will be blocked from Walmart's site.",
+      "supported_by": [
+        2,
+        3
+      ],
+      "evidence": "Source 2: 'Agents that do not follow these terms will be blocked from Walmart's site.' Source 3 lists the same point among the eight terms."
+    },
+    {
+      "claim": "Under the terms, customers must approve agent purchases by default. Walmart may require extra approvals even within an agent's spending limit.",
+      "supported_by": [
+        2,
+        3
+      ],
+      "evidence": "Source 2: customers must approve agent purchases by default, and Walmart may require additional approvals even for purchases within an agent's spending limits. Source 3 repeats this."
+    },
+    {
+      "claim": "Under the terms, agents do not receive customers' payment-card information and cannot add or change a customer's payment methods.",
+      "supported_by": [
+        2,
+        3
+      ],
+      "evidence": "Source 2 and source 3 both state this term."
+    },
+    {
+      "claim": "Agent Profiles give each authorized AI agent its own profile inside the customer's Walmart account. Customers can see the agent's purchases separately.",
+      "supported_by": [
+        2,
+        3
+      ],
+      "evidence": "Source 2: customers will be able to authorize each AI agent with a dedicated profile and see the agent's purchases separately. Source 3 describes the same."
+    },
+    {
+      "claim": "Customers can require approval for every purchase or let an agent buy within a spending limit they set. Walmart's examples are $50, $100 or $200. These are examples, not fixed tiers.",
+      "supported_by": [
+        2,
+        3
+      ],
+      "evidence": "Source 2: 'for example, $50, $100 or $200'. Source 3 says '$50, $100 or $200' are illustrations in the post, not fixed tiers."
+    },
+    {
+      "claim": "Agent Profiles are due to launch 'in the next month' from the Oct 21, 2026 announcement. No exact date is given.",
+      "supported_by": [
+        2,
+        3
+      ],
+      "evidence": "Source 2: 'Agent Profiles, launching in the next month'. Source 3: no exact date is given, which points to late November 2026."
+    },
+    {
+      "claim": "Walmart says the prices an AI agent sees are the same as those a human sees on Walmart.com. Applicable offers and fees are shown before purchase.",
+      "supported_by": [
+        2,
+        3
+      ],
+      "evidence": "Source 2: 'We price products, not people, so the prices that an AI agent sees are the same prices that a human would see on Walmart.com...' Source 3 quotes the same."
+    },
+    {
+      "claim": "The gateway is meant to help agents shop for a customer's 'usual' items without sharing the customer's personal information or purchase history with the agent.",
+      "supported_by": [
+        2,
+        3
+      ],
+      "evidence": "Source 2 gives the sourdough bread and milk example. Source 3 repeats it."
+    },
+    {
+      "claim": "The Walmart and Sam's Club agent shopping tools include the Agent Gateway. Walmart already lists conversational commerce integrations with Muse, ChatGPT, Gemini and others.",
+      "supported_by": [
+        2,
+        3
+      ],
+      "evidence": "Source 2: 'Sparky and conversational commerce integrations with Muse, ChatGPT, Gemini and others'. Source 3 quotes the same and says the announcement covers Walmart and Sam's Club."
+    },
+    {
+      "claim": "Walmart's Sparky usage in the U.S. was up 129% year over year, per Walmart's Q3 FY27 earnings page. The roundup says it 'more than doubled' in the third quarter of fiscal 2027.",
+      "supported_by": [
+        0,
+        4
+      ],
+      "evidence": "Source 4: '129% YoY increase in Sparky usage in the U.S.' Source 0: usage 'more than doubled' and 'increased 129% in the U.S. compared to the prior year'."
+    }
+  ],
+  "dropped": [
+    {
+      "claim": "Walmart's Nov 19, 2026 Q3 FY27 earnings page repeats the Agent Gateway as part of its agentic push. It does not announce the gateway for the first time.",
+      "supported_by": [
+        4
+      ],
+      "evidence": "Source 4 (Nov. 19, 2026) says Walmart is helping establish the rules with new Agent Profiles, the Walmart Agent Gateway and standards for how AI agents interact with its platforms. It links to the Oct 2026 post."
+    },
+    {
+      "claim": "The Walmart.com beta page says the gateway connects agents through Sparky. It also lists safeguards: category restrictions, rate limits and compliance guardrails. Walmart's newsroom post does not state this.",
+      "supported_by": [
+        3
+      ],
+      "evidence": "Source 3 quotes the beta page: 'connects AI agents through Sparky' and 'category restrictions, rate limits & compliance guardrails'. It says the newsroom post does not mention Sparky in connection with the gateway. Source 2 does not state this."
+    },
+    {
+      "claim": "The roundup says Walmart is launching the Agent Gateway to regulate external AI agents. It also says customers get control over permissions and spending limits.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Source 0 summarizes an AIM Media House piece. It describes the gateway as regulating external AI agents and giving customers control over permissions and spending limits. The roundup is a secondary summary, and the primary sources describe the gateway as an agent shopping channel, with control coming via the terms and Agent Profiles."
+    },
+    {
+      "claim": "Single-source and unverified: the roundup says customer basket sizes grew 40% when using Sparky, and that Sparky expanded to Mexico, Canada and Sam's Club with voice and image shopping. None of the Walmart pages fetched state this.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Source 0 only. Sources 2, 3 and 4 do not state these figures."
+    },
+    {
+      "claim": "Source 1, the Google Duplex research blog, does not mention Walmart or the Agent Gateway.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "The fetched page text contains no mention of Walmart."
+    }
+  ]
+}

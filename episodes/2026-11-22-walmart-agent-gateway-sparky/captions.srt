@@ -1,0 +1,92 @@
+1
+00:00:00,100 --> 00:00:01,381
+Walmart built a gate
+
+2
+00:00:01,381 --> 00:00:02,829
+for AI shopping agents.
+
+3
+00:00:02,829 --> 00:00:04,388
+Customers set the limits.
+
+4
+00:00:04,688 --> 00:00:06,609
+Walmart announced Agent Gateway
+
+5
+00:00:06,609 --> 00:00:08,529
+on October twenty-first, twenty
+
+6
+00:00:08,529 --> 00:00:10,337
+twenty-six. Agents that break
+
+7
+00:00:10,337 --> 00:00:11,749
+its terms get blocked.
+
+8
+00:00:12,049 --> 00:00:13,391
+Each agent gets its
+
+9
+00:00:13,391 --> 00:00:15,403
+own profile. Customers approve
+
+10
+00:00:15,403 --> 00:00:16,684
+purchases or set a
+
+11
+00:00:16,684 --> 00:00:18,574
+spending limit. Agents never
+
+12
+00:00:18,574 --> 00:00:19,793
+get card details.
+
+13
+00:00:20,093 --> 00:00:21,678
+AI agents are becoming
+
+14
+00:00:21,678 --> 00:00:23,452
+shoppers. The catch: it's
+
+15
+00:00:23,452 --> 00:00:25,924
+an invitation-only beta, suspendable
+
+16
+00:00:25,924 --> 00:00:26,621
+anytime.
+
+17
+00:00:26,921 --> 00:00:28,162
+Our take: learn these
+
+18
+00:00:28,162 --> 00:00:29,817
+approval rules now. Customers
+
+19
+00:00:29,817 --> 00:00:31,316
+may expect them elsewhere.
+
+20
+00:00:31,616 --> 00:00:33,353
+Full breakdown and sources
+
+21
+00:00:33,353 --> 00:00:34,730
+on augaster dot com.
+
+22
+00:00:34,730 --> 00:00:36,526
+Follow for weekly practical
+
+23
+00:00:36,526 --> 00:00:36,885
+AI.
+
