@@ -5,6 +5,7 @@ slug: "walmart-agent-gateway-sparky"
 description: "On October 21, 2026, Walmart announced the Walmart Agent Gateway, together with Agent Profiles and terms for AI agents. That is about a month before the Nove..."
 tags: ["AIAgents", "Walmart", "AgenticCommerce", "Ecommerce", "SmallBusiness", "AIShopping"]
 series: "Augaster AI Digest"
+video: "https://www.instagram.com/reel/DgDZt7nidP5/"
 ---
 **What happened.** On October 21, 2026, Walmart announced the Walmart Agent Gateway, together with Agent Profiles and terms for AI agents. That is about a month before the November 21, 2026 roundup that presents it as news. Walmart's control over outside agents works through its published terms: agents that do not follow them will be blocked from Walmart's site.
 

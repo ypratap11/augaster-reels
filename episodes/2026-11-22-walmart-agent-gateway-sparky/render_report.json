@@ -24,5 +24,6 @@
       "url": "https://corporate.walmart.com/news/2026/11/walmart-releases-q3-fy27-earnings"
     }
   ],
-  "approved": false
+  "approved": true,
+  "approved_by": "auto-publish gate"
 }
