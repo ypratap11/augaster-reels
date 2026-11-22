@@ -5,6 +5,7 @@ slug: "gemini-mac-computer-use"
 description: "On Thursday, Nov. 19, 2026, Google announced computer use in the Gemini app for Mac. The feature lets Gemini complete multi-step tasks across local files, de..."
 tags: ["Gemini", "GoogleAI", "Mac", "SmallBusiness", "AIAutomation", "Productivity"]
 series: "Augaster AI Digest"
+video: "https://www.instagram.com/reel/DgBvU37gTsp/"
 ---
 **What happened.** On Thursday, Nov. 19, 2026, Google announced computer use in the Gemini app for Mac. The feature lets Gemini complete multi-step tasks across local files, desktop apps and the web. The announcement came in a Google blog post by Michael Friedman, Group Product Manager, Gemini App.
 

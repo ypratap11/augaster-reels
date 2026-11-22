@@ -20,5 +20,6 @@
       "url": "https://www.pymnts.com/news/artificial-intelligence/2026/googles-gemini-app-can-now-operate-apple-desktop-computers/"
     }
   ],
-  "approved": false
+  "approved": true,
+  "approved_by": "auto-publish gate"
 }
