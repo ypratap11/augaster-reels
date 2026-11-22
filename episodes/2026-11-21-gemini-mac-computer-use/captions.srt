@@ -1,0 +1,96 @@
+1
+00:00:00,100 --> 00:00:01,141
+Gemini on Mac can
+
+2
+00:00:01,141 --> 00:00:02,233
+now use your apps.
+
+3
+00:00:02,533 --> 00:00:04,364
+Google announced computer use
+
+4
+00:00:04,364 --> 00:00:05,509
+in the Gemini app
+
+5
+00:00:05,509 --> 00:00:06,882
+for Mac. It completes
+
+6
+00:00:06,882 --> 00:00:08,770
+multi-step tasks across files,
+
+7
+00:00:08,770 --> 00:00:09,915
+apps and the web.
+
+8
+00:00:10,215 --> 00:00:10,977
+It works in a
+
+9
+00:00:10,977 --> 00:00:12,311
+background window, so you
+
+10
+00:00:12,311 --> 00:00:13,503
+keep working. You pick
+
+11
+00:00:13,503 --> 00:00:14,599
+the apps and approve
+
+12
+00:00:14,599 --> 00:00:15,313
+key actions.
+
+13
+00:00:15,613 --> 00:00:16,843
+The catch: it needs
+
+14
+00:00:16,843 --> 00:00:18,352
+a Google AI subscription
+
+15
+00:00:18,352 --> 00:00:19,638
+and an Apple Silicon
+
+16
+00:00:19,638 --> 00:00:20,029
+Mac.
+
+17
+00:00:20,329 --> 00:00:21,375
+Our take: test it
+
+18
+00:00:21,375 --> 00:00:22,840
+on one boring, repetitive
+
+19
+00:00:22,840 --> 00:00:23,572
+task first.
+
+20
+00:00:23,872 --> 00:00:25,456
+Full breakdown and sources
+
+21
+00:00:25,456 --> 00:00:26,713
+on augaster dot com.
+
+22
+00:00:26,713 --> 00:00:27,751
+Want this set up
+
+23
+00:00:27,751 --> 00:00:29,171
+for your business? Link
+
+24
+00:00:29,171 --> 00:00:29,717
+in bio.
+

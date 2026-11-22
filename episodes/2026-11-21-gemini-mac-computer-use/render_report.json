@@ -1,0 +1,24 @@
+{
+  "duration_sec": 29.92,
+  "segments": 6,
+  "captions": 24,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/__w/augaster-reels/augaster-reels/episodes/2026-11-21-gemini-mac-computer-use/reel.mp4",
+  "voice": "kokoro:af_heart",
+  "sources": [
+    {
+      "name": "Google Keyword blog (Michael Friedman)",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/"
+    },
+    {
+      "name": "TechCrunch (Sarah Perez)",
+      "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/"
+    },
+    {
+      "name": "PYMNTS",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/googles-gemini-app-can-now-operate-apple-desktop-computers/"
+    }
+  ],
+  "approved": false
+}

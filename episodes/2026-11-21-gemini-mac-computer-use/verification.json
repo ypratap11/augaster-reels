@@ -1,0 +1,156 @@
+{
+  "title": "Google's Gemini app for Mac can now use your apps and files for you",
+  "episode_number": 21,
+  "cta": "service",
+  "sources": [
+    {
+      "index": 0,
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/",
+      "name": "Google Keyword blog (Michael Friedman)",
+      "fetched": true,
+      "published": "2026-11-19",
+      "kind": "primary"
+    },
+    {
+      "index": 1,
+      "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+      "name": "TechCrunch (Sarah Perez)",
+      "fetched": true,
+      "published": "2026-11-19",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 2,
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/googles-gemini-app-can-now-operate-apple-desktop-computers/",
+      "name": "PYMNTS",
+      "fetched": true,
+      "published": "Nov. 19, 2026 (Thursday, per article text)",
+      "kind": "original_reporting"
+    }
+  ],
+  "kept": [
+    {
+      "claim": "Google announced computer use in the Gemini app for Mac on Thursday, Nov. 19, 2026.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Google blog is dated 2026-11-19 and says 'Starting today'. TechCrunch (published 2026-11-19): 'Google on Thursday announced...'. PYMNTS: 'Google said in a Thursday (Nov. 19) blog post'."
+    },
+    {
+      "claim": "Computer use in the Gemini app for Mac lets Gemini complete multi-step tasks across local files, desktop apps and the web.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Google: 'helps you get multi-step tasks done across your local files, desktop apps, and the web'. TechCrunch: multistep tasks 'across local files, apps, and the web'. PYMNTS: same wording."
+    },
+    {
+      "claim": "Gemini works in an isolated background window with a live preview in the chat, so the user's main screen and cursor stay free to keep working.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Google: 'isolated background window with a live preview right in your chat. Your main screen and cursor remain completely free'. TechCrunch: live preview in chat while screen and cursor stay free. PYMNTS: isolated background window leaving main screen and cursor free."
+    },
+    {
+      "claim": "The user chooses which apps Gemini can access, can watch every step live, can pause at any time, and approves key actions before they happen.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Google: 'you choose which apps Gemini can access, watch every step live, pause at any time, and approve key actions before they happen'. PYMNTS repeats this. TechCrunch mentions only the live preview, not the permission, pause or approval controls."
+    },
+    {
+      "claim": "The user describes what they need and Gemini handles the clicking, typing, menus and forms.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Google: 'Just describe what you need, and Gemini handles the clicking, typing, menus, and forms for you.' PYMNTS quotes this. TechCrunch says only that Gemini completes tasks on the user's behalf by navigating native Mac apps and browsing websites in the background."
+    },
+    {
+      "claim": "Use cases named by Google include batch colour-grading photos or setting up 3D scenes, filling out shipping quote forms from local PDFs, building a Google Slides presentation from live dashboard data, and batch-listing items for sale on resale platforms.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Google lists these four examples. PYMNTS lists creative workflows, filling out forms, turning live data into a Google Slides presentation, and preparing resale-site listings."
+    },
+    {
+      "claim": "The feature is rolling out in English in the U.S.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Google: 'rolling out in English in the U.S.'. TechCrunch: 'initially available in English in the U.S.'. PYMNTS: 'rolling out in English in the United States'."
+    },
+    {
+      "claim": "It requires a Google AI Plus, Pro or Ultra subscription.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Google footnote: 'available to Google AI Plus, Pro and Ultra users'. TechCrunch: 'requires the Gemini app for Mac and a Google AI Plus, Pro, or Ultra subscription'. PYMNTS: same subscription tiers."
+    },
+    {
+      "claim": "It requires an Apple Silicon Mac running macOS Sequoia 15.0 or later.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Google footnote: 'Requires an Apple Silicon Mac running macOS Sequoia 15.0+'. PYMNTS: 'requires an Apple Silicon Mac running macOS Sequoia 15.0 or later'. TechCrunch does not state this."
+    },
+    {
+      "claim": "It is available for personal Google accounts, with users 18 or older.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Google footnote: 'Available for personal Google accounts 18+'. PYMNTS: 'an 18-plus personal Google account'. TechCrunch does not state this."
+    },
+    {
+      "claim": "The Google blog post is authored by Michael Friedman, Group Product Manager, Gemini App.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Google byline: 'Michael Friedman, Group Product Manager, Gemini App'. PYMNTS quotes him with the same title."
+    }
+  ],
+  "dropped": [
+    {
+      "claim": "TechCrunch lists use cases of filling out forms, repeating a task across a batch of files, organizing files into folders by criteria, and creating slideshows from files or online dashboards.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "TechCrunch: 'filling out forms, repeating the same task over and over across a batch of files, organizing files into folders based on specific criteria, creating slideshows...'. Only one source states this exact list."
+    },
+    {
+      "claim": "The Gemini app for Mac can be downloaded at gemini.google/mac.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Google: 'Download the app at gemini.google/mac to get started.' Only the primary source states this."
+    },
+    {
+      "claim": "Google did not say when the feature would expand to other markets or platforms.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "TechCrunch: 'The company didn't say when it would expand to other markets or platforms.' Only one source states this."
+    },
+    {
+      "claim": "TechCrunch says Google is late to this launch, because OpenAI, Anthropic and Meta already offer agentic features in their desktop apps. This is TechCrunch's characterisation.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "TechCrunch: 'a little late to the game' compared with OpenAI, Anthropic and Meta. Only one source states this."
+    }
+  ]
+}
