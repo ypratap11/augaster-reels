@@ -1,0 +1,60 @@
+{
+  "episode": "2026-11-22",
+  "series": "Augaster AI Digest",
+  "story": "Canva adds AI Controls: a switch to turn generative AI off",
+  "sources": [
+    {
+      "name": "Engadget (Anna Washenko)",
+      "url": "https://www.engadget.com/2321318/canva-will-let-users-switch-off-most-generative-ai/"
+    },
+    {
+      "name": "PetaPixel",
+      "url": "https://petapixel.com/2026/11/19/canva-now-lets-users-turn-off-generative-ai-features/"
+    }
+  ],
+  "source_line": "Sources: Engadget, PetaPixel",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "THIS WEEK IN AI",
+      "title": "Canva adds an off switch for AI",
+      "point": "Generative AI, on your terms",
+      "narration": "Canva now gives you an off switch for generative AI."
+    },
+    {
+      "kind": "news",
+      "label": "WHAT HAPPENED",
+      "title": "Two new AI settings in Canva",
+      "point": "Generative AI toggle + library filter",
+      "narration": "Canva added two settings. One turns generative AI features on or off. The other reduces AI-made content in the library."
+    },
+    {
+      "kind": "news",
+      "label": "HOW IT WORKS",
+      "title": "Where to find the controls",
+      "point": "Settings > Permissions",
+      "narration": "Find the switch under Profile, Settings, Permissions. Library control: Your Account, AI Personalization."
+    },
+    {
+      "kind": "analysis",
+      "label": "WHAT IT MEANS FOR YOU",
+      "title": "Useful tools stay, but there's a catch",
+      "point": "Library filter is no guarantee",
+      "narration": "Background Remover and Magic Grab still work. The library setting only reduces AI content. It's not a guarantee."
+    },
+    {
+      "kind": "analysis",
+      "label": "OUR TAKE",
+      "title": "Set a team AI policy, then flip it",
+      "point": "",
+      "narration": "Our take: decide your AI policy, then flip it."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER AI DIGEST",
+      "title": "Full breakdown + sources",
+      "point": "augaster.com",
+      "narration": "Full breakdown and sources on augaster dot com. Follow for weekly practical AI."
+    }
+  ]
+}

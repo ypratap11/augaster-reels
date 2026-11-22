@@ -1,0 +1,20 @@
+{
+  "duration_sec": 35.25,
+  "segments": 6,
+  "captions": 24,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/__w/augaster-reels/augaster-reels/episodes/2026-11-22-canva-ai-controls-switch/reel.mp4",
+  "voice": "kokoro:af_heart",
+  "sources": [
+    {
+      "name": "Engadget (Anna Washenko)",
+      "url": "https://www.engadget.com/2321318/canva-will-let-users-switch-off-most-generative-ai/"
+    },
+    {
+      "name": "PetaPixel",
+      "url": "https://petapixel.com/2026/11/19/canva-now-lets-users-turn-off-generative-ai-features/"
+    }
+  ],
+  "approved": false
+}

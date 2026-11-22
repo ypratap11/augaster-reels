@@ -1,0 +1,96 @@
+1
+00:00:00,100 --> 00:00:01,230
+Canva now gives you
+
+2
+00:00:01,230 --> 00:00:02,256
+an off switch for
+
+3
+00:00:02,256 --> 00:00:03,129
+generative AI.
+
+4
+00:00:03,429 --> 00:00:05,180
+Canva added two settings.
+
+5
+00:00:05,180 --> 00:00:06,806
+One turns generative AI
+
+6
+00:00:06,806 --> 00:00:08,181
+features on or off.
+
+7
+00:00:08,181 --> 00:00:09,932
+The other reduces AI-made
+
+8
+00:00:09,932 --> 00:00:11,557
+content in the library.
+
+9
+00:00:11,857 --> 00:00:13,280
+Find the switch under
+
+10
+00:00:13,280 --> 00:00:15,770
+Profile, Settings, Permissions. Library
+
+11
+00:00:15,770 --> 00:00:17,430
+control: Your Account, AI
+
+12
+00:00:17,430 --> 00:00:18,556
+Personalization.
+
+13
+00:00:18,856 --> 00:00:20,743
+Background Remover and Magic
+
+14
+00:00:20,743 --> 00:00:22,143
+Grab still work. The
+
+15
+00:00:22,143 --> 00:00:24,031
+library setting only reduces
+
+16
+00:00:24,031 --> 00:00:25,431
+AI content. It's not
+
+17
+00:00:25,431 --> 00:00:26,344
+a guarantee.
+
+18
+00:00:26,644 --> 00:00:27,929
+Our take: decide your
+
+19
+00:00:27,929 --> 00:00:29,160
+AI policy, then flip
+
+20
+00:00:29,160 --> 00:00:29,481
+it.
+
+21
+00:00:29,781 --> 00:00:31,518
+Full breakdown and sources
+
+22
+00:00:31,518 --> 00:00:32,895
+on augaster dot com.
+
+23
+00:00:32,895 --> 00:00:34,691
+Follow for weekly practical
+
+24
+00:00:34,691 --> 00:00:35,051
+AI.
+

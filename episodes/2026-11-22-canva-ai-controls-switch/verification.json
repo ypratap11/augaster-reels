@@ -1,0 +1,124 @@
+{
+  "title": "Canva adds AI Controls: a switch to turn generative AI off, free on Free and Pro",
+  "episode_number": 23,
+  "cta": "follow",
+  "sources": [
+    {
+      "index": 0,
+      "url": "https://www.canva.com/newsroom/news/ai-controls-canva/",
+      "name": "Canva newsroom",
+      "fetched": false,
+      "published": "",
+      "kind": "primary"
+    },
+    {
+      "index": 1,
+      "url": "https://www.engadget.com/2321318/canva-will-let-users-switch-off-most-generative-ai/",
+      "name": "Engadget (Anna Washenko)",
+      "fetched": true,
+      "published": "Nov. 19, 2026 7:30 am EST",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 2,
+      "url": "https://petapixel.com/2026/11/19/canva-now-lets-users-turn-off-generative-ai-features/",
+      "name": "PetaPixel",
+      "fetched": true,
+      "published": "2026/11/19 (date from URL; the page text shows no byline date)",
+      "kind": "roundup"
+    }
+  ],
+  "kept": [
+    {
+      "claim": "Canva added two new settings. One turns generative AI features off or on. The other reduces how much AI-generated content appears in the content library.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Engadget: two new settings, one to turn all the gen AI features off or on, and a second to reduce how much gen AI content appears in a user's library. PetaPixel: settings to disable generative AI features and reduce AI-generated material in the content library."
+    },
+    {
+      "claim": "Background Remover and Magic Grab stay available when generative AI is switched off.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Engadget: Background Remover and Magic Grab remain available even when the broader AI tools are disabled. PetaPixel: they remain available even when generative AI is switched off."
+    },
+    {
+      "claim": "Those tools stay on because they work with the content of an existing image and do not generate anything new.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Engadget: they \"don't leverage generative AI, only the content of an existing image\". PetaPixel: Canva says they \"make everyday tasks faster without generating anything new.\""
+    },
+    {
+      "claim": "The library setting reduces the chance of AI-generated content appearing in search. It does not guarantee AI content is excluded.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Engadget: the library option will \"reduce\" the odds of AI-generated images in searches but does not promise to block them. PetaPixel: it does not guarantee AI content is excluded entirely."
+    },
+    {
+      "claim": "The generative AI switch is at Profile > Settings > Permissions, labelled \"Enable generative AI features\".",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Engadget: profile tab, permissions section of the settings menu, with the text \"Enable generative AI features.\" PetaPixel: Profile, Settings, Permissions, switch off Enable generative AI features."
+    },
+    {
+      "claim": "The library setting is at Profile > Your Account > AI Personalization.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Engadget: \"Your Account\" and then the AI personalization section. PetaPixel: Profile, Your Account, AI Personalization."
+    },
+    {
+      "claim": "The announcement and rollout date was Nov. 19, 2026. This comes from the Engadget article, which says \"Today\" and is dated that day, and from the PetaPixel URL date. The Canva primary page could not be fetched to confirm the date.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Engadget: published Nov. 19, 2026 7:30 am EST, \"Today, the company is giving its users the option...\". PetaPixel URL and page are dated 2026/11/19."
+    }
+  ],
+  "dropped": [
+    {
+      "claim": "The controls are available to Free and Pro users.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Engadget: \"Free and Pro users will both be able to access the new controls.\""
+    },
+    {
+      "claim": "The controls are available to both free and paid subscribers. PetaPixel says this is according to The Verge.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "PetaPixel: The Verge reports the controls are available to both free and paid subscribers."
+    },
+    {
+      "claim": "The controls are free or at no additional cost. No fetched source states this. A search snippet from 9to5Mac mentions it, but that page was not fetched, and the Canva primary page could not be fetched.",
+      "supported_by": [],
+      "evidence": "Engadget and PetaPixel only say the controls are available to Free and Pro/paid users. Neither mentions price."
+    },
+    {
+      "claim": "The generative AI switch disables Magic Expand, Magic Write, Magic Design, Magic Layers, Magic Edit, Dream Lab, Canva Code and AI Shapes. It also stops image generation through Canva's AI chatbot.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "PetaPixel lists these tools. Engadget does not list them."
+    },
+    {
+      "claim": "With the library setting on, Canva prioritises human-created templates, graphics and other design elements in search results. A \"small portion\" of the library is AI-generated, and designs containing it carry an AI label in their metadata.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "PetaPixel states this. Engadget says only that the AI tag is not added to results made with Background Remover or Magic Grab."
+    }
+  ]
+}
