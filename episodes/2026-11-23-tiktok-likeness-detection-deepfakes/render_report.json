@@ -1,0 +1,28 @@
+{
+  "duration_sec": 34.89,
+  "segments": 6,
+  "captions": 24,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/__w/augaster-reels/augaster-reels/episodes/2026-11-23-tiktok-likeness-detection-deepfakes/reel.mp4",
+  "voice": "kokoro:af_heart",
+  "sources": [
+    {
+      "name": "Music Business Worldwide",
+      "url": "https://www.musicbusinessworldwide.com/tiktok-rolls-out-likeness-detection-deepfake-tool-globally-launches-public-ai-content-checker/"
+    },
+    {
+      "name": "RT\u00c9 News (AFP wire copy)",
+      "url": "https://www.rte.ie/news/business/2026/1120/1599945-tiktok-deep-fakes/"
+    },
+    {
+      "name": "CTV News (AFP)",
+      "url": "https://www.ctvnews.ca/sci-tech/article/tiktok-launches-tool-to-help-public-figures-detect-deepfakes-globally/"
+    },
+    {
+      "name": "TikTok Newsroom (en-GB): More tools to provide clarity and control around AI-generated content",
+      "url": "https://newsroom.tiktok.com/more-tools-to-provide-clarity-and-control-around-ai-generated-content?lang=en-GB"
+    }
+  ],
+  "approved": false
+}

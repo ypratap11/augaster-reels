@@ -1,0 +1,246 @@
+{
+  "title": "TikTok rolls out Likeness Detection globally, plus a public checker for AI-made videos",
+  "episode_number": 24,
+  "cta": "service",
+  "sources": [
+    {
+      "index": 0,
+      "url": "https://www.musicbusinessworldwide.com/tiktok-rolls-out-likeness-detection-deepfake-tool-globally-launches-public-ai-content-checker/",
+      "name": "Music Business Worldwide",
+      "fetched": true,
+      "published": "November 23, 2026",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 1,
+      "url": "https://www.rte.ie/news/business/2026/1120/1599945-tiktok-deep-fakes/",
+      "name": "RTÉ News (AFP wire copy)",
+      "fetched": true,
+      "published": "2026-11-20",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 2,
+      "url": "https://www.ctvnews.ca/sci-tech/article/tiktok-launches-tool-to-help-public-figures-detect-deepfakes-globally/",
+      "name": "CTV News (AFP)",
+      "fetched": true,
+      "published": "2026-11-20",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 3,
+      "url": "https://newsroom.tiktok.com/more-tools-to-provide-clarity-and-control-around-ai-generated-content?lang=en-GB",
+      "name": "TikTok Newsroom (en-GB): More tools to provide clarity and control around AI-generated content",
+      "fetched": true,
+      "published": "November 20, 2026",
+      "kind": "primary"
+    }
+  ],
+  "kept": [
+    {
+      "claim": "TikTok has started rolling out Likeness Detection globally. It is an opt-in tool that helps eligible creators find and flag AI-generated content on TikTok that may use their likeness without consent.",
+      "supported_by": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "evidence": "Source 3: 'starting to globally roll out Likeness Detection, an opt-in tool...'. Source 0: 'started a global rollout'. Source 1 and Source 2 (AFP): global launch of its deepfake-detection tool for public figures. Source 2's text was only readable through its page metadata description; the article body was not in the fetched text."
+    },
+    {
+      "claim": "The Likeness Detection rollout is gradual, not instant.",
+      "supported_by": [
+        1,
+        3
+      ],
+      "evidence": "Source 1: 'with the tool gradually being rolled out'. Source 3: 'starting to globally roll out'."
+    },
+    {
+      "claim": "Likeness Detection is available to eligible creators and public figures, including Government, Politician, or Political Party Accounts (GPPPAs).",
+      "supported_by": [
+        0,
+        3
+      ],
+      "evidence": "Source 3: 'available to eligible creators and public figures, including ... (GPPPAs)'. Source 0 quotes the same wording."
+    },
+    {
+      "claim": "Likeness Detection works in three steps. Eligible creators verify their ID with a third-party partner. They are notified of content and accounts that may use their likeness and can review them in the tool. They can report content directly to TikTok's safety teams.",
+      "supported_by": [
+        0,
+        3
+      ],
+      "evidence": "Source 3 lists the three steps. Source 0 repeats them and says the partner was not named in the announcement."
+    },
+    {
+      "claim": "Content that violates TikTok's community guidelines against harmful, misleading or nonconsensual depiction of private individuals will be removed.",
+      "supported_by": [
+        0,
+        3
+      ],
+      "evidence": "Source 3 step 3 states this. Source 0 quotes the newsroom post."
+    },
+    {
+      "claim": "TikTok says Likeness Detection is designed to minimise data collection and preserve privacy, and TikTok does not keep ID documents.",
+      "supported_by": [
+        0,
+        3
+      ],
+      "evidence": "Source 3: 'designed to minimise data collection and preserve privacy, and TikTok does not keep ID documents'. Source 0 says the same."
+    },
+    {
+      "claim": "TikTok says it removes more than 99% of content that breaks its rules before anyone reports it. Anyone, whether or not they use TikTok, can report nonconsensual AI-generated content through its privacy reporting form.",
+      "supported_by": [
+        0,
+        3
+      ],
+      "evidence": "Source 3 and Source 0 (quoting the newsroom post) both state this."
+    },
+    {
+      "claim": "TikTok launched a second tool, a public transparency checker. Anyone can upload an image or video to see whether it was generated or edited with TikTok's AI creation features, even without a TikTok account.",
+      "supported_by": [
+        0,
+        3
+      ],
+      "evidence": "Source 3: 'People can upload an image or video to see whether it was generated or edited with TikTok's AI creation features, even if they don't have a TikTok account.' Source 0: 'Anyone can upload an image or video... without needing a TikTok account.'"
+    },
+    {
+      "claim": "The checker looks for C2PA Content Credentials and for VeraDura, TikTok's proprietary invisible watermark, which TikTok says is more durable and harder to remove.",
+      "supported_by": [
+        0,
+        3
+      ],
+      "evidence": "Source 3: 'Alongside Content Credentials, the tool checks for VeraDura, our proprietary invisible watermark, which is more durable and harder to remove.' Source 0 says the same."
+    },
+    {
+      "claim": "The checker detects content made or edited with TikTok's own AI tools. It is not a general-purpose AI detector.",
+      "supported_by": [
+        0,
+        3
+      ],
+      "evidence": "Source 3 limits the check to 'TikTok's AI creation features'. Source 0: 'only detects content made or edited with TikTok and ByteDance AI tools, so it is not a general-purpose AI detector'. The 'not general-purpose' wording is in Source 0 only."
+    },
+    {
+      "claim": "TikTok says its AI labelling tools and technologies have helped it label over/more than 5 billion AI-generated videos on its platform to date. This is a cumulative total.",
+      "supported_by": [
+        0,
+        3
+      ],
+      "evidence": "Source 3: 'helped us label over 5 billion AI-generated videos on our platform to date'. Source 0: 'more than 5 billion'."
+    },
+    {
+      "claim": "TikTok says it became the first video platform to adopt C2PA Content Credentials, in 2024, and automatically adds them to AI-generated content made with its tools.",
+      "supported_by": [
+        0,
+        3
+      ],
+      "evidence": "Source 3: 'In 2024, we became the first video platform to adopt C2PA Content Credentials...'. Source 0 says the same."
+    },
+    {
+      "claim": "TikTok says its in-app AI literacy hub, launched in July, has helped more than 4 million people learn to spot AI-generated content.",
+      "supported_by": [
+        0,
+        3
+      ],
+      "evidence": "Source 3: 'launched in July, has helped more than 4 million people'. Source 0 says the same."
+    },
+    {
+      "claim": "TikTok is a member of the C2PA Steering Committee. Source 0 adds that it joined in July.",
+      "supported_by": [
+        0,
+        3
+      ],
+      "evidence": "Source 3: 'As members of the C2PA Steering Committee...'. Source 0: 'joined the C2PA Steering Committee in July'. The July detail is in Source 0 only."
+    },
+    {
+      "claim": "TikTok announced the tool at its safety and innovation event or forum in London.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "Source 1: 'said at TikTok's safety and innovation event in London'. Source 0: 'Safety and Innovation Forum in London'."
+    },
+    {
+      "claim": "The tool is positioned against AI-generated disinformation ahead of a wave of European elections next year. Source 0 gives the year as 2027. Source 1 names Italy, France and Greece.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 1 and Source 2 (AFP): 'ahead of a wave of European elections next year'. Source 0: 'a wave of elections across Europe in 2027'. Only Source 1 names Italy, France and Greece."
+    },
+    {
+      "claim": "Francesca Scapolo, TikTok's Government Relations Lead for European Elections, said the tool would help politicians and government identify potentially AI-generated content shared potentially without their consent.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "Source 1 quotes her directly. Source 0 paraphrases her and credits AFP."
+    },
+    {
+      "claim": "TikTok is owned by China-based ByteDance.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "Source 1: 'TikTok, owned by China-based ByteDance'. Source 0 calls ByteDance TikTok's parent."
+    }
+  ],
+  "dropped": [
+    {
+      "claim": "AFP describes the Likeness Detection tool as aimed at politicians and accounts with a large number of followers.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Source 1: 'allows politicians and accounts with a large number of followers on TikTok to find and report AI-generated content using their image without consent'."
+    },
+    {
+      "claim": "The checker also recognizes AI features in four ByteDance apps: CapCut, Dreamina, Hypic and Pippit.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Source 0 states this. The TikTok newsroom post does not mention these apps."
+    },
+    {
+      "claim": "The checker is available now via TikTok's Transparency Centre.",
+      "supported_by": [
+        3
+      ],
+      "evidence": "Source 3: 'The tool is available now via our Transparency Centre.'"
+    },
+    {
+      "claim": "The cumulative labelled-video figure was more than 3 billion in July and more than 1.3 billion in November 2025.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Source 0 states both earlier figures."
+    },
+    {
+      "claim": "Date version A: the TikTok newsroom post announcing both tools is dated November 20, 2026.",
+      "supported_by": [
+        3
+      ],
+      "evidence": "Source 3 prints 'November 20, 2026'."
+    },
+    {
+      "claim": "Date version B: MBW says TikTok announced the global rollout on Thursday (November 19) at its Safety and Innovation Forum in London.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Source 0: 'announced the global rollout on Thursday (November 19) at its Safety and Innovation Forum in London'. Source 0 also says the checker was unveiled on November 19."
+    },
+    {
+      "claim": "Date version C: AFP, as carried by CTV, says TikTok announced the launch on Friday. Source 2 was published 2026-11-20, which is a Friday. RTÉ published the same AFP story at 2026-11-20 05:40 UTC and does not name a weekday in its text.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Source 2 metadata description: 'TikTok announced Friday the global launch of its deepfake-detection tool for public figures'."
+    },
+    {
+      "claim": "The announcement is not the start of the tool. TikTok began testing Likeness Detection with a small group of creators in the United States in July. Identity checks in that test were run by Jumio using a real-time selfie and a government ID check.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "Source 0 states this, citing its own earlier reporting. The TikTok newsroom post does not mention the July test or Jumio."
+    }
+  ]
+}

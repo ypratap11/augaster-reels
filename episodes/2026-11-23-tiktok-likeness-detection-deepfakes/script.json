@@ -1,0 +1,68 @@
+{
+  "episode": "2026-11-23",
+  "series": "Augaster AI Digest",
+  "story": "TikTok rolls out Likeness Detection globally, plus a public checker for AI-made videos",
+  "sources": [
+    {
+      "name": "Music Business Worldwide",
+      "url": "https://www.musicbusinessworldwide.com/tiktok-rolls-out-likeness-detection-deepfake-tool-globally-launches-public-ai-content-checker/"
+    },
+    {
+      "name": "RTÉ News (AFP wire copy)",
+      "url": "https://www.rte.ie/news/business/2026/1120/1599945-tiktok-deep-fakes/"
+    },
+    {
+      "name": "CTV News (AFP)",
+      "url": "https://www.ctvnews.ca/sci-tech/article/tiktok-launches-tool-to-help-public-figures-detect-deepfakes-globally/"
+    },
+    {
+      "name": "TikTok Newsroom (en-GB): More tools to provide clarity and control around AI-generated content",
+      "url": "https://newsroom.tiktok.com/more-tools-to-provide-clarity-and-control-around-ai-generated-content?lang=en-GB"
+    }
+  ],
+  "source_line": "Sources: Music Business Worldwide, RTÉ News (AFP), CTV News (AFP), TikTok Newsroom",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "THIS WEEK IN AI",
+      "title": "TikTok's public AI checker needs no account",
+      "point": "Anyone can upload a clip",
+      "narration": "TikTok's new public checker spots its own AI videos. No account needed."
+    },
+    {
+      "kind": "news",
+      "label": "WHAT HAPPENED",
+      "title": "Likeness Detection is rolling out globally",
+      "point": "Gradual rollout, opt-in",
+      "narration": "Likeness Detection is rolling out globally. Eligible creators can flag AI content using their likeness."
+    },
+    {
+      "kind": "news",
+      "label": "HOW IT WORKS",
+      "title": "Checks Content Credentials and a watermark",
+      "point": "Only TikTok's own AI tools",
+      "narration": "The checker reads Content Credentials and an invisible watermark. It misses other AI tools."
+    },
+    {
+      "kind": "analysis",
+      "label": "WHAT IT MEANS FOR YOU",
+      "title": "The catch: it's for eligible creators only",
+      "point": "Check whether you qualify",
+      "narration": "The catch: Likeness Detection is only for eligible creators, so check whether you qualify."
+    },
+    {
+      "kind": "analysis",
+      "label": "OUR TAKE",
+      "title": "Report fakes fast, don't rely on one checker",
+      "point": "",
+      "narration": "Our take: report fakes of you fast, and don't trust one checker alone."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER TECHNOLOGIES",
+      "title": "Want this set up for your business?",
+      "point": "augaster.com",
+      "narration": "Full breakdown and sources on augaster dot com. Want this set up for your business? Link in bio."
+    }
+  ]
+}

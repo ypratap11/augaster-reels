@@ -1,0 +1,96 @@
+1
+00:00:00,100 --> 00:00:01,905
+TikTok's new public checker
+
+2
+00:00:01,905 --> 00:00:03,048
+spots its own AI
+
+3
+00:00:03,048 --> 00:00:04,793
+videos. No account needed.
+
+4
+00:00:05,093 --> 00:00:07,111
+Likeness Detection is rolling
+
+5
+00:00:07,111 --> 00:00:09,254
+out globally. Eligible creators
+
+6
+00:00:09,254 --> 00:00:10,642
+can flag AI content
+
+7
+00:00:10,642 --> 00:00:12,155
+using their likeness.
+
+8
+00:00:12,455 --> 00:00:14,073
+The checker reads Content
+
+9
+00:00:14,073 --> 00:00:15,866
+Credentials and an invisible
+
+10
+00:00:15,866 --> 00:00:17,542
+watermark. It misses other
+
+11
+00:00:17,542 --> 00:00:18,236
+AI tools.
+
+12
+00:00:18,536 --> 00:00:20,405
+The catch: Likeness Detection
+
+13
+00:00:20,405 --> 00:00:21,748
+is only for eligible
+
+14
+00:00:21,748 --> 00:00:23,441
+creators, so check whether
+
+15
+00:00:23,441 --> 00:00:24,317
+you qualify.
+
+16
+00:00:24,617 --> 00:00:25,860
+Our take: report fakes
+
+17
+00:00:25,860 --> 00:00:26,804
+of you fast, and
+
+18
+00:00:26,804 --> 00:00:28,096
+don't trust one checker
+
+19
+00:00:28,096 --> 00:00:28,543
+alone.
+
+20
+00:00:28,843 --> 00:00:30,427
+Full breakdown and sources
+
+21
+00:00:30,427 --> 00:00:31,683
+on augaster dot com.
+
+22
+00:00:31,683 --> 00:00:32,721
+Want this set up
+
+23
+00:00:32,721 --> 00:00:34,142
+for your business? Link
+
+24
+00:00:34,142 --> 00:00:34,688
+in bio.
+
