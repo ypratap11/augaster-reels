@@ -5,6 +5,7 @@ slug: "tiktok-likeness-detection-deepfakes"
 description: "TikTok has started rolling out Likeness Detection globally. It is an opt-in tool that helps eligible creators find and flag AI-generated content on the platf..."
 tags: ["TikTok", "AI", "Deepfakes", "SmallBusiness", "SocialMedia", "ContentCredentials"]
 series: "Augaster AI Digest"
+video: "https://www.instagram.com/reel/DgGQHf8kzQb/"
 ---
 **What happened.** TikTok has started rolling out Likeness Detection globally. It is an opt-in tool that helps eligible creators find and flag AI-generated content on the platform that may use their likeness without consent. The rollout is gradual, not instant. It is available to eligible creators and public figures, including Government, Politician, or Political Party Accounts. TikTok announced it at its safety and innovation event in London, and positioned it against AI-generated disinformation ahead of a wave of European elections next year. One source gives the year as 2027, and another names Italy, France and Greece. Francesca Scapolo, TikTok's Government Relations Lead for European Elections, said the tool would help politicians and government identify potentially AI-generated content shared potentially without their consent.
 
