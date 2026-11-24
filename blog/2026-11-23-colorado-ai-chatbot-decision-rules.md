@@ -5,6 +5,7 @@ slug: "colorado-ai-chatbot-decision-rules"
 description: "The Colorado Department of Law adopted its Automated Decision-Making Technology (ADMT) and Chatbot Safety Act rules on November 19, 2026, after an October 26..."
 tags: ["AI", "SmallBusiness", "Colorado", "AIRegulation", "Chatbots", "AICompliance"]
 series: "Augaster AI Digest"
+video: "https://www.instagram.com/reel/DgHJ5QRo5LM/"
 ---
 **What happened.** The Colorado Department of Law adopted its Automated Decision-Making Technology (ADMT) and Chatbot Safety Act rules on November 19, 2026, after an October 26 public hearing. The rules are not yet final or in force. The Department has requested a formal opinion on them from the Attorney General. After that, the rules and the opinion are filed with the Secretary of State, and the rules become final twenty days after publication. Earlier steps were the filing of proposed rules on August 11, 2026 and an interim draft on October 6, 2026.
 
