@@ -1,0 +1,64 @@
+{
+  "episode": "2026-11-23",
+  "series": "Augaster AI Digest",
+  "story": "Colorado adopts AI rules: chatbot age checks can't rely on ID alone, and AI-assisted denials need a 30-day explanation",
+  "sources": [
+    {
+      "name": "Colorado Attorney General (Dept. of Law) ADMT & Chatbot Safety rulemaking page",
+      "url": "https://coag.gov/resources/ai/"
+    },
+    {
+      "name": "PPC Land",
+      "url": "https://ppc.land/colorado-bans-id-only-age-checks-for-ai-chatbots-in-adopted-rules/"
+    },
+    {
+      "name": "Consumer Financial Services Law Monitor (Troutman Pepper Locke)",
+      "url": "https://www.consumerfinancialserviceslawmonitor.com/2026/11/colorado-finalizes-automated-decision-making-technology-rules-servicing-and-collections-are-in-and-human-review-gets-a-commercial-reasonableness-roadmap/"
+    }
+  ],
+  "source_line": "Sources: Colorado Attorney General (Dept. of Law), PPC Land, Consumer Financial Services Law Monitor (Troutman Pepper Locke)",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "THIS WEEK IN AI",
+      "title": "Colorado's AI rules could change chatbot age checks",
+      "point": "Adopted, but not final",
+      "narration": "Colorado's new AI rules could change chatbot age checks. They're not final."
+    },
+    {
+      "kind": "news",
+      "label": "WHAT HAPPENED",
+      "title": "Colorado adopted its ADMT and chatbot rules",
+      "point": "Adopted Nov. 19, 2026",
+      "narration": "Adopted November nineteenth, they still need an Attorney General opinion. Final comes twenty days after publication."
+    },
+    {
+      "kind": "news",
+      "label": "HOW IT WORKS",
+      "title": "Age estimates, AI disclosure, review of denials",
+      "point": "Headline claims: one report only",
+      "narration": "Chatbots must estimate age and say they're AI. One report says ID alone won't do, and denials need a thirty-day explanation."
+    },
+    {
+      "kind": "analysis",
+      "label": "WHAT IT MEANS FOR YOU",
+      "title": "Your chatbots may need changes",
+      "point": "Catch: nothing is final yet",
+      "narration": "Your chatbots may need changes. The catch: nothing's final, and key claims are unconfirmed."
+    },
+    {
+      "kind": "analysis",
+      "label": "OUR TAKE",
+      "title": "Audit your AI tools, then wait for final text",
+      "point": "",
+      "narration": "Our take: audit your AI tools, then wait for final text."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER AI DIGEST",
+      "title": "Full breakdown + sources",
+      "point": "augaster.com",
+      "narration": "Full breakdown and sources on augaster dot com. Follow for weekly practical AI."
+    }
+  ]
+}

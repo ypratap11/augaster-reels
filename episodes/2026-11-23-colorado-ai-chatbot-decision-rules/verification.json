@@ -1,0 +1,201 @@
+{
+  "title": "Colorado adopts AI rules: chatbot age checks can't rely on ID alone, and AI-assisted denials need a 30-day explanation",
+  "episode_number": 25,
+  "cta": "follow",
+  "sources": [
+    {
+      "index": 0,
+      "url": "https://coag.gov/resources/ai/",
+      "name": "Colorado Attorney General (Dept. of Law) ADMT & Chatbot Safety rulemaking page",
+      "fetched": true,
+      "published": "",
+      "kind": "primary"
+    },
+    {
+      "index": 1,
+      "url": "https://ppc.land/colorado-bans-id-only-age-checks-for-ai-chatbots-in-adopted-rules/",
+      "name": "PPC Land",
+      "fetched": true,
+      "published": "November 22, 2026",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 2,
+      "url": "https://www.consumerfinancialserviceslawmonitor.com/2026/11/colorado-finalizes-automated-decision-making-technology-rules-servicing-and-collections-are-in-and-human-review-gets-a-commercial-reasonableness-roadmap/",
+      "name": "Consumer Financial Services Law Monitor (Troutman Pepper Locke)",
+      "fetched": true,
+      "published": "November 23, 2026",
+      "kind": "original_reporting"
+    }
+  ],
+  "kept": [
+    {
+      "claim": "The Colorado Department of Law adopted the Automated Decision-Making Technology (ADMT) and Chatbot Safety Act rules on November 19, 2026, after an October 26 public hearing.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0: 'On November 19, 2026, the Department adopted the ADMT & Chatbot Safety Act Rules'. Source 1: Department adopted 76 pages of rules on November 19, 2026. Source 2: DOL adopted the final rules on November 19, after an October 26 public hearing."
+    },
+    {
+      "claim": "The adopted rules are not yet final or in force. The Department has requested a formal opinion on them from the Attorney General. After that, the rules and the opinion are filed with the Secretary of State, and the rules become final twenty days after publication.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0: requested a formal opinion (§ 24-4-103(8)(b)); rules final twenty days after publication (§ 24-4-103(5)). Source 1: 'not yet in force'; AG opinion and publication still needed. Source 2: AG opinion not yet issued, so the exact effective date is unknown."
+    },
+    {
+      "claim": "The rulemaking timeline was: proposed rules filed with the Secretary of State on August 11, 2026; interim draft on October 6, 2026; formal hearing on October 26, 2026.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0 lists Aug 11 filing, Oct 6 interim draft and Oct 26 hearing. Source 1 gives the same dates. Source 2 gives Aug 11 initial draft, Oct 6 interim draft and Oct 26 hearing. Sources 0 and 1 also give a Regulatory Analysis released October 21 and written comments closing October 26 at 11:59 p.m."
+    },
+    {
+      "claim": "SB 26-189 repeals and reenacts the 2024 Colorado AI law (SB 24-205) with new requirements for ADMT used in consequential decisions. It takes effect January 1, 2027, and the AG must adopt implementing rules before that date.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0: SB 26-189 repeals and reenacts the provisions, effective January 1, 2027, and requires AG rules before then. Source 1: statutes still take effect on January 1, 2027, and SB 26-189 requires AG rules before that date. Source 2: same effective date, and AG rules required beforehand."
+    },
+    {
+      "claim": "SB 26-189 was signed in May 2026. Source 1 gives the date as May 14, 2026.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0: 'signed into law May 2026'. Source 2: 'signed in May 2026'. Source 1 (citing the General Assembly record): Polis signed SB 26-189 on May 14, 2026."
+    },
+    {
+      "claim": "HB 26-1263 (the Chatbot Safety Act, Conversational Artificial Intelligence Services Act) takes effect January 1, 2027.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0: 'goes effect January 1, 2027'. Source 2: takes effect January 1, 2027."
+    },
+    {
+      "claim": "The sources disagree on when HB 26-1263 was signed. Source 1 says May 29, 2026. Source 0 says both that the legislature passed it and the Governor signed it in May 2026, and that it was signed 'on July 1, 2026', so the page is internally inconsistent.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "Source 0: 'signed into law on July 1, 2026' and also, in an earlier paragraph, May 2026. Source 1: Polis signed HB 26-1263 on May 29, 2026."
+    },
+    {
+      "claim": "The Chatbot Safety Act requires chatbot operators to estimate user age, disclose that users are talking to AI, safeguard teens against sexually explicit content and simulated emotional dependence, and offer privacy and account tools for minors. It also requires suicide and self-harm response protocols and bars presenting chatbot output as equivalent to licensed professional services.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0 and source 2 each list these requirements. Source 1 also covers them in the rules summary."
+    },
+    {
+      "claim": "Chatbot operators must submit an annual report to the Attorney General that includes additional metrics on the efficacy and reliability of safeguards. The statute does not detail the report's content.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Both quote the statutory phrase 'any additional metrics necessary to determine the efficacy and reliability...' and say no further detail is given."
+    },
+    {
+      "claim": "Human-review timing: the deployer must acknowledge a request for meaningful human review within 10 days and complete the review within 45 days. There is one extension of up to 45 days in limited circumstances, and none where the decision affects food, shelter or required medical care.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "Source 1: 8.7 timing, 10 days to acknowledge, 45 days with a 45-day extension, not available for food, shelter or required medical care. Source 2: same timing."
+    },
+    {
+      "claim": "Date context: the rules were adopted on November 19, 2026. The ppc.land article was published November 22, 2026 and the CFS Law Monitor post on November 23, 2026, so these are recent news about rules that are adopted but not yet final.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0 gives the November 19 adoption date. Source 1 is dated November 22, 2026 and source 2 November 23, 2026."
+    },
+    {
+      "claim": "Verification gap: the adopted rules text (double-redline docx dated November 18) is the primary source for the ID-only and 30-day claims. It could not be fetched, and a further search and fetch of other independent reports hit a tool-use limit. The coag.gov page and source 2 do not state those two headline claims, so each rests on source 1 alone.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "Source 0 links the adopted rules docx but does not summarize Rules 7 or 10. Source 2 covers the human-review rules and the Chatbot Act overview but not the 30-day disclosure or the ID restriction."
+    }
+  ],
+  "dropped": [
+    {
+      "claim": "The adopted rules (4 CCR 904-6) say an operator 'must not use as the sole method of age estimation a method that requires the User to provide government-issued identification' (Rule 10.2). Self-declared age, contract terms and payment methods available to minors also cannot be relied on alone. This is the 'no ID-only age check' claim. Only source 1 states it explicitly, so it lacks a second readable source.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Source 1 quotes Rule 10.2. Sources 0 and 2 only say operators must estimate age and do not mention the ID restriction. The rules text itself could not be fetched."
+    },
+    {
+      "claim": "Under the adopted rules a deployer that uses ADMT in a consequential decision (lending, hiring, housing, education) must send a plain-language adverse-outcome disclosure within 30 days after the decision (Rules 7.4(A), 7.7). The disclosure describes the decision and the system's role, how to request more information, and the rights to access and correct data and to request human review. Only source 1 states this, so it lacks a second readable source.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Source 1: 'Within 30 days after the decision' in the deadlines table, and it describes Rule 7 as turning the statute's 30-day disclosure duty into a format. Sources 0 and 2 do not mention the 30-day disclosure."
+    },
+    {
+      "claim": "Notices already required by the Equal Credit Opportunity Act or the Fair Credit Reporting Act satisfy the Colorado disclosure duty if they carry the extra required information, in the notice or a supplement within 30 days (Rule 7.7).",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Source 1 describes Rule 7.7 this way."
+    },
+    {
+      "claim": "Deployers must respond to a request for more information within 15 days. Personal data access or correction is due within 45 days, extendable once by 45 days. Records of human review must be kept for three years.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Source 1's deadlines table and process list."
+    },
+    {
+      "claim": "The first annual chatbot report to the Attorney General is due on or before July 1, 2027, covering the preceding calendar year (Rule 14.5(A)). Operators must state a Monthly Active User tier, from Tier 1 at more than 10,000,000 to Tier 5 at fewer than 500,000.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Source 1's deadlines table and its annual-report section."
+    },
+    {
+      "claim": "Chatbot AI disclosures: to minors at the start of each interaction and at least once every three hours. To adults on the first interaction of each calendar day, then persistently or at three-hour intervals. A continuous interaction ends after 60 consecutive minutes without user activity.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Source 1: Rules 11.2(A)(3), 11.2(B) and 2.2."
+    },
+    {
+      "claim": "The adopted Rule 1.3 drops the fixed January 1, 2027 effective date used in the earlier drafts. The rules now take effect on the date the Secretary of State publishes them in the Colorado Code of Regulations.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Source 1 quotes adopted Rule 1.3 and says both the August 11 and October 6 drafts set January 1, 2027."
+    },
+    {
+      "claim": "A federal court order in xAI's lawsuit limits when the state can begin enforcing the automated-decision law.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Source 1 summary: 'a federal court order in xAI's lawsuit already limits when the state can start enforcing'. Not covered by sources 0 or 2."
+    },
+    {
+      "claim": "The Secretary of State docket lists November 19 as the adoption date and November 20 as the date the AG opinion was requested. Its status shows the filing as pending. The tracking number is 2026-00360.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "Source 1 states this. Source 0 says only that the opinion has been requested."
+    }
+  ]
+}

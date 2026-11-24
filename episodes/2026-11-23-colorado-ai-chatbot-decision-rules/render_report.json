@@ -1,0 +1,24 @@
+{
+  "duration_sec": 36.62,
+  "segments": 6,
+  "captions": 24,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/__w/augaster-reels/augaster-reels/episodes/2026-11-23-colorado-ai-chatbot-decision-rules/reel.mp4",
+  "voice": "kokoro:af_heart",
+  "sources": [
+    {
+      "name": "Colorado Attorney General (Dept. of Law) ADMT & Chatbot Safety rulemaking page",
+      "url": "https://coag.gov/resources/ai/"
+    },
+    {
+      "name": "PPC Land",
+      "url": "https://ppc.land/colorado-bans-id-only-age-checks-for-ai-chatbots-in-adopted-rules/"
+    },
+    {
+      "name": "Consumer Financial Services Law Monitor (Troutman Pepper Locke)",
+      "url": "https://www.consumerfinancialserviceslawmonitor.com/2026/11/colorado-finalizes-automated-decision-making-technology-rules-servicing-and-collections-are-in-and-human-review-gets-a-commercial-reasonableness-roadmap/"
+    }
+  ],
+  "approved": false
+}
