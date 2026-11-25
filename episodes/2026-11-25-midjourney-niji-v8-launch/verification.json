@@ -1,0 +1,190 @@
+{
+  "title": "Midjourney launches Niji V8, its anime image model, with a built-in editing model and consistent characters",
+  "episode_number": 26,
+  "cta": "follow",
+  "sources": [
+    {
+      "index": 0,
+      "url": "https://emergent.sh/news/midjourney-niji-v8-launches-built-anime",
+      "name": "Emergent News",
+      "fetched": true,
+      "published": "Nov 25, 2026 12:46 PM",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 1,
+      "url": "https://alphasignal.ai/news/midjourney-s-niji-8-rewrites-anime-character-continuity-with-reference-editing",
+      "name": "AlphaSignal",
+      "fetched": true,
+      "published": "Nov 24, 2026",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 2,
+      "url": "https://dev.to/fathomnews/ai-image-maker-midjourney-launches-new-anime-model-with-built-in-editing-aao",
+      "name": "Fathom News (via DEV Community)",
+      "fetched": true,
+      "published": "Posted on Nov 25",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 3,
+      "url": "https://nijijourney.com/blog/niji-8",
+      "name": "niji・journey blog, 'Welcome to Niji 8!' (Midjourney/Spellbrush)",
+      "fetched": true,
+      "published": "Nov 24, 2026",
+      "kind": "primary"
+    }
+  ],
+  "kept": [
+    {
+      "claim": "Niji 8 (Niji V8), Midjourney's anime-focused image model, was announced and made available on Nov 24, 2026 (date of the primary blog post).",
+      "supported_by": [
+        1,
+        3
+      ],
+      "evidence": "[3] niji・journey blog 'Welcome to Niji 8!' is dated Nov 24, 2026. [1] AlphaSignal published Nov 24, 2026 and says Midjourney launched Niji 8."
+    },
+    {
+      "claim": "Midjourney announced on X that Niji V8 is live. It described it as its latest anime model with precision prompting, consistent characters, 'best in class coherence' and a dedicated editing model. The X post itself could not be fetched, so this is only reported second-hand.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "[2] says Midjourney announced Niji V8 is now live with precision prompting, consistent characters, 'best in class coherence' and a dedicated editing model. [0] gives the same list of features."
+    },
+    {
+      "claim": "Niji models are developed in collaboration between Spellbrush and Midjourney.",
+      "supported_by": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "evidence": "[3] 'A magical collaboration... between... Spellbrush & Midjourney.' [1] 'Midjourney and Spellbrush have released Niji 8.' [0] and [2] say Niji is developed with Spellbrush for Eastern and anime aesthetics."
+    },
+    {
+      "claim": "Niji 8 is selected by adding --niji 8 to a prompt in Discord, or by choosing 'Niji 8' from the Version dropdown in the web interface.",
+      "supported_by": [
+        0,
+        1,
+        3
+      ],
+      "evidence": "[3] 'type --niji 8 after your prompt in discord' or select 'Niji 8' from the 'Version' dropdown in the web interface. [1] says the same. [0] mentions --niji 8 in Discord or Niji 8 in version settings."
+    },
+    {
+      "claim": "Niji 8 includes a dedicated edit feature/model. It is the replacement for the cref (character reference) feature that Niji 6 had. It poses characters into different backgrounds while keeping them consistent.",
+      "supported_by": [
+        1,
+        3
+      ],
+      "evidence": "[3] cref 'from Niji 6'... 'its replacement: the edit feature, which allows you to pose your characters into different backgrounds while keeping consistency.' [1] says a new edit model fills the role of cref."
+    },
+    {
+      "claim": "The edit feature takes character sheets and background images as inputs. It is opened from the Quick Edit button at the bottom right of a finished generation, which opens a menu to attach more pictures. Prompts refer to the images as 'image 1' and 'image 2'.",
+      "supported_by": [
+        1,
+        3
+      ],
+      "evidence": "[3] 'pressing the quick edit button on the bottom right corner of your finished generation'; 'take the character from image 1 and put it into image 2'. [1] lists the same web workflow."
+    },
+    {
+      "claim": "The edit feature can also do small touch-ups on a single image, such as adding a hair bun.",
+      "supported_by": [
+        1,
+        3
+      ],
+      "evidence": "[3] 'you can also use it for small touchups'; example 'add a single hair bun'. [1] 'adding a hair accessory'."
+    },
+    {
+      "claim": "Output quality depends on input quality, so blurry or pixelated reference images give worse results.",
+      "supported_by": [
+        1,
+        3
+      ],
+      "evidence": "[3] 'The quality of the output is highly affected by the quality of the input... not blurry or pixelated.' [1] says blurred, compressed or pixelated references reduce detail and character fidelity."
+    },
+    {
+      "claim": "Midjourney describes Niji 8 as the fastest and most coherent Niji model yet. The post also recommends the HD feature.",
+      "supported_by": [
+        1,
+        3
+      ],
+      "evidence": "[3] 'The newest Niji 8 is the fastest and most coherent niji model yet!' [1] 'describe it as their fastest and most coherent Niji model'."
+    },
+    {
+      "claim": "Niji 8 has improved spatial reasoning and prompt following. The post demonstrates a multi-object scene (a woman on a bed packing a white sundress into a teal suitcase, with a pink flamingo inner tube behind her) and simple multi-panel comic pages from one prompt.",
+      "supported_by": [
+        1,
+        3
+      ],
+      "evidence": "[3] 'Improved Spatial Reasoning' and 'Comic Pages' sections with the sundress/teal suitcase prompt and a three-panel manga prompt. [1] describes the same examples."
+    },
+    {
+      "claim": "Niji 8 does not return the same character for the same prompt wording, unlike Niji 7. It gives a wide variety of results for the same words. Longer prompts are less diverse than shorter ones. Consistency is meant to come from the edit feature, and sref and moodboards were also improved.",
+      "supported_by": [
+        1,
+        3
+      ],
+      "evidence": "[3] 'Niji 8 will NOT do this'; 'longer prompts are less diverse than shorter ones'; 'sref and moodboards have also been improved'. [1] 'same text prompts no longer reproduce the same character'."
+    },
+    {
+      "claim": "The launch announcement did not give pricing changes or benchmark/speed numbers (latency benchmarks, API details, pricing changes).",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "[1] 'provides no latency benchmarks, API details, pricing changes'. [0] 'has not announced pricing changes, speed improvements, or benchmark comparisons'. [2] 'has not spelled out benchmark numbers, pricing changes, or speed changes'. The primary post [3] has none of these."
+    },
+    {
+      "claim": "Per Midjourney's docs as reported by secondary sources, the Edit Model works in three ways: change an image with written instructions, generate new images from up to 4 reference images, and edit part of an image or extend the canvas beyond the frame. The docs were not fetched. [2] attributes this to the main Midjourney Edit Model (V8.1/V8.2), while [0] attributes it to Niji V8's editor.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "[2] 'up to 4 reference images' plus inpainting/outpainting, compatible with versions 8.1 and 8.2. [0] says Niji V8's editing system 'operates in three modes' including 'up to four reference images'."
+    },
+    {
+      "claim": "Per Midjourney's docs as reported by secondary sources, the Edit Model is not currently compatible with tile generation or Remix. Midjourney recommends the raw setting for more precise control. These limits are attributed to the Edit Model in [2] and to the Niji V8 editor in [0].",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "[2] 'not currently compatible with tile generation'; 'not currently compatible with Remix'; raw setting recommended. [0] reports the same limits."
+    },
+    {
+      "claim": "Midjourney's default version is V8.2, which became the default on July 24. V8.2 brought the Edit Model into the main product and replaced Omni Reference, Character Reference and Retexture.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "[2] 'V8.2, which became the default on July 24'; Edit Model replaced Omni Reference, Character Reference, and Retexture. [0] 'July 24, 2026' with the same replacements."
+    },
+    {
+      "claim": "On Nov. 17 (2026), Midjourney added Moodboards, Style Codes and Style References to its Edit Model.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "[2] 'On Nov. 17, Midjourney said it had added Moodboards, Style Codes, and Style References to its edit model.' [0] 'November 17, 2026'."
+    },
+    {
+      "claim": "The previous version, Niji 7, launched on Jan. 9 (2026). Midjourney said it brought a 'major boost in coherency'.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "[2] 'Niji 7, launched on Jan. 9' with 'major boost in coherency'. [0] 'launched on January 9, 2026'."
+    }
+  ],
+  "dropped": [
+    {
+      "claim": "Source disagreement on date: Emergent says Midjourney officially launched Niji V8 on November 25, 2026. This is later than the primary blog post date of Nov 24, 2026.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "[0] 'Officially launched on November 25, 2026.' [3] and [1] date it Nov 24, 2026. Fathom [2] was posted Nov 25 and gives no launch date."
+    }
+  ]
+}

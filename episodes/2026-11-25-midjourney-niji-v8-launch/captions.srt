@@ -1,0 +1,92 @@
+1
+00:00:00,100 --> 00:00:01,745
+Midjourney's anime model now
+
+2
+00:00:01,745 --> 00:00:03,708
+keeps characters consistent across
+
+3
+00:00:03,708 --> 00:00:04,239
+scenes.
+
+4
+00:00:04,539 --> 00:00:06,157
+Midjourney launched Niji eight
+
+5
+00:00:06,157 --> 00:00:07,824
+on November twenty-fourth, with
+
+6
+00:00:07,824 --> 00:00:09,197
+a built-in editing model,
+
+7
+00:00:09,197 --> 00:00:10,619
+developed with Spellbrush.
+
+8
+00:00:10,919 --> 00:00:11,912
+Use Quick Edit to
+
+9
+00:00:11,912 --> 00:00:13,401
+attach character sheets and
+
+10
+00:00:13,401 --> 00:00:14,890
+backgrounds, then pose your
+
+11
+00:00:14,890 --> 00:00:16,231
+character in new scenes.
+
+12
+00:00:16,531 --> 00:00:17,871
+Good for mascots and
+
+13
+00:00:17,871 --> 00:00:19,503
+ads. The catch: identical
+
+14
+00:00:19,503 --> 00:00:21,076
+prompts no longer return
+
+15
+00:00:21,076 --> 00:00:22,592
+the same character, and
+
+16
+00:00:22,592 --> 00:00:24,573
+blurry references hurt results.
+
+17
+00:00:24,873 --> 00:00:25,924
+Our take: test it
+
+18
+00:00:25,924 --> 00:00:27,501
+with sharp reference images
+
+19
+00:00:27,501 --> 00:00:29,183
+before planning any campaign.
+
+20
+00:00:29,483 --> 00:00:31,219
+Full breakdown and sources
+
+21
+00:00:31,219 --> 00:00:32,596
+on augaster dot com.
+
+22
+00:00:32,596 --> 00:00:34,393
+Follow for weekly practical
+
+23
+00:00:34,393 --> 00:00:34,752
+AI.
+

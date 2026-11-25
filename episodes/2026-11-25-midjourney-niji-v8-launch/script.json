@@ -1,0 +1,68 @@
+{
+  "episode": "2026-11-25",
+  "series": "Augaster AI Digest",
+  "story": "Midjourney launches Niji V8, its anime image model, with a built-in editing model and consistent characters",
+  "sources": [
+    {
+      "name": "Emergent News",
+      "url": "https://emergent.sh/news/midjourney-niji-v8-launches-built-anime"
+    },
+    {
+      "name": "AlphaSignal",
+      "url": "https://alphasignal.ai/news/midjourney-s-niji-8-rewrites-anime-character-continuity-with-reference-editing"
+    },
+    {
+      "name": "Fathom News (via DEV Community)",
+      "url": "https://dev.to/fathomnews/ai-image-maker-midjourney-launches-new-anime-model-with-built-in-editing-aao"
+    },
+    {
+      "name": "niji・journey blog, 'Welcome to Niji 8!' (Midjourney/Spellbrush)",
+      "url": "https://nijijourney.com/blog/niji-8"
+    }
+  ],
+  "source_line": "Sources: niji・journey blog (Midjourney/Spellbrush), AlphaSignal, Emergent News, Fathom News (via DEV Community)",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "THIS WEEK IN AI",
+      "title": "Niji 8 keeps anime characters consistent",
+      "point": "Midjourney's new anime model",
+      "narration": "Midjourney's anime model now keeps characters consistent across scenes."
+    },
+    {
+      "kind": "news",
+      "label": "WHAT HAPPENED",
+      "title": "Midjourney launches Niji 8",
+      "point": "Nov 24, 2026",
+      "narration": "Midjourney launched Niji eight on November twenty-fourth, with a built-in editing model, developed with Spellbrush."
+    },
+    {
+      "kind": "news",
+      "label": "HOW IT WORKS",
+      "title": "Quick Edit poses characters in new scenes",
+      "point": "Attach sheets and backgrounds",
+      "narration": "Use Quick Edit to attach character sheets and backgrounds, then pose your character in new scenes."
+    },
+    {
+      "kind": "analysis",
+      "label": "WHAT IT MEANS FOR YOU",
+      "title": "Good for mascots, with catches",
+      "point": "Same prompt, different character",
+      "narration": "Good for mascots and ads. The catch: identical prompts no longer return the same character, and blurry references hurt results."
+    },
+    {
+      "kind": "analysis",
+      "label": "OUR TAKE",
+      "title": "Test with sharp references first",
+      "point": "No pricing changes announced",
+      "narration": "Our take: test it with sharp reference images before planning any campaign."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER AI DIGEST",
+      "title": "Full breakdown + sources",
+      "point": "augaster.com",
+      "narration": "Full breakdown and sources on augaster dot com. Follow for weekly practical AI."
+    }
+  ]
+}

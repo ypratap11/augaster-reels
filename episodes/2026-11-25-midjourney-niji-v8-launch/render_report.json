@@ -1,0 +1,28 @@
+{
+  "duration_sec": 34.95,
+  "segments": 6,
+  "captions": 23,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/__w/augaster-reels/augaster-reels/episodes/2026-11-25-midjourney-niji-v8-launch/reel.mp4",
+  "voice": "kokoro:af_heart",
+  "sources": [
+    {
+      "name": "Emergent News",
+      "url": "https://emergent.sh/news/midjourney-niji-v8-launches-built-anime"
+    },
+    {
+      "name": "AlphaSignal",
+      "url": "https://alphasignal.ai/news/midjourney-s-niji-8-rewrites-anime-character-continuity-with-reference-editing"
+    },
+    {
+      "name": "Fathom News (via DEV Community)",
+      "url": "https://dev.to/fathomnews/ai-image-maker-midjourney-launches-new-anime-model-with-built-in-editing-aao"
+    },
+    {
+      "name": "niji\u30fbjourney blog, 'Welcome to Niji 8!' (Midjourney/Spellbrush)",
+      "url": "https://nijijourney.com/blog/niji-8"
+    }
+  ],
+  "approved": false
+}
