@@ -24,5 +24,6 @@
       "url": "https://nijijourney.com/blog/niji-8"
     }
   ],
-  "approved": false
+  "approved": true,
+  "approved_by": "auto-publish gate"
 }

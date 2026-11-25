@@ -5,6 +5,7 @@ slug: "midjourney-niji-v8-launch"
 description: "Midjourney has launched Niji 8 (Niji V8), its anime-focused image model, developed in collaboration with Spellbrush. The primary blog post is dated Nov 24, 2..."
 tags: ["Midjourney", "Niji8", "AIArt", "AnimeArt", "SmallBusiness", "GenerativeAI"]
 series: "Augaster AI Digest"
+video: "https://www.instagram.com/reel/DgLWqiSKM1e/"
 ---
 **What happened.** Midjourney has launched Niji 8 (Niji V8), its anime-focused image model, developed in collaboration with Spellbrush. The primary blog post is dated Nov 24, 2026. Midjourney describes it as the fastest and most coherent Niji model yet, with improved spatial reasoning and prompt following. Its X announcement, reported second-hand because the post itself could not be fetched, also cited precision prompting, consistent characters and a dedicated editing model.
 
