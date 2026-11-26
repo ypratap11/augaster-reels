@@ -5,6 +5,7 @@ slug: "baidu-ernie-flash-open-weights"
 description: "Baidu has released the model weights for ERNIE 5.5 Flash Preview under the Apache License 2.0. The Apache 2.0 licence allows commercial use, modification and..."
 tags: ["AI", "OpenSource", "ERNIE", "Baidu", "SmallBusiness", "Automation"]
 series: "Augaster AI Digest"
+video: "https://www.instagram.com/reel/DgOMJC8hQmm/"
 ---
 **What happened.** Baidu has released the model weights for ERNIE 5.5 Flash Preview under the Apache License 2.0. The Apache 2.0 licence allows commercial use, modification and redistribution, and developers do not pay Baidu per interaction. The announcement came first: Baidu introduced the Preview through its cloud platform roughly two weeks before the open weights were published.
 
