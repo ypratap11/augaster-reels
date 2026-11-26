@@ -1,0 +1,64 @@
+{
+  "episode": "2026-11-26",
+  "series": "Augaster AI Digest",
+  "story": "Baidu releases ERNIE 5.5 Flash Preview as a free open-weights model with a commercial license",
+  "sources": [
+    {
+      "name": "Baidu ERNIE-5.5-Flash-Preview Hugging Face model card",
+      "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview"
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/384015/china-google-released-fast-new-ai-model-free-baidu-ernie"
+    },
+    {
+      "name": "The Machine Herald",
+      "url": "https://machineherald.io/article/2026-11/26-baidu-opens-ernie-55-flash-preview-weights-under-apache-20-as-benchmark-claims-remain-self-reported/"
+    }
+  ],
+  "source_line": "Sources: Baidu ERNIE-5.5-Flash-Preview Hugging Face model card, Decrypt, The Machine Herald",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "THIS WEEK IN AI",
+      "title": "A free AI model you can use commercially",
+      "point": "Baidu's ERNIE 5.5 Flash Preview",
+      "narration": "Baidu just released a free AI model with a commercial licence."
+    },
+    {
+      "kind": "news",
+      "label": "WHAT HAPPENED",
+      "title": "Baidu opens up ERNIE 5.5 Flash Preview",
+      "point": "Apache 2.0 license",
+      "narration": "Baidu released ERNIE five point five Flash Preview weights under Apache two point zero."
+    },
+    {
+      "kind": "news",
+      "label": "HOW IT WORKS",
+      "title": "Text in, text out, 1M-token context",
+      "point": "Benchmarks are Baidu's own",
+      "narration": "It's text only, with a one million token context window. Benchmarks are Baidu's own."
+    },
+    {
+      "kind": "analysis",
+      "label": "WHAT IT MEANS FOR YOU",
+      "title": "No per-interaction fees to Baidu, but it's a preview",
+      "point": "Some capabilities may fall short",
+      "narration": "Developers pay Baidu nothing per interaction. The catch: it's a preview, so capabilities may fall short."
+    },
+    {
+      "kind": "analysis",
+      "label": "OUR TAKE",
+      "title": "Test it on one small task first",
+      "point": "",
+      "narration": "Our take: test it on one small task first."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER TECHNOLOGIES",
+      "title": "Want this set up for your business?",
+      "point": "augaster.com",
+      "narration": "Full breakdown and sources on augaster dot com. Want this set up for your business? Link in bio."
+    }
+  ]
+}

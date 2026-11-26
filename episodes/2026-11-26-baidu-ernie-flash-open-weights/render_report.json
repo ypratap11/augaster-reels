@@ -1,0 +1,24 @@
+{
+  "duration_sec": 30.62,
+  "segments": 6,
+  "captions": 23,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/__w/augaster-reels/augaster-reels/episodes/2026-11-26-baidu-ernie-flash-open-weights/reel.mp4",
+  "voice": "kokoro:af_heart",
+  "sources": [
+    {
+      "name": "Baidu ERNIE-5.5-Flash-Preview Hugging Face model card",
+      "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview"
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/384015/china-google-released-fast-new-ai-model-free-baidu-ernie"
+    },
+    {
+      "name": "The Machine Herald",
+      "url": "https://machineherald.io/article/2026-11/26-baidu-opens-ernie-55-flash-preview-weights-under-apache-20-as-benchmark-claims-remain-self-reported/"
+    }
+  ],
+  "approved": false
+}

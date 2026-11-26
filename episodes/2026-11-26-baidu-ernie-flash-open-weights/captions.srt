@@ -1,0 +1,92 @@
+1
+00:00:00,100 --> 00:00:01,399
+Baidu just released a
+
+2
+00:00:01,399 --> 00:00:02,535
+free AI model with
+
+3
+00:00:02,535 --> 00:00:03,833
+a commercial licence.
+
+4
+00:00:04,133 --> 00:00:05,633
+Baidu released ERNIE five
+
+5
+00:00:05,633 --> 00:00:07,079
+point five Flash Preview
+
+6
+00:00:07,079 --> 00:00:08,525
+weights under Apache two
+
+7
+00:00:08,525 --> 00:00:09,275
+point zero.
+
+8
+00:00:09,575 --> 00:00:10,936
+It's text only, with
+
+9
+00:00:10,936 --> 00:00:12,238
+a one million token
+
+10
+00:00:12,238 --> 00:00:14,191
+context window. Benchmarks are
+
+11
+00:00:14,191 --> 00:00:15,079
+Baidu's own.
+
+12
+00:00:15,379 --> 00:00:17,088
+Developers pay Baidu nothing
+
+13
+00:00:17,088 --> 00:00:18,741
+per interaction. The catch:
+
+14
+00:00:18,741 --> 00:00:19,899
+it's a preview, so
+
+15
+00:00:19,899 --> 00:00:21,608
+capabilities may fall short.
+
+16
+00:00:21,908 --> 00:00:22,875
+Our take: test it
+
+17
+00:00:22,875 --> 00:00:23,841
+on one small task
+
+18
+00:00:23,841 --> 00:00:24,276
+first.
+
+19
+00:00:24,576 --> 00:00:26,160
+Full breakdown and sources
+
+20
+00:00:26,160 --> 00:00:27,417
+on augaster dot com.
+
+21
+00:00:27,417 --> 00:00:28,455
+Want this set up
+
+22
+00:00:28,455 --> 00:00:29,875
+for your business? Link
+
+23
+00:00:29,875 --> 00:00:30,421
+in bio.
+

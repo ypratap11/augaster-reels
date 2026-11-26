@@ -1,0 +1,205 @@
+{
+  "title": "Baidu releases ERNIE 5.5 Flash Preview as a free open-weights model with a commercial license",
+  "episode_number": 27,
+  "cta": "service",
+  "sources": [
+    {
+      "index": 0,
+      "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview",
+      "name": "Baidu ERNIE-5.5-Flash-Preview Hugging Face model card",
+      "fetched": true,
+      "published": "",
+      "kind": "primary"
+    },
+    {
+      "index": 1,
+      "url": "https://decrypt.co/384015/china-google-released-fast-new-ai-model-free-baidu-ernie",
+      "name": "Decrypt",
+      "fetched": true,
+      "published": "Nov 25, 2026",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 2,
+      "url": "https://machineherald.io/article/2026-11/26-baidu-opens-ernie-55-flash-preview-weights-under-apache-20-as-benchmark-claims-remain-self-reported/",
+      "name": "The Machine Herald",
+      "fetched": true,
+      "published": "2026-11-26",
+      "kind": "roundup"
+    }
+  ],
+  "kept": [
+    {
+      "claim": "Baidu released the ERNIE 5.5 Flash Preview model weights under the Apache License 2.0.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "[0] 'ERNIE 5.5 Flash Preview is released under the Apache License 2.0'. [1] Baidu 'released ERNIE 5.5 Flash Preview under the Apache 2.0 license'. [2] weights are published under Apache 2.0."
+    },
+    {
+      "claim": "The Apache 2.0 licence allows commercial use, modification and redistribution, and developers do not pay Baidu per interaction. (Source 0 names the licence but does not spell out these terms. Source 2 is derived from Decrypt.)",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "[1] 'allowing commercial use, modification and redistribution'; developers can use it 'without paying Baidu for every interaction'. [2] letting developers download, modify and build commercial products on it without paying Baidu per interaction, citing Decrypt."
+    },
+    {
+      "claim": "The model is a Mixture-of-Experts model with 280B total parameters and 14B active per token.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "[0] '280B total parameters, 14B of them active per token'. [1] 280 billion parameters, 14 billion used per token. [2] 280-billion-parameter MoE with 14 billion active per token."
+    },
+    {
+      "claim": "The context window is 1M tokens (1,048,576 in the spec table).",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "[0] '1M-token context window'; table shows 'Context Length 1,048,576'. [1] 'context window exceeds one million tokens'. [2] 'context window exceeds one million tokens'."
+    },
+    {
+      "claim": "Most of the weights are compressed to 4-bit precision (FP4 / MXFP4 routed experts), and the model uses speculative decoding with a DSpark draft head.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "[0] routed experts in MXFP4 (W4A8); 'adds a DSpark draft head for speculative decoding'. [1] compressed most weights to four-bit precision and used speculative decoding. [2] repeats this, citing Decrypt."
+    },
+    {
+      "claim": "The model card describes the Preview as an intermediate checkpoint from post-training. Some capabilities may fall short because training is not finished, and an official release will follow.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "[0] 'an intermediate checkpoint from post-training'. [2] quotes the same Baidu model-card wording."
+    },
+    {
+      "claim": "The model is text in, text out. It cannot process images natively.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "[0] spec table says 'Modality: Text in, text out' (implies this but does not say images are unsupported). [1] the model worked 'despite being unable to process images natively'. [2] repeats this."
+    },
+    {
+      "claim": "Baidu's demo: in a single 11-hour coding task the model wrote a third-person wuxia/martial-arts game on Unreal Engine 5.8.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "[0] 'In a single 11-hour coding task it wrote a complete third-person wuxia game in C++ on Unreal Engine 5.8'. [1] and [2] describe an 11-hour Unreal Engine 5.8 martial-arts game build."
+    },
+    {
+      "claim": "Terminal-Bench 4.0 scores: ERNIE 5.5 Flash Preview 46.5, DeepSeek-V4.1-Flash 42.3, GLM-5.3-Flash 35.8, GPT-6.1 Sol 56.1.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "[0] benchmark table row 46.5 / 42.3 / 35.8 / 56.1. [1] 46.5%, 42.3%, 35.8%, 56.1%. [2] same figures, citing Decrypt."
+    },
+    {
+      "claim": "AutomationBench scores: ERNIE 5.5 Flash Preview 61.9, GPT-6.1 Sol 49.3, Claude Opus 5.5 58.0.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "[0] table row 61.9 / 49.3* / 58.0*. [1] 61.9% vs 49.3% for GPT and 58% for Claude. [2] same figures, citing Decrypt."
+    },
+    {
+      "claim": "The benchmark results are Baidu's own, manufacturer-reported evaluations.",
+      "supported_by": [
+        0,
+        1,
+        2
+      ],
+      "evidence": "[0] 'All ERNIE 5.5 Flash Preview scores are from our own evaluations.' [1] 'manufacturer-reported results'. [2] benchmarks 'still self-reported'."
+    },
+    {
+      "claim": "Baidu's international API pricing is $0.28 per million input tokens and $1.13 per million output tokens. Decrypt links this to a third-party blog, and the Hugging Face card gives no pricing.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "[1] 'pricing is $0.28 per million input tokens and $1.13 per million output tokens'. [2] same figures, citing Decrypt."
+    },
+    {
+      "claim": "The model is also available through a free tier on OpenRouter.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "[1] 'available through a free tier on OpenRouter'. [2] 'a free tier available through OpenRouter', citing Decrypt."
+    },
+    {
+      "claim": "The announcement is older than the weights release. Baidu introduced the Preview through its cloud platform roughly two weeks before the open weights were published.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "[1] 'The release comes nearly two weeks after Baidu introduced the model through its cloud computing platform.' [2] 'roughly two weeks before publishing its open weights', citing Decrypt."
+    },
+    {
+      "claim": "The open-weights release date: Decrypt (published Nov 25, 2026) says 'this week'. The Machine Herald (Nov 26, 2026) says the Hugging Face repository was created on November 23, 2026.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "[1] 'released its ERNIE 5.5 Flash Preview AI model this week', dated Nov 25, 2026. [2] repository for the BF16 weights 'was created on November 23, 2026'. Only [2] gives the Nov 23 date."
+    }
+  ],
+  "dropped": [
+    {
+      "claim": "The Apache 2.0 licence covers the ERNIE 5.5 Flash Preview weights only. ERNIE 5.5 Flash Base stays under its own licence, the ERNIE 5.5 Flash Base Model License Agreement v1.0.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "[0] License section: 'This license covers the ERNIE 5.5 Flash Preview weights only.' Single source."
+    },
+    {
+      "claim": "The Hugging Face page's auto-generated metadata and sidebar list the model size as '300B params'. This differs from the 280B stated in the card text and by the press.",
+      "supported_by": [
+        0
+      ],
+      "evidence": "[0] The page description says 'Text Generation model with 300B parameters', and the sidebar shows 'Model size 300B params'. The card text says 280B."
+    },
+    {
+      "claim": "ERNIE-5.5-Flash-Base was released earlier, on November 5, as a raw pre-trained model with 33.5 trillion training tokens. Source 0 says only that the Base was 'released earlier'.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "[2] cites The Decoder for the Nov 5 Base release and 33.5T tokens. [0] says the Base was released earlier but gives no date. Not confirmed by two sources."
+    },
+    {
+      "claim": "Baidu says the model generates more than 200 tokens per second.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "[1] 'generating more than 200 tokens per second, according to Baidu'. Single source."
+    },
+    {
+      "claim": "No independent third-party reproduction of Baidu's benchmark numbers exists yet. Artificial Analysis had no entry for the model as of Nov 26, 2026.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "[2] 'None of the cited sources show an independent, third-party reproduction'. Single source."
+    },
+    {
+      "claim": "The release is open-weight rather than fully open-source, because it does not provide everything needed to reproduce the model's training.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "[2] states this, attributing it to Decrypt. I did not locate this wording in Decrypt, so single source."
+    }
+  ]
+}
