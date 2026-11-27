@@ -1,0 +1,131 @@
+{
+  "title": "OpenAI starts merging ChatGPT Chat and Work into one usage limit; new Business sign-ups by Nov 30 get 2x usage and fast mode",
+  "episode_number": 28,
+  "cta": "follow",
+  "sources": [
+    {
+      "index": 0,
+      "url": "https://chatgpt.com/pricing",
+      "name": "ChatGPT pricing page (OpenAI)",
+      "fetched": true,
+      "published": "",
+      "kind": "primary"
+    },
+    {
+      "index": 1,
+      "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+      "name": "TechCrunch (Jagmeet Singh)",
+      "fetched": true,
+      "published": "12:03 PM PST · November 25, 2026",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 2,
+      "url": "https://www.techcityng.com/chatgpt-codex-shared-usage-limits/",
+      "name": "TechCity (Olawale Adeyina)",
+      "fetched": true,
+      "published": "26 Nov 2026",
+      "kind": "original_reporting"
+    }
+  ],
+  "kept": [
+    {
+      "claim": "New ChatGPT Business customers who sign up by Nov 30 get 2x included usage and fast mode at no extra cost for all seats through Dec 31.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "[0] pricing page banner: \"Sign up for ChatGPT Business by Nov 30 and get 2x included usage and fast mode at no extra cost for all seats through Dec 31.\" [2] says OpenAI's pricing page lists an offer for new Business customers: sign up by Nov. 30, get double the included usage and fast mode for all seats through Dec. 31."
+    },
+    {
+      "claim": "OpenAI plans to bring shared usage limits more broadly in December, per its support page.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "[1] says OpenAI plans to bring shared usage limits more broadly in December, per its support page. [2] says the change applies to Plus, Pro and Business starting in December 2026."
+    },
+    {
+      "claim": "Most users are not expected to have to wait for usage resets more often, but a small fraction of the heaviest users may hit limits sooner.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "[1] spokesperson: most users not expected to face more frequent usage resets; a small fraction of heaviest users may hit limits sooner. [2] says OpenAI expects most users won't need to wait for reset more often, and notes heavy users of agent tasks and Codex draw from one pool."
+    },
+    {
+      "claim": "Conversations with the Instant model stay unlimited and do not count toward the shared allowance.",
+      "supported_by": [
+        1,
+        2
+      ],
+      "evidence": "[1] says Instant conversations remain unlimited and won't count toward the shared allowance, and users can keep using Instant after exhausting limits. [2] says Instant chat will not draw from the shared allowance."
+    },
+    {
+      "claim": "Timing caveat: the Business offer was already on OpenAI's pricing page when fetched (retrieved 2026-11-27) and the offer deadline of Nov 30 is stated by the primary source. The merger announcement predates the Nov 25 TechCrunch story, and the primary OpenAI help-center article could not be fetched (tool limit), so merger claims lack a primary source here.",
+      "supported_by": [
+        0,
+        1
+      ],
+      "evidence": "[0] pricing banner with Nov 30 and Dec 31 dates. [1] refers to an earlier emailed announcement and to OpenAI's support page for the December plan."
+    }
+  ],
+  "dropped": [
+    {
+      "claim": "OpenAI will have Chat and Work share a single usage meter across ChatGPT, per an OpenAI spokesperson.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "[1] \"Under the new system, Chat and Work will share a single usage meter across ChatGPT, the OpenAI spokesperson told TechCrunch.\" [2] describes a shared allowance across ChatGPT and Codex as Work's agentic capabilities come into main ChatGPT, but does not say Chat and Work share one meter in these words. [0] does not state it (it says \"Usage refers to Chat limits\"). The OpenAI help-center page cited by both articles could not be fetched, so there is no primary confirmation."
+    },
+    {
+      "claim": "OpenAI began rolling out the unified Chat and Work experience to a small group of Pro subscribers, per a Tuesday post on X by product lead Thibault \"Tibo\" Sottiaux.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "[1] says the update began for a small group of Pro subscribers, as Sottiaux said in an X post on Tuesday. [2] only says a small group of users (not specifically Pro) may see the change before December."
+    },
+    {
+      "claim": "The merger of Chat and Work was announced earlier than this rollout, in an email to users (the link in TechCrunch points to a Nov 2, 2026 TechCrunch story, which was not fetched).",
+      "supported_by": [
+        1
+      ],
+      "evidence": "[1] says the rollout follows OpenAI's \"earlier announcement\" of the merger in an email to users. The date is inferred from the linked URL only."
+    },
+    {
+      "claim": "The shared allowance applies to Plus, Pro and Business plans and also covers Codex (TechCity's framing).",
+      "supported_by": [
+        2
+      ],
+      "evidence": "[2] \"ChatGPT usage limits on the Plus, Pro and Business plans will become one shared allowance that also covers Codex.\" [1] does not mention Codex or specific plans in this context (it only mentions Pro for the early rollout)."
+    },
+    {
+      "claim": "Usage under the shared allowance will be counted in tokens, so advanced models and complex tasks use more of it.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "[2] says usage is measured in tokens and that advanced models and complex tasks use up more. [1] does not say this."
+    },
+    {
+      "claim": "When users run out, they can wait for the reset, upgrade their plan or buy credits; remaining allowance and reset time appear under Settings > Usage.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "[2] lists the three options and says the Settings, then Usage page shows combined remaining allowance and reset time. [1] does not state this. [0] only says Enterprise and Business can purchase credits for more access."
+    },
+    {
+      "claim": "Some subscribers have criticized the merger, fearing less access to advanced reasoning models at the same subscription price.",
+      "supported_by": [
+        1
+      ],
+      "evidence": "[1] says users raised concerns on social media and OpenAI's community forum that merged limits could leave them with less access to advanced reasoning models while paying the same fees."
+    },
+    {
+      "claim": "Details still unknown as of Nov 26, 2026: the exact December date for most accounts, how many tokens each plan includes, and what credits cost.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "[2] \"What we don't know yet\" section lists these three items."
+    }
+  ]
+}

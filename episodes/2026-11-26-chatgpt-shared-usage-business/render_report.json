@@ -1,0 +1,24 @@
+{
+  "duration_sec": 35.49,
+  "segments": 6,
+  "captions": 25,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/__w/augaster-reels/augaster-reels/episodes/2026-11-26-chatgpt-shared-usage-business/reel.mp4",
+  "voice": "kokoro:af_heart",
+  "sources": [
+    {
+      "name": "ChatGPT pricing page (OpenAI)",
+      "url": "https://chatgpt.com/pricing"
+    },
+    {
+      "name": "TechCrunch (Jagmeet Singh)",
+      "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/"
+    },
+    {
+      "name": "TechCity (Olawale Adeyina)",
+      "url": "https://www.techcityng.com/chatgpt-codex-shared-usage-limits/"
+    }
+  ],
+  "approved": false
+}

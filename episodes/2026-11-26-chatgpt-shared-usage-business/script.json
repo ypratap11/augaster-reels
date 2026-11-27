@@ -1,0 +1,64 @@
+{
+  "episode": "2026-11-26",
+  "series": "Augaster AI Digest",
+  "story": "OpenAI is merging ChatGPT Chat and Work into one shared usage limit, and new Business sign-ups by Nov 30 get 2x usage and fast mode",
+  "sources": [
+    {
+      "name": "ChatGPT pricing page (OpenAI)",
+      "url": "https://chatgpt.com/pricing"
+    },
+    {
+      "name": "TechCrunch (Jagmeet Singh)",
+      "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/"
+    },
+    {
+      "name": "TechCity (Olawale Adeyina)",
+      "url": "https://www.techcityng.com/chatgpt-codex-shared-usage-limits/"
+    }
+  ],
+  "source_line": "Sources: OpenAI ChatGPT pricing page, TechCrunch, TechCity",
+  "segments": [
+    {
+      "kind": "hook",
+      "label": "THIS WEEK IN AI",
+      "title": "Double ChatGPT Business usage, free",
+      "point": "Sign up by Nov 30",
+      "narration": "New ChatGPT Business sign-ups by November thirtieth get double usage, plus fast mode."
+    },
+    {
+      "kind": "news",
+      "label": "WHAT HAPPENED",
+      "title": "Chat and Work share one limit",
+      "point": "Wider rollout in December",
+      "narration": "OpenAI is merging ChatGPT Chat and Work into one shared usage limit, rolling out wider in December."
+    },
+    {
+      "kind": "news",
+      "label": "HOW IT WORKS",
+      "title": "Instant chats stay unlimited",
+      "point": "Not counted in shared allowance",
+      "narration": "Instant model conversations stay unlimited and don't count toward the shared allowance."
+    },
+    {
+      "kind": "analysis",
+      "label": "WHAT IT MEANS FOR YOU",
+      "title": "The catch: heavy users",
+      "point": "May hit limits sooner",
+      "narration": "Most users aren't expected to wait for resets more often, but heavy users may hit limits sooner."
+    },
+    {
+      "kind": "analysis",
+      "label": "OUR TAKE",
+      "title": "Sign up early, watch usage",
+      "point": "Offer runs through Dec 31",
+      "narration": "Our take: if you're considering Business, sign up before November thirtieth and track heavy users."
+    },
+    {
+      "kind": "cta",
+      "label": "AUGASTER AI DIGEST",
+      "title": "Full breakdown + sources",
+      "point": "augaster.com",
+      "narration": "Full breakdown and sources on augaster dot com. Follow for weekly practical AI."
+    }
+  ]
+}
