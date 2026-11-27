@@ -5,6 +5,7 @@ slug: "chatgpt-shared-usage-business"
 description: "OpenAI is starting to merge ChatGPT's Chat and Work into one shared usage limit. At the same time, new ChatGPT Business customers who sign up by Nov 30 get 2..."
 tags: ["ChatGPT", "OpenAI", "SmallBusiness", "AITools", "Productivity", "BusinessTips"]
 series: "Augaster AI Digest"
+video: "https://www.instagram.com/reel/DgO1J0rznkx/"
 ---
 **What happened.** OpenAI is starting to merge ChatGPT's Chat and Work into one shared usage limit. At the same time, new ChatGPT Business customers who sign up by Nov 30 get 2x included usage and fast mode at no extra cost for all seats through Dec 31.
 

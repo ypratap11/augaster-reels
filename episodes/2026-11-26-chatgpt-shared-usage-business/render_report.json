@@ -20,5 +20,6 @@
       "url": "https://www.techcityng.com/chatgpt-codex-shared-usage-limits/"
     }
   ],
-  "approved": false
+  "approved": true,
+  "approved_by": "auto-publish gate"
 }
