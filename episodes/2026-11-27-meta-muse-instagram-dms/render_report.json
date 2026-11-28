@@ -1,0 +1,32 @@
+{
+  "duration_sec": 33.99,
+  "segments": 6,
+  "captions": 24,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "output": "/__w/augaster-reels/augaster-reels/episodes/2026-11-27-meta-muse-instagram-dms/reel.mp4",
+  "voice": "kokoro:af_heart",
+  "sources": [
+    {
+      "name": "The Neuron daily digest (Nov 25, 2026)",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-november-25-2026/"
+    },
+    {
+      "name": "The Neuron daily digest (Nov 26, 2026)",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-november-26-2026/"
+    },
+    {
+      "name": "TechCrunch (Aisha Malik) - Muse in Instagram DMs",
+      "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/"
+    },
+    {
+      "name": "TechCrunch (Lauren Forristal) - Walmart and Meta Muse",
+      "url": "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse/"
+    },
+    {
+      "name": "The Decoder - Amazon and Meta talks over Muse",
+      "url": "https://the-decoder.com/amazon-and-meta-are-in-talks-to-end-the-block-on-metas-ai-shopping-agent-muse-in-amazons-online-store/"
+    }
+  ],
+  "approved": false
+}

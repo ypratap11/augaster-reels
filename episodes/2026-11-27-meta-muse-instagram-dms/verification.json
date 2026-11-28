@@ -1,0 +1,198 @@
+{
+  "title": "Meta puts its Muse AI agent inside Instagram DMs and partners with Walmart on Black Friday deals",
+  "episode_number": 29,
+  "cta": "follow",
+  "sources": [
+    {
+      "index": 0,
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-november-25-2026/",
+      "name": "The Neuron daily digest (Nov 25, 2026)",
+      "fetched": true,
+      "published": "Nov 25, 2026",
+      "kind": "roundup"
+    },
+    {
+      "index": 1,
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-november-26-2026/",
+      "name": "The Neuron daily digest (Nov 26, 2026)",
+      "fetched": true,
+      "published": "Nov 26, 2026",
+      "kind": "roundup"
+    },
+    {
+      "index": 2,
+      "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+      "name": "TechCrunch (Aisha Malik) - Muse in Instagram DMs",
+      "fetched": true,
+      "published": "9:00 AM PST · November 24, 2026",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 3,
+      "url": "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse/",
+      "name": "TechCrunch (Lauren Forristal) - Walmart and Meta Muse",
+      "fetched": true,
+      "published": "1:32 PM PST · November 24, 2026",
+      "kind": "original_reporting"
+    },
+    {
+      "index": 4,
+      "url": "https://the-decoder.com/amazon-and-meta-are-in-talks-to-end-the-block-on-metas-ai-shopping-agent-muse-in-amazons-online-store/",
+      "name": "The Decoder - Amazon and Meta talks over Muse",
+      "fetched": true,
+      "published": "2026-11-25",
+      "kind": "original_reporting"
+    }
+  ],
+  "kept": [
+    {
+      "claim": "Meta integrated its Muse AI agent into Instagram DMs, so users can chat with Muse in a DM thread.",
+      "supported_by": [
+        0,
+        2
+      ],
+      "evidence": "Source 0: 'Meta integrated Muse into Instagram DMs'. Source 2: 'Instagram users can now chat with Meta's AI agent Muse in a DM thread, the company announced on Tuesday.' Caveat: Meta's own newsroom post was not fetched (the web_fetch tool limit was reached), so no primary source has been read."
+    },
+    {
+      "claim": "Walmart partnered with Meta so customers can shop Walmart's Black Friday deals through Muse.",
+      "supported_by": [
+        0,
+        3
+      ],
+      "evidence": "Source 0: Meta 'partnered with Walmart to make Black Friday deals accessible through Muse'. Source 3: Walmart is 'teaming up with Meta to let customers shop its Black Friday deals through Muse'. Walmart's own announcement (corporate.walmart.com) is linked from source 3 but could not be fetched, so it is not a source."
+    },
+    {
+      "claim": "Amazon blocked Meta's Muse shopping agent in September 2026. Amazon and Meta are reportedly in talks to lift the block, and no deal has been announced.",
+      "supported_by": [
+        1,
+        4
+      ],
+      "evidence": "Source 1: 'Amazon and Meta discussed lifting Amazon's September block'; 'companies have yet to announce a deal'. Source 4: the two are 'in talks' to end the block on Muse. Its earlier-coverage link is dated Sep 21, 2026."
+    },
+    {
+      "claim": "Ad revenue and control over search results are the main sticking points in the Amazon–Meta talks.",
+      "supported_by": [
+        1,
+        4
+      ],
+      "evidence": "Source 1: advertising revenue and control over search results 'remain under negotiation'. Source 4, citing Fortune: these are the main sticking points."
+    },
+    {
+      "claim": "Amazon's advertising business brings in $68.6 billion a year.",
+      "supported_by": [
+        1,
+        4
+      ],
+      "evidence": "Source 1: 'Amazon's $68.6 billion annual advertising business'. Source 4: 'a business that brings in $68.6 billion a year'. Annual figure."
+    },
+    {
+      "claim": "Muse accounted for 51% of all agentic shopping orders, ahead of Grok at 24% and ChatGPT at 22%. The Decoder attributes the data to Forter Intelligence, and the figure is a share of AI-agent orders, not of all online orders.",
+      "supported_by": [
+        1,
+        4
+      ],
+      "evidence": "Source 1: Muse 'accounts for 51% of AI-agent shopping orders'. Source 4: 'Muse recently accounted for 51 percent of all agentic orders' per Forter Intelligence, followed by Grok at 24 percent and ChatGPT at 22 percent. Source 4 calls Grok 'SpaceX's Grok'. Source 1 does not print the Grok and ChatGPT shares."
+    },
+    {
+      "claim": "Amazon's decision to block third-party AI agents from making purchases contrasts with Walmart's approach of welcoming them.",
+      "supported_by": [
+        3,
+        4
+      ],
+      "evidence": "Source 3: Amazon 'has taken steps to stop third-party AI agents from making purchases', while Walmart 'is leaning into the idea'. Source 4 covers Amazon's block on Muse."
+    }
+  ],
+  "dropped": [
+    {
+      "claim": "Meta announced the Instagram DM integration on Tuesday, November 24, 2026. The Neuron digest reported it a day later, on November 25.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Source 2 is dated November 24, 2026 and says Meta announced it 'on Tuesday'. Source 0 is dated Nov 25 and links to the Nov 24 TechCrunch story but prints no announcement date itself. Only one source states this date."
+    },
+    {
+      "claim": "In Instagram DMs, Muse can give users more context about a post, place or product, and can catch them up on DM conversations they missed.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Source 2: users can chat with Muse 'to get more context about a post, place, or product' or 'catch up on conversations they may have missed'. Single source."
+    },
+    {
+      "claim": "Users can share Instagram posts with Muse and ask it to act on them, for example adding a coffee shop to a Mexico City itinerary or finding a Black Friday deal on shoes.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Source 2 gives these two examples."
+    },
+    {
+      "claim": "Muse in Instagram DMs began rolling out Tuesday on iOS and Android in the U.S., Canada, Mexico, Japan and Singapore.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Source 2: rollout 'for iOS and Android users in the U.S., Canada, Mexico, Japan, and Singapore'. Single source."
+    },
+    {
+      "claim": "Conversations with Muse on Instagram appear as a side chat in the main Muse app.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Source 2: 'conversations with Muse on Instagram will appear as a side chat in the main Muse app'. Single source."
+    },
+    {
+      "claim": "Meta also launched a feature, starting Tuesday in the U.S. and Canada only, where Muse can organize saved Instagram posts and reels into Collections. A prompt appears when a user saves a post.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Source 2: 'Starting Tuesday, when users save a post on Instagram, they will see a prompt for Muse to organize it... launching in the U.S. and Canada.' Single source."
+    },
+    {
+      "claim": "Meta says nothing is shared, published or sent from Muse on Instagram without user approval. Users can ask Muse to forget information or undo actions.",
+      "supported_by": [
+        2
+      ],
+      "evidence": "Source 2 gives this as Meta's statement. Single source."
+    },
+    {
+      "claim": "The Walmart–Meta partnership was announced Tuesday, November 24, 2026, and is described as live now.",
+      "supported_by": [
+        3
+      ],
+      "evidence": "Source 3 is dated Nov 24, 2026. It says the partnership was 'announced Tuesday' and 'Walmart now lets customers shop Black Friday deals through Muse'. Single source."
+    },
+    {
+      "claim": "To use it, a user opens the Muse app, signs in to their Walmart account, and returns to the assistant. Muse sends requests to Walmart, which returns products and helps build a cart.",
+      "supported_by": [
+        3
+      ],
+      "evidence": "Source 3 describes this sign-in and request flow. Single source."
+    },
+    {
+      "claim": "Walmart says Muse does not get access to a customer's Walmart shopping history or other personal information. Shoppers can set spending limits, require approval before purchases, review orders placed by the agent, and delete the agent's profile.",
+      "supported_by": [
+        3
+      ],
+      "evidence": "Source 3 reports these as Walmart's privacy protections. Single source."
+    },
+    {
+      "claim": "The experience runs on Walmart's Agent Gateway. It launched in October, and Walmart plans to open it to more developers and AI platforms.",
+      "supported_by": [
+        3
+      ],
+      "evidence": "Source 3: powered by 'Walmart's Agent Gateway', which 'launched in October'. Single source."
+    },
+    {
+      "claim": "Instacart has also recently teamed up with Meta's Muse.",
+      "supported_by": [
+        3
+      ],
+      "evidence": "Source 3: 'Instacart also recently joined forces with the AI assistant.' Single source."
+    },
+    {
+      "claim": "Muse has more than 10 million users in the US and Canada. The Decoder calls it Meta's most successful consumer AI product so far.",
+      "supported_by": [
+        4
+      ],
+      "evidence": "Source 4 states this. Single source, so not confirmed by a second source."
+    }
+  ]
+}
