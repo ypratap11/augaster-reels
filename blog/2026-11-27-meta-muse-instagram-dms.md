@@ -5,6 +5,7 @@ slug: "meta-muse-instagram-dms"
 description: "Meta integrated its Muse AI agent into Instagram DMs, so users can chat with Muse in a DM thread. Walmart also partnered with Meta, so customers can shop Wal..."
 tags: ["AI", "SmallBusiness", "Instagram", "Meta", "Walmart", "AgenticShopping"]
 series: "Augaster AI Digest"
+video: "https://www.instagram.com/reel/DgRck0yuEfr/"
 ---
 **What happened.** Meta integrated its Muse AI agent into Instagram DMs, so users can chat with Muse in a DM thread. Walmart also partnered with Meta, so customers can shop Walmart's Black Friday deals through Muse.
 
